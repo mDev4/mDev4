@@ -20,11 +20,16 @@ namespace KVS_windows
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class MainPage : Page
+    public sealed partial class HomePage : Page
     {
-        public MainPage()
+        public HomePage()
         {
             this.InitializeComponent();
+        }
+
+        private void messageT_Copy1_SelectionChanged(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

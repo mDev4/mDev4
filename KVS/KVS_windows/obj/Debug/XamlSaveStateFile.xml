@@ -1,6 +1,10 @@
 <XamlCompilerSaveState>
   <ReferenceAssemblyList>
+<<<<<<< HEAD
     <LocalAssembly PathName="c:\users\lincy\documents\mdev4\kvs\kvs_windows\obj\debug\intermediatexaml\kvs_windows.exe" HashGuid="48ec1ea7-39ff-142d-c61c-f5836fae4cf0" />
     <ReferenceAssembly PathName="c:\users\lincy\documents\mdev4\kvs\packages\newtonsoft.json.8.0.3\lib\portable-net45+wp80+win8+wpa81+dnxcore50\newtonsoft.json.dll" HashGuid="74af0f9d-4f96-68dd-0977-2bb867adf196" />
+=======
+    <LocalAssembly PathName="c:\users\lincy\documents\mdev4\kvs\kvs_windows\obj\debug\intermediatexaml\kvs_windows.exe" HashGuid="9052e32a-5513-61a3-1893-b183277b8fb3" />
+>>>>>>> caf6d27f0f04ad9341d8c3de26bc636a338f80dd
   </ReferenceAssemblyList>
 </XamlCompilerSaveState>
