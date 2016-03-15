@@ -8,7 +8,6 @@ C:\Users\lincy\Documents\mDev4\KVS\KVS_windows\bin\Debug\AppxManifest.xml
 C:\Users\lincy\Documents\mDev4\KVS\KVS_windows\bin\Debug\KVS_windows.build.appxrecipe
 C:\Users\lincy\Documents\mDev4\KVS\KVS_windows\bin\Debug\Newtonsoft.Json.dll
 C:\Users\lincy\Documents\mDev4\KVS\KVS_windows\bin\Debug\Newtonsoft.Json.xml
-C:\Users\lincy\Documents\mDev4\KVS\KVS_windows\obj\Debug\KVS_windows.csprojResolveAssemblyReference.cache
 C:\Users\lincy\Documents\mDev4\KVS\KVS_windows\obj\Debug\App.g.i.cs
 C:\Users\lincy\Documents\mDev4\KVS\KVS_windows\obj\Debug\App.g.cs
 C:\Users\lincy\Documents\mDev4\KVS\KVS_windows\obj\Debug\MainPage.g.i.cs
@@ -34,3 +33,4 @@ C:\Users\lincy\Documents\mDev4\KVS\KVS_windows\obj\Debug\qualifiers.txt
 C:\Users\lincy\Documents\mDev4\KVS\KVS_windows\obj\Debug\qualifiers.txt.intermediate
 C:\Users\lincy\Documents\mDev4\KVS\KVS_windows\obj\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\lincy\Documents\mDev4\KVS\KVS_windows\obj\Debug\ProjectArchitectures.txt
+C:\Users\lincy\Documents\mDev4\KVS\KVS_windows\obj\Debug\KVS_windows.csprojResolveAssemblyReference.cache

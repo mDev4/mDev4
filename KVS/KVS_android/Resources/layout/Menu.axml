@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <TextView
+        android:text="Welcome! You're logged in as ... "
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/welcomeText"
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/white"
+        android:layout_gravity="center_horizontal" />
+    <Button
+        android:text="Home"
+        android:layout_width="110.0dp"
+        android:layout_height="48.0dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/HomeButton"
+        android:layout_gravity="center_horizontal" />
+    <Button
+        android:text="Klas"
+        android:layout_width="110.0dp"
+        android:layout_height="48.0dp"
+        android:id="@+id/KlasButton"
+        android:layout_gravity="center_horizontal" />
+    <Button
+        android:text="Resulaten"
+        android:layout_width="110.0dp"
+        android:layout_height="48.0dp"
+        android:id="@+id/ResultsButton"
+        android:layout_gravity="center_horizontal" />
+    <Button
+        android:text="Planning"
+        android:layout_width="110.0dp"
+        android:layout_height="48.0dp"
+        android:id="@+id/PlanningButton"
+        android:layout_gravity="center_horizontal" />
+    <Button
+        android:text="Meldingen"
+        android:layout_width="110.0dp"
+        android:layout_height="48.0dp"
+        android:id="@+id/MeldingenButton"
+        android:layout_gravity="center_horizontal" />
+    <Button
+        android:text="Logout"
+        android:layout_width="110.0dp"
+        android:layout_height="48.0dp"
+        android:id="@+id/logoutButton"
+        android:layout_marginTop="180dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@android:color/holo_blue_dark" />
+</LinearLayout>
