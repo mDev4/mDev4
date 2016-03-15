@@ -1,0 +1,13 @@
+﻿<Properties StartupItem="KVS_android\KVS_android.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.6c364c50" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="KVS_windows\MainPage.xaml">
+    <Files>
+      <File FileName="KVS_windows\App.xaml" Line="1" Column="1" />
+      <File FileName="KVS_windows\MainPage.xaml" Line="8" Column="22" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

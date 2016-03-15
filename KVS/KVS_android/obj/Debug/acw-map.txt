@@ -1,0 +1,4 @@
+KVS_android.MainActivity, KVS_android;md5d1d82567df1ca27afb530863f924e1d0.MainActivity
+KVS_android.MainActivity, KVS_android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5d1d82567df1ca27afb530863f924e1d0.MainActivity
+KVS_android.MainActivity;md5d1d82567df1ca27afb530863f924e1d0.MainActivity
+kvs_android.MainActivity;md5d1d82567df1ca27afb530863f924e1d0.MainActivity

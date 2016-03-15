@@ -13,7 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KVS_iOS", "KVS_iOS\KVS_iOS.
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Shared\Shared.projitems*{ce263192-f081-4a0c-8e45-b0558be950e4}*SharedItemsImports = 4
 		Shared\Shared.projitems*{087e12be-8f4b-4491-80fd-1b91555be99f}*SharedItemsImports = 13
+		Shared\Shared.projitems*{71365233-fd03-4d44-ba55-28973ffe359a}*SharedItemsImports = 4
+		Shared\Shared.projitems*{6a9739d7-ad75-4f51-b9f4-3c743996cc0f}*SharedItemsImports = 4
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Ad-Hoc|Any CPU = Ad-Hoc|Any CPU
