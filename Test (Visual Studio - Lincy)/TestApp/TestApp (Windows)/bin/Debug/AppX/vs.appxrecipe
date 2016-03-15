@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>DESKTOP-0QBDGVU</Machine>
+    <WindowsUser>lincy</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <TargetOsVersion>6.3</TargetOsVersion>
+    <TargetOsDescription>Windows 8.1</TargetOsDescription>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>0a2747cb-f128-4144-9430-24fcced48e74</PackageIdentityName>
+    <IntermediateOutputPath>c:\Users\lincy\documents\visual studio 2015\Projects\TestApp\TestApp %28Windows%29\obj\Debug\</IntermediateOutputPath>
+    <RegisteredManifestChecksum>67686C7D2963CF99CF760A688AB707E4A93F187BD67A9AB711CD18B9B8D8C071</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>0a2747cb-f128-4144-9430-24fcced48e74_1.0.0.0_neutral__5s23x1s37vzd8</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>0a2747cb-f128-4144-9430-24fcced48e74_5s23x1s37vzd8!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>0a2747cb-f128-4144-9430-24fcced48e74</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=lincy</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+    <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="c:\Users\lincy\documents\visual studio 2015\Projects\TestApp\TestApp %28Windows%29\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-03-15T10:35:21.503</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="c:\Users\lincy\documents\visual studio 2015\Projects\TestApp\TestApp %28Windows%29\bin\Debug\TestApp %28Windows%29.exe">
+      <PackagePath>TestApp %28Windows%29.exe</PackagePath>
+      <Modified>2016-03-15T10:35:20.605</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\Users\lincy\documents\visual studio 2015\Projects\TestApp\packages\Newtonsoft.Json.8.0.3\lib\portable-net45+wp80+win8+wpa81+dnxcore50\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+      <Modified>2016-03-15T10:31:11.797</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\Users\lincy\documents\visual studio 2015\Projects\TestApp\TestApp %28Windows%29\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-07-06T21:05:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\Users\lincy\documents\visual studio 2015\Projects\TestApp\TestApp %28Windows%29\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-07-06T21:05:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\Users\lincy\documents\visual studio 2015\Projects\TestApp\TestApp %28Windows%29\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-07-06T21:05:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\Users\lincy\documents\visual studio 2015\Projects\TestApp\TestApp %28Windows%29\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-07-06T21:05:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\Users\lincy\documents\visual studio 2015\Projects\TestApp\TestApp %28Windows%29\bin\Debug\TestApp %28Windows%29.xr.xml">
+      <PackagePath>TestApp %28Windows%29.xr.xml</PackagePath>
+      <Modified>2016-03-15T10:28:35.133</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\Users\lincy\documents\visual studio 2015\Projects\TestApp\TestApp %28Windows%29\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+      <Modified>2016-03-15T10:28:36.408</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\Users\lincy\documents\visual studio 2015\Projects\TestApp\TestApp %28Windows%29\bin\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+      <Modified>2016-03-15T10:28:36.423</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\Users\lincy\documents\visual studio 2015\Projects\TestApp\TestApp %28Windows%29\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2016-03-15T10:35:21.308</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

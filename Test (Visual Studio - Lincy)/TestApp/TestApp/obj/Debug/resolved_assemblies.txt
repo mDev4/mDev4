@@ -1,0 +1,12 @@
+C:\Users\lincy\Documents\Visual Studio 2015\Projects\TestApp\TestApp\obj\Debug\assemblies\TestApp.dll
+C:\Users\lincy\Documents\Visual Studio 2015\Projects\TestApp\TestApp\obj\Debug\assemblies\Microsoft.CSharp.dll
+C:\Users\lincy\Documents\Visual Studio 2015\Projects\TestApp\TestApp\obj\Debug\assemblies\Mono.Android.dll
+C:\Users\lincy\Documents\Visual Studio 2015\Projects\TestApp\TestApp\obj\Debug\assemblies\mscorlib.dll
+C:\Users\lincy\Documents\Visual Studio 2015\Projects\TestApp\TestApp\obj\Debug\assemblies\Newtonsoft.Json.dll
+C:\Users\lincy\Documents\Visual Studio 2015\Projects\TestApp\TestApp\obj\Debug\assemblies\System.Core.dll
+C:\Users\lincy\Documents\Visual Studio 2015\Projects\TestApp\TestApp\obj\Debug\assemblies\System.dll
+C:\Users\lincy\Documents\Visual Studio 2015\Projects\TestApp\TestApp\obj\Debug\assemblies\System.Xml.dll
+C:\Users\lincy\Documents\Visual Studio 2015\Projects\TestApp\TestApp\obj\Debug\assemblies\System.Xml.Linq.dll
+C:\Users\lincy\Documents\Visual Studio 2015\Projects\TestApp\TestApp\obj\Debug\assemblies\Mono.CSharp.dll
+C:\Users\lincy\Documents\Visual Studio 2015\Projects\TestApp\TestApp\obj\Debug\assemblies\System.Runtime.Serialization.dll
+C:\Users\lincy\Documents\Visual Studio 2015\Projects\TestApp\TestApp\obj\Debug\assemblies\System.ServiceModel.Internals.dll

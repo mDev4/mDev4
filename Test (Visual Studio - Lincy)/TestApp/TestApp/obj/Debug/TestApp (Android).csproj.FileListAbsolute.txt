@@ -1,0 +1,17 @@
+c:\users\lincy\documents\visual studio 2015\Projects\TestApp\TestApp\bin\Debug\TestApp.dll
+c:\users\lincy\documents\visual studio 2015\Projects\TestApp\TestApp\bin\Debug\TestApp.pdb
+c:\users\lincy\documents\visual studio 2015\Projects\TestApp\TestApp\bin\Debug\TestApp.TestApp.apk
+c:\users\lincy\documents\visual studio 2015\Projects\TestApp\TestApp\bin\Debug\TestApp.TestApp-Signed.apk
+c:\users\lincy\documents\visual studio 2015\Projects\TestApp\TestApp\obj\Debug\TestApp (Android).csprojResolveAssemblyReference.cache
+c:\users\lincy\documents\visual studio 2015\Projects\TestApp\TestApp\obj\Debug\TestApp.dll
+c:\users\lincy\documents\visual studio 2015\Projects\TestApp\TestApp\obj\Debug\TestApp.pdb
+c:\users\lincy\documents\visual studio 2015\Projects\TestApp\TestApp\obj\Debug\android\bin\TestApp.TestApp.apk
+c:\users\lincy\documents\visual studio 2015\Projects\TestApp\TestApp\obj\Debug\res\layout\main.xml
+c:\users\lincy\documents\visual studio 2015\Projects\TestApp\TestApp\obj\Debug\res\values\strings.xml
+c:\users\lincy\documents\visual studio 2015\Projects\TestApp\TestApp\obj\Debug\res\drawable\icon.png
+c:\users\lincy\documents\visual studio 2015\Projects\TestApp\TestApp\obj\Debug\R.cs.flag
+c:\users\lincy\documents\visual studio 2015\Projects\TestApp\TestApp\obj\Debug\uploadflags.txt
+c:\users\lincy\documents\visual studio 2015\Projects\TestApp\TestApp\bin\Debug\Newtonsoft.Json.dll
+c:\users\lincy\documents\visual studio 2015\Projects\TestApp\TestApp\bin\Debug\Newtonsoft.Json.xml
+C:\Users\lincy\Documents\Visual Studio 2015\Projects\TestApp\TestApp\obj\Debug\TestApp.dll.mdb
+C:\Users\lincy\Documents\Visual Studio 2015\Projects\TestApp\TestApp\bin\Debug\TestApp.dll.mdb
