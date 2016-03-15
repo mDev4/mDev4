@@ -15,3 +15,18 @@ C:\Users\lincy\Documents\mDev4\KVS\KVS_android\obj\Debug\R.cs.flag
 C:\Users\lincy\Documents\mDev4\KVS\KVS_android\obj\Debug\uploadflags.txt
 C:\Users\lincy\Documents\mDev4\KVS\KVS_android\obj\Debug\KVS_android.dll.mdb
 C:\Users\lincy\Documents\mDev4\KVS\KVS_android\bin\Debug\KVS_android.dll.mdb
+C:\Users\lars\Documents\Git\Mobile Dev Project Team 4\KVS\KVS_android\bin\Debug\KVS_android.dll
+C:\Users\lars\Documents\Git\Mobile Dev Project Team 4\KVS\KVS_android\bin\Debug\KVS_android.pdb
+C:\Users\lars\Documents\Git\Mobile Dev Project Team 4\KVS\KVS_android\bin\Debug\KVS_android.KVS_android.apk
+C:\Users\lars\Documents\Git\Mobile Dev Project Team 4\KVS\KVS_android\bin\Debug\KVS_android.KVS_android-Signed.apk
+C:\Users\lars\Documents\Git\Mobile Dev Project Team 4\KVS\KVS_android\obj\Debug\KVS_android.csprojResolveAssemblyReference.cache
+C:\Users\lars\Documents\Git\Mobile Dev Project Team 4\KVS\KVS_android\obj\Debug\KVS_android.dll
+C:\Users\lars\Documents\Git\Mobile Dev Project Team 4\KVS\KVS_android\obj\Debug\KVS_android.pdb
+C:\Users\lars\Documents\Git\Mobile Dev Project Team 4\KVS\KVS_android\obj\Debug\android\bin\KVS_android.KVS_android.apk
+C:\Users\lars\Documents\Git\Mobile Dev Project Team 4\KVS\KVS_android\obj\Debug\res\layout\main.xml
+C:\Users\lars\Documents\Git\Mobile Dev Project Team 4\KVS\KVS_android\obj\Debug\res\values\strings.xml
+C:\Users\lars\Documents\Git\Mobile Dev Project Team 4\KVS\KVS_android\obj\Debug\res\drawable\icon.png
+C:\Users\lars\Documents\Git\Mobile Dev Project Team 4\KVS\KVS_android\obj\Debug\R.cs.flag
+C:\Users\lars\Documents\Git\Mobile Dev Project Team 4\KVS\KVS_android\obj\Debug\uploadflags.txt
+C:\Users\lars\Documents\Git\Mobile Dev Project Team 4\KVS\KVS_android\obj\Debug\KVS_android.dll.mdb
+C:\Users\lars\Documents\Git\Mobile Dev Project Team 4\KVS\KVS_android\bin\Debug\KVS_android.dll.mdb

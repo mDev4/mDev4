@@ -124,15 +124,17 @@ namespace KVS_windows.KVS_windows_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[3];
-            _typeNameTable[0] = "KVS_windows.MainPage";
+            _typeNameTable = new string[4];
+            _typeNameTable[0] = "KVS_windows.HomePage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
+            _typeNameTable[3] = "KVS_windows.MainPage";
 
-            _typeTable = new global::System.Type[3];
-            _typeTable[0] = typeof(global::KVS_windows.MainPage);
+            _typeTable = new global::System.Type[4];
+            _typeTable[0] = typeof(global::KVS_windows.HomePage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
+            _typeTable[3] = typeof(global::KVS_windows.MainPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -167,7 +169,8 @@ namespace KVS_windows.KVS_windows_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_MainPage() { return new global::KVS_windows.MainPage(); }
+        private object Activate_0_HomePage() { return new global::KVS_windows.HomePage(); }
+        private object Activate_3_MainPage() { return new global::KVS_windows.MainPage(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -179,9 +182,9 @@ namespace KVS_windows.KVS_windows_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  KVS_windows.MainPage
+            case 0:   //  KVS_windows.HomePage
                 userType = new global::KVS_windows.KVS_windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_0_MainPage;
+                userType.Activator = Activate_0_HomePage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -192,6 +195,13 @@ namespace KVS_windows.KVS_windows_XamlTypeInfo
 
             case 2:   //  Windows.UI.Xaml.Controls.UserControl
                 xamlType = new global::KVS_windows.KVS_windows_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 3:   //  KVS_windows.MainPage
+                userType = new global::KVS_windows.KVS_windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_3_MainPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
                 break;
             }
             return xamlType;
