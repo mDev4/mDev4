@@ -9,47 +9,47 @@
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>5fb714f2-ab8b-409a-864c-06a5136ce32b</PackageIdentityName>
-    <IntermediateOutputPath>C:\Users\lars\Documents\Git\Mobile Dev Project Team 4\KVS\KVS_windows\obj\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\lars\Documents\Git\mDev4\KVS\KVS_windows\obj\Debug\</IntermediateOutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\lars\Documents\Git\Mobile Dev Project Team 4\KVS\KVS_windows\bin\Debug\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\lars\Documents\Git\mDev4\KVS\KVS_windows\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\lars\Documents\Git\Mobile Dev Project Team 4\KVS\KVS_windows\bin\Debug\KVS_windows.exe">
+    <AppxPackagedFile Include="C:\Users\lars\Documents\Git\mDev4\KVS\KVS_windows\bin\Debug\KVS_windows.exe">
       <PackagePath>KVS_windows.exe</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lars\Documents\Git\Mobile Dev Project Team 4\KVS\KVS_windows\Assets\Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\lars\Documents\Git\mDev4\KVS\KVS_windows\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lars\Documents\Git\Mobile Dev Project Team 4\KVS\KVS_windows\Assets\SmallLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\lars\Documents\Git\mDev4\KVS\KVS_windows\Assets\SmallLogo.scale-100.png">
       <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lars\Documents\Git\Mobile Dev Project Team 4\KVS\KVS_windows\Assets\SplashScreen.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\lars\Documents\Git\mDev4\KVS\KVS_windows\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lars\Documents\Git\Mobile Dev Project Team 4\KVS\KVS_windows\Assets\StoreLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\lars\Documents\Git\mDev4\KVS\KVS_windows\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lars\Documents\Git\Mobile Dev Project Team 4\KVS\KVS_windows\bin\Debug\KVS_windows.xr.xml">
+    <AppxPackagedFile Include="C:\Users\lars\Documents\Git\mDev4\KVS\KVS_windows\bin\Debug\KVS_windows.xr.xml">
       <PackagePath>KVS_windows.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lars\Documents\Git\Mobile Dev Project Team 4\KVS\KVS_windows\bin\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\lars\Documents\Git\mDev4\KVS\KVS_windows\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lars\Documents\Git\Mobile Dev Project Team 4\KVS\KVS_windows\bin\Debug\HomePage.xbf">
+    <AppxPackagedFile Include="C:\Users\lars\Documents\Git\mDev4\KVS\KVS_windows\bin\Debug\HomePage.xbf">
       <PackagePath>HomePage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lars\Documents\Git\Mobile Dev Project Team 4\KVS\KVS_windows\bin\Debug\LoginPage.xbf">
+    <AppxPackagedFile Include="C:\Users\lars\Documents\Git\mDev4\KVS\KVS_windows\bin\Debug\LoginPage.xbf">
       <PackagePath>LoginPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lars\Documents\Git\Mobile Dev Project Team 4\KVS\KVS_windows\bin\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\lars\Documents\Git\mDev4\KVS\KVS_windows\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

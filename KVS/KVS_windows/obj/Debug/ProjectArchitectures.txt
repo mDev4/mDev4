@@ -1,1 +1,1 @@
-C:\Users\lars\Documents\Git\Mobile Dev Project Team 4\KVS\KVS_windows\KVS_windows.csproj;neutral
+C:\Users\lars\Documents\Git\mDev4\KVS\KVS_windows\KVS_windows.csproj;neutral

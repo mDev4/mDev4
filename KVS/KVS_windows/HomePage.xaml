@@ -10,21 +10,31 @@
     <!--menu items-->
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <StackPanel x:Name="menuStackPanel" Height="768" VerticalAlignment="Top" HorizontalAlignment="Left" Width="300" Background="#FF444040">
-            <Border BorderBrush="Black" BorderThickness="0,0,0,2" Height="100">
-                <TextBlock x:Name="homeMenuTextBlock_Copy" TextWrapping="Wrap" Text="Home" Margin="116.497,32,115.503,36" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="25"/>
-            </Border>
-            <Border BorderBrush="Black" BorderThickness="0,0,0,2" Height="100">
-                <TextBlock x:Name="classMenuTextBox" TextWrapping="Wrap" Text="Klas" Margin="116.994,32,115.006,36" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="25"/>
-            </Border>
-            <Border BorderBrush="Black" BorderThickness="0,0,0,2" Height="100">
-                <TextBlock x:Name="planningMenuTextBox" TextWrapping="Wrap" Text="Planning" Margin="103,29,90,39" VerticalAlignment="Center" FontSize="25" HorizontalAlignment="Left"/>
-            </Border>
-            <Border BorderBrush="Black" BorderThickness="0,0,0,2" Height="100">
-                <TextBlock x:Name="resultsMenuTextBox" TextWrapping="Wrap" Text="Resultaten" Margin="90,17,78,21" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="25"/>
-            </Border>
-            <Border BorderBrush="Black" BorderThickness="0,0,0,2" Height="100">
-                <TextBlock x:Name="messagesMenuTextBox" TextWrapping="Wrap" Text="Meldingen" Margin="90,34,91,34" VerticalAlignment="Center" FontSize="25" HorizontalAlignment="Center"/>
-            </Border>
+            <StackPanel x:Name="menuHomeStackPanel" Height="100">
+                <Border x:Name="menuHomeBorder" BorderBrush="Black" BorderThickness="0,0,0,2" Height="100">
+                    <TextBlock x:Name="menuHomeTextBlock" TextWrapping="Wrap" Text="Home" Margin="0,0,0,-2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="25"/>
+                </Border>
+            </StackPanel>
+            <StackPanel x:Name="menuClassStackPanel" Height="100">
+                <Border x:Name="menuClassBorder" BorderBrush="Black" BorderThickness="0,0,0,2" Height="100">
+                    <TextBlock x:Name="menuClassTextBlock" TextWrapping="Wrap" Text="Klas" Margin="0,0,0,-2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="25" SelectionChanged="menuClassTextBlock_SelectionChanged"/>
+                </Border>
+            </StackPanel>
+            <StackPanel x:Name="menuResultStackPanel" Height="100">
+                <Border x:Name="menuResultBorder" BorderBrush="Black" BorderThickness="0,0,0,2" Height="100">
+                    <TextBlock x:Name="menuResultTextBlock" TextWrapping="Wrap" Text="Resultaten" Margin="0,0,0,-2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="25"/>
+                </Border>
+            </StackPanel>
+            <StackPanel x:Name="menuPlanningStackPanel" Height="100">
+                <Border x:Name="menuPlanningBorder" BorderBrush="Black" BorderThickness="0,0,0,2" Height="100">
+                    <TextBlock x:Name="menuPlanningTextBlock" TextWrapping="Wrap" Text="Planning" Margin="0,0,0,-2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="25"/>
+                </Border>
+            </StackPanel>
+            <StackPanel x:Name="menuMessageStackPanel" Height="100">
+                <Border x:Name="menuMessageBorder" BorderBrush="Black" BorderThickness="0,0,0,2" Height="100">
+                    <TextBlock x:Name="menuMessageTextBlock" TextWrapping="Wrap" Text="Mededelingen" Margin="0,0,0,-2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="25"/>
+                </Border>
+            </StackPanel>
         </StackPanel>
         <StackPanel x:Name="messagesStackPanel" HorizontalAlignment="Left" Height="383" Margin="305,0,0,0" VerticalAlignment="Top" Width="644">
             <TextBlock x:Name="messageT" TextWrapping="Wrap" Text="Meldingen" Height="35" FontSize="25" Margin="0,0,3,0"/>

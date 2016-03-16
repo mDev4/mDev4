@@ -9,7 +9,7 @@
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>5fb714f2-ab8b-409a-864c-06a5136ce32b</PackageIdentityName>
-    <IntermediateOutputPath>C:\Users\lars\Documents\Git\Mobile Dev Project Team 4\KVS\KVS_windows\obj\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\lars\Documents\Git\mDev4\KVS\KVS_windows\obj\Debug\</IntermediateOutputPath>
     <RegisteredManifestChecksum>3B89B23484AE647A7DC2D3FB760DFBD6FE8668AF35CAE4766302C69C37328152</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>5fb714f2-ab8b-409a-864c-06a5136ce32b_1.0.0.0_neutral__5s23x1s37vzd8</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>5fb714f2-ab8b-409a-864c-06a5136ce32b_5s23x1s37vzd8!App</RegisteredUserModeAppID>
@@ -19,56 +19,56 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\lars\Documents\Git\Mobile Dev Project Team 4\KVS\KVS_windows\bin\Debug\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\lars\Documents\Git\mDev4\KVS\KVS_windows\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-03-15T14:45:17.557</Modified>
+      <Modified>2016-03-16T10:21:25.284</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\lars\Documents\Git\Mobile Dev Project Team 4\KVS\KVS_windows\bin\Debug\KVS_windows.exe">
+    <AppxPackagedFile Include="C:\Users\lars\Documents\Git\mDev4\KVS\KVS_windows\bin\Debug\KVS_windows.exe">
       <PackagePath>KVS_windows.exe</PackagePath>
-      <Modified>2016-03-15T14:56:25.826</Modified>
+      <Modified>2016-03-16T10:39:34.687</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lars\Documents\Git\Mobile Dev Project Team 4\KVS\KVS_windows\Assets\Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\lars\Documents\Git\mDev4\KVS\KVS_windows\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-03-15T12:37:14.571</Modified>
+      <Modified>2016-03-16T09:48:07.910</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lars\Documents\Git\Mobile Dev Project Team 4\KVS\KVS_windows\Assets\SmallLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\lars\Documents\Git\mDev4\KVS\KVS_windows\Assets\SmallLogo.scale-100.png">
       <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-03-15T12:37:14.572</Modified>
+      <Modified>2016-03-16T09:48:07.912</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lars\Documents\Git\Mobile Dev Project Team 4\KVS\KVS_windows\Assets\SplashScreen.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\lars\Documents\Git\mDev4\KVS\KVS_windows\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-03-15T12:37:14.575</Modified>
+      <Modified>2016-03-16T09:48:07.914</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lars\Documents\Git\Mobile Dev Project Team 4\KVS\KVS_windows\Assets\StoreLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\lars\Documents\Git\mDev4\KVS\KVS_windows\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-03-15T12:37:14.577</Modified>
+      <Modified>2016-03-16T09:48:07.916</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lars\Documents\Git\Mobile Dev Project Team 4\KVS\KVS_windows\bin\Debug\KVS_windows.xr.xml">
+    <AppxPackagedFile Include="C:\Users\lars\Documents\Git\mDev4\KVS\KVS_windows\bin\Debug\KVS_windows.xr.xml">
       <PackagePath>KVS_windows.xr.xml</PackagePath>
-      <Modified>2016-03-15T14:56:25.495</Modified>
+      <Modified>2016-03-16T10:38:57.321</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lars\Documents\Git\Mobile Dev Project Team 4\KVS\KVS_windows\bin\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\lars\Documents\Git\mDev4\KVS\KVS_windows\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2016-03-15T12:46:16.298</Modified>
+      <Modified>2016-03-16T10:21:24.638</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lars\Documents\Git\Mobile Dev Project Team 4\KVS\KVS_windows\bin\Debug\HomePage.xbf">
+    <AppxPackagedFile Include="C:\Users\lars\Documents\Git\mDev4\KVS\KVS_windows\bin\Debug\HomePage.xbf">
       <PackagePath>HomePage.xbf</PackagePath>
-      <Modified>2016-03-15T14:56:25.561</Modified>
+      <Modified>2016-03-16T10:38:57.539</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lars\Documents\Git\Mobile Dev Project Team 4\KVS\KVS_windows\bin\Debug\LoginPage.xbf">
+    <AppxPackagedFile Include="C:\Users\lars\Documents\Git\mDev4\KVS\KVS_windows\bin\Debug\LoginPage.xbf">
       <PackagePath>LoginPage.xbf</PackagePath>
-      <Modified>2016-03-15T14:56:25.562</Modified>
+      <Modified>2016-03-16T10:21:24.640</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lars\Documents\Git\Mobile Dev Project Team 4\KVS\KVS_windows\bin\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\lars\Documents\Git\mDev4\KVS\KVS_windows\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-03-15T14:45:17.155</Modified>
+      <Modified>2016-03-16T10:21:25.066</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

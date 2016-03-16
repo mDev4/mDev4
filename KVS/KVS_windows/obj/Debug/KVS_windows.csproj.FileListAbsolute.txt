@@ -1,76 +1,37 @@
-C:\Users\lincy\Documents\mDev4\KVS\KVS_windows\bin\Debug\App.xbf
-C:\Users\lincy\Documents\mDev4\KVS\KVS_windows\bin\Debug\MainPage.xbf
-C:\Users\lincy\Documents\mDev4\KVS\KVS_windows\bin\Debug\KVS_windows.xr.xml
-C:\Users\lincy\Documents\mDev4\KVS\KVS_windows\bin\Debug\KVS_windows.exe
-C:\Users\lincy\Documents\mDev4\KVS\KVS_windows\bin\Debug\KVS_windows.pdb
-C:\Users\lincy\Documents\mDev4\KVS\KVS_windows\bin\Debug\resources.pri
-C:\Users\lincy\Documents\mDev4\KVS\KVS_windows\bin\Debug\AppxManifest.xml
-C:\Users\lincy\Documents\mDev4\KVS\KVS_windows\bin\Debug\KVS_windows.build.appxrecipe
-C:\Users\lincy\Documents\mDev4\KVS\KVS_windows\bin\Debug\Newtonsoft.Json.dll
-C:\Users\lincy\Documents\mDev4\KVS\KVS_windows\bin\Debug\Newtonsoft.Json.xml
-C:\Users\lincy\Documents\mDev4\KVS\KVS_windows\obj\Debug\App.g.i.cs
-C:\Users\lincy\Documents\mDev4\KVS\KVS_windows\obj\Debug\App.g.cs
-C:\Users\lincy\Documents\mDev4\KVS\KVS_windows\obj\Debug\MainPage.g.i.cs
-C:\Users\lincy\Documents\mDev4\KVS\KVS_windows\obj\Debug\MainPage.g.cs
-C:\Users\lincy\Documents\mDev4\KVS\KVS_windows\obj\Debug\XamlTypeInfo.g.cs
-C:\Users\lincy\Documents\mDev4\KVS\KVS_windows\obj\Debug\App.xaml
-C:\Users\lincy\Documents\mDev4\KVS\KVS_windows\obj\Debug\MainPage.xaml
-C:\Users\lincy\Documents\mDev4\KVS\KVS_windows\obj\Debug\App.xbf
-C:\Users\lincy\Documents\mDev4\KVS\KVS_windows\obj\Debug\MainPage.xbf
-C:\Users\lincy\Documents\mDev4\KVS\KVS_windows\obj\Debug\XamlSaveStateFile.xml
-C:\Users\lincy\Documents\mDev4\KVS\KVS_windows\obj\Debug\KVS_windows.exe
-C:\Users\lincy\Documents\mDev4\KVS\KVS_windows\obj\Debug\KVS_windows.pdb
-C:\Users\lincy\Documents\mDev4\KVS\KVS_windows\obj\Debug\KVS_windows.csproj.GenerateResource.Cache
-C:\Users\lincy\Documents\mDev4\KVS\KVS_windows\obj\Debug\priconfig.xml
-C:\Users\lincy\Documents\mDev4\KVS\KVS_windows\obj\Debug\priconfig.xml.intermediate
-C:\Users\lincy\Documents\mDev4\KVS\KVS_windows\obj\Debug\layout.resfiles
-C:\Users\lincy\Documents\mDev4\KVS\KVS_windows\obj\Debug\layout.resfiles.intermediate
-C:\Users\lincy\Documents\mDev4\KVS\KVS_windows\obj\Debug\resources.resfiles
-C:\Users\lincy\Documents\mDev4\KVS\KVS_windows\obj\Debug\resources.resfiles.intermediate
-C:\Users\lincy\Documents\mDev4\KVS\KVS_windows\obj\Debug\pri.resfiles
-C:\Users\lincy\Documents\mDev4\KVS\KVS_windows\obj\Debug\pri.resfiles.intermediate
-C:\Users\lincy\Documents\mDev4\KVS\KVS_windows\obj\Debug\qualifiers.txt
-C:\Users\lincy\Documents\mDev4\KVS\KVS_windows\obj\Debug\qualifiers.txt.intermediate
-C:\Users\lincy\Documents\mDev4\KVS\KVS_windows\obj\Debug\MultipleQualifiersPerDimensionFound.txt
-C:\Users\lincy\Documents\mDev4\KVS\KVS_windows\obj\Debug\ProjectArchitectures.txt
-<<<<<<< HEAD
-C:\Users\lincy\Documents\mDev4\KVS\KVS_windows\obj\Debug\KVS_windows.csprojResolveAssemblyReference.cache
-=======
-C:\Users\lars\Documents\Git\Mobile Dev Project Team 4\KVS\KVS_windows\bin\Debug\App.xbf
-C:\Users\lars\Documents\Git\Mobile Dev Project Team 4\KVS\KVS_windows\bin\Debug\KVS_windows.xr.xml
-C:\Users\lars\Documents\Git\Mobile Dev Project Team 4\KVS\KVS_windows\bin\Debug\KVS_windows.exe
-C:\Users\lars\Documents\Git\Mobile Dev Project Team 4\KVS\KVS_windows\bin\Debug\KVS_windows.pdb
-C:\Users\lars\Documents\Git\Mobile Dev Project Team 4\KVS\KVS_windows\bin\Debug\resources.pri
-C:\Users\lars\Documents\Git\Mobile Dev Project Team 4\KVS\KVS_windows\bin\Debug\AppxManifest.xml
-C:\Users\lars\Documents\Git\Mobile Dev Project Team 4\KVS\KVS_windows\bin\Debug\KVS_windows.build.appxrecipe
-C:\Users\lars\Documents\Git\Mobile Dev Project Team 4\KVS\KVS_windows\obj\Debug\App.g.i.cs
-C:\Users\lars\Documents\Git\Mobile Dev Project Team 4\KVS\KVS_windows\obj\Debug\App.g.cs
-C:\Users\lars\Documents\Git\Mobile Dev Project Team 4\KVS\KVS_windows\obj\Debug\XamlTypeInfo.g.cs
-C:\Users\lars\Documents\Git\Mobile Dev Project Team 4\KVS\KVS_windows\obj\Debug\App.xaml
-C:\Users\lars\Documents\Git\Mobile Dev Project Team 4\KVS\KVS_windows\obj\Debug\App.xbf
-C:\Users\lars\Documents\Git\Mobile Dev Project Team 4\KVS\KVS_windows\obj\Debug\XamlSaveStateFile.xml
-C:\Users\lars\Documents\Git\Mobile Dev Project Team 4\KVS\KVS_windows\obj\Debug\KVS_windows.exe
-C:\Users\lars\Documents\Git\Mobile Dev Project Team 4\KVS\KVS_windows\obj\Debug\KVS_windows.pdb
-C:\Users\lars\Documents\Git\Mobile Dev Project Team 4\KVS\KVS_windows\obj\Debug\priconfig.xml
-C:\Users\lars\Documents\Git\Mobile Dev Project Team 4\KVS\KVS_windows\obj\Debug\priconfig.xml.intermediate
-C:\Users\lars\Documents\Git\Mobile Dev Project Team 4\KVS\KVS_windows\obj\Debug\layout.resfiles
-C:\Users\lars\Documents\Git\Mobile Dev Project Team 4\KVS\KVS_windows\obj\Debug\layout.resfiles.intermediate
-C:\Users\lars\Documents\Git\Mobile Dev Project Team 4\KVS\KVS_windows\obj\Debug\resources.resfiles
-C:\Users\lars\Documents\Git\Mobile Dev Project Team 4\KVS\KVS_windows\obj\Debug\resources.resfiles.intermediate
-C:\Users\lars\Documents\Git\Mobile Dev Project Team 4\KVS\KVS_windows\obj\Debug\pri.resfiles
-C:\Users\lars\Documents\Git\Mobile Dev Project Team 4\KVS\KVS_windows\obj\Debug\pri.resfiles.intermediate
-C:\Users\lars\Documents\Git\Mobile Dev Project Team 4\KVS\KVS_windows\obj\Debug\qualifiers.txt
-C:\Users\lars\Documents\Git\Mobile Dev Project Team 4\KVS\KVS_windows\obj\Debug\qualifiers.txt.intermediate
-C:\Users\lars\Documents\Git\Mobile Dev Project Team 4\KVS\KVS_windows\obj\Debug\MultipleQualifiersPerDimensionFound.txt
-C:\Users\lars\Documents\Git\Mobile Dev Project Team 4\KVS\KVS_windows\obj\Debug\ProjectArchitectures.txt
-C:\Users\lars\Documents\Git\Mobile Dev Project Team 4\KVS\KVS_windows\bin\Debug\HomePage.xbf
-C:\Users\lars\Documents\Git\Mobile Dev Project Team 4\KVS\KVS_windows\bin\Debug\LoginPage.xbf
-C:\Users\lars\Documents\Git\Mobile Dev Project Team 4\KVS\KVS_windows\obj\Debug\HomePage.g.i.cs
-C:\Users\lars\Documents\Git\Mobile Dev Project Team 4\KVS\KVS_windows\obj\Debug\HomePage.g.cs
-C:\Users\lars\Documents\Git\Mobile Dev Project Team 4\KVS\KVS_windows\obj\Debug\LoginPage.g.i.cs
-C:\Users\lars\Documents\Git\Mobile Dev Project Team 4\KVS\KVS_windows\obj\Debug\LoginPage.g.cs
-C:\Users\lars\Documents\Git\Mobile Dev Project Team 4\KVS\KVS_windows\obj\Debug\HomePage.xaml
-C:\Users\lars\Documents\Git\Mobile Dev Project Team 4\KVS\KVS_windows\obj\Debug\HomePage.xbf
-C:\Users\lars\Documents\Git\Mobile Dev Project Team 4\KVS\KVS_windows\obj\Debug\LoginPage.xaml
-C:\Users\lars\Documents\Git\Mobile Dev Project Team 4\KVS\KVS_windows\obj\Debug\LoginPage.xbf
->>>>>>> caf6d27f0f04ad9341d8c3de26bc636a338f80dd
+C:\Users\lars\Documents\Git\mDev4\KVS\KVS_windows\bin\Debug\App.xbf
+C:\Users\lars\Documents\Git\mDev4\KVS\KVS_windows\bin\Debug\HomePage.xbf
+C:\Users\lars\Documents\Git\mDev4\KVS\KVS_windows\bin\Debug\LoginPage.xbf
+C:\Users\lars\Documents\Git\mDev4\KVS\KVS_windows\bin\Debug\KVS_windows.xr.xml
+C:\Users\lars\Documents\Git\mDev4\KVS\KVS_windows\bin\Debug\KVS_windows.exe
+C:\Users\lars\Documents\Git\mDev4\KVS\KVS_windows\bin\Debug\KVS_windows.pdb
+C:\Users\lars\Documents\Git\mDev4\KVS\KVS_windows\bin\Debug\resources.pri
+C:\Users\lars\Documents\Git\mDev4\KVS\KVS_windows\bin\Debug\AppxManifest.xml
+C:\Users\lars\Documents\Git\mDev4\KVS\KVS_windows\bin\Debug\KVS_windows.build.appxrecipe
+C:\Users\lars\Documents\Git\mDev4\KVS\KVS_windows\obj\Debug\App.g.i.cs
+C:\Users\lars\Documents\Git\mDev4\KVS\KVS_windows\obj\Debug\App.g.cs
+C:\Users\lars\Documents\Git\mDev4\KVS\KVS_windows\obj\Debug\HomePage.g.i.cs
+C:\Users\lars\Documents\Git\mDev4\KVS\KVS_windows\obj\Debug\HomePage.g.cs
+C:\Users\lars\Documents\Git\mDev4\KVS\KVS_windows\obj\Debug\LoginPage.g.i.cs
+C:\Users\lars\Documents\Git\mDev4\KVS\KVS_windows\obj\Debug\LoginPage.g.cs
+C:\Users\lars\Documents\Git\mDev4\KVS\KVS_windows\obj\Debug\XamlTypeInfo.g.cs
+C:\Users\lars\Documents\Git\mDev4\KVS\KVS_windows\obj\Debug\XamlSaveStateFile.xml
+C:\Users\lars\Documents\Git\mDev4\KVS\KVS_windows\obj\Debug\App.xaml
+C:\Users\lars\Documents\Git\mDev4\KVS\KVS_windows\obj\Debug\HomePage.xaml
+C:\Users\lars\Documents\Git\mDev4\KVS\KVS_windows\obj\Debug\LoginPage.xaml
+C:\Users\lars\Documents\Git\mDev4\KVS\KVS_windows\obj\Debug\App.xbf
+C:\Users\lars\Documents\Git\mDev4\KVS\KVS_windows\obj\Debug\HomePage.xbf
+C:\Users\lars\Documents\Git\mDev4\KVS\KVS_windows\obj\Debug\LoginPage.xbf
+C:\Users\lars\Documents\Git\mDev4\KVS\KVS_windows\obj\Debug\KVS_windows.exe
+C:\Users\lars\Documents\Git\mDev4\KVS\KVS_windows\obj\Debug\KVS_windows.pdb
+C:\Users\lars\Documents\Git\mDev4\KVS\KVS_windows\obj\Debug\priconfig.xml
+C:\Users\lars\Documents\Git\mDev4\KVS\KVS_windows\obj\Debug\priconfig.xml.intermediate
+C:\Users\lars\Documents\Git\mDev4\KVS\KVS_windows\obj\Debug\layout.resfiles
+C:\Users\lars\Documents\Git\mDev4\KVS\KVS_windows\obj\Debug\layout.resfiles.intermediate
+C:\Users\lars\Documents\Git\mDev4\KVS\KVS_windows\obj\Debug\resources.resfiles
+C:\Users\lars\Documents\Git\mDev4\KVS\KVS_windows\obj\Debug\resources.resfiles.intermediate
+C:\Users\lars\Documents\Git\mDev4\KVS\KVS_windows\obj\Debug\pri.resfiles
+C:\Users\lars\Documents\Git\mDev4\KVS\KVS_windows\obj\Debug\pri.resfiles.intermediate
+C:\Users\lars\Documents\Git\mDev4\KVS\KVS_windows\obj\Debug\qualifiers.txt
+C:\Users\lars\Documents\Git\mDev4\KVS\KVS_windows\obj\Debug\qualifiers.txt.intermediate
+C:\Users\lars\Documents\Git\mDev4\KVS\KVS_windows\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\lars\Documents\Git\mDev4\KVS\KVS_windows\obj\Debug\ProjectArchitectures.txt

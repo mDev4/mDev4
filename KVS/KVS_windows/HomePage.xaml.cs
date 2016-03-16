@@ -31,5 +31,10 @@ namespace KVS_windows
         {
 
         }
+
+        private void menuClassTextBlock_SelectionChanged(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
