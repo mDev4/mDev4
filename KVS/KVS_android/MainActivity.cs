@@ -8,7 +8,7 @@ using Android.OS;
 
 namespace KVS_android
 {
-    [Activity(Label = "KVS Login", MainLauncher = true, Icon = "@drawable/icon")]
+    [Activity(Label = "KVS App", MainLauncher = true, Icon = "@drawable/icon")]
     public class MainActivity : Activity
     {
 
@@ -19,13 +19,18 @@ namespace KVS_android
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
 
-            // Get our button from the layout resource,
-            // and attach an event to it
-            Button button = FindViewById<Button>(Resource.Id.loginButton);
+            Button button1 = FindViewById<Button>(Resource.Id.btnRegister);
 
-            button.Click += delegate {
-                StartActivity(typeof(Menu));
+            button1.Click += delegate {
+                StartActivity(typeof(Register));
             };
+
+            Button button2 = FindViewById<Button>(Resource.Id.btnLogin);
+
+            button2.Click += delegate {
+                StartActivity(typeof(Login));
+            };
+
         }
 
 
