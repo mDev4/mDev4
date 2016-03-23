@@ -20,20 +20,21 @@ public final class R {
         public static final int schoolbackground=0x7f020006;
     }
     public static final class id {
-        public static final int HomeButton=0x7f060006;
-        public static final int KlasButton=0x7f060007;
-        public static final int MeldingenButton=0x7f06000a;
-        public static final int PlanningButton=0x7f060009;
-        public static final int ResultsButton=0x7f060008;
+        public static final int Klas=0x7f06000a;
+        public static final int LogOut=0x7f06000c;
+        public static final int Mede=0x7f060008;
+        public static final int Plan=0x7f060009;
+        public static final int Settings=0x7f06000b;
         public static final int btnLogin=0x7f060003;
         public static final int btnRegister=0x7f060004;
-        public static final int etEmail=0x7f06000c;
+        public static final int etEmail=0x7f06000d;
         public static final int etPass=0x7f060001;
         public static final int etUserName=0x7f060000;
+        public static final int gridLayout1=0x7f060005;
         public static final int loginButton=0x7f060002;
-        public static final int logoutButton=0x7f06000b;
-        public static final int registerButton=0x7f06000d;
-        public static final int welcomeText=0x7f060005;
+        public static final int rInvoeren=0x7f060007;
+        public static final int rInzien=0x7f060006;
+        public static final int registerButton=0x7f06000e;
     }
     public static final class layout {
         public static final int login=0x7f030000;

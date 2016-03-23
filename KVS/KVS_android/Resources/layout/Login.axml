@@ -18,7 +18,8 @@
             android:padding="10dp"
             android:hint="Email"
             android:textColorHint="#cccccc"
-            android:drawableLeft="@android:drawable/ic_dialog_email" />
+            android:drawableLeft="@android:drawable/ic_dialog_email"
+            android:textColor="@android:color/black" />
         <EditText
             android:id="@+id/etPass"
             android:layout_width="match_parent"
@@ -29,7 +30,8 @@
             android:hint="Wachtwoord"
             android:textColorHint="#cccccc"
             android:password="true"
-            android:drawableLeft="@android:drawable/ic_lock_idle_lock" />
+            android:drawableLeft="@android:drawable/ic_lock_idle_lock"
+            android:textColor="@android:color/black" />
         <Button
             android:id="@+id/loginButton"
             android:layout_width="match_parent"

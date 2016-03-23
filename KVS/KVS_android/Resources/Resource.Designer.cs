@@ -78,20 +78,20 @@ namespace KVS_android
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f060006
-			public const int HomeButton = 2131099654;
-			
-			// aapt resource value: 0x7f060007
-			public const int KlasButton = 2131099655;
-			
 			// aapt resource value: 0x7f06000a
-			public const int MeldingenButton = 2131099658;
+			public const int Klas = 2131099658;
 			
-			// aapt resource value: 0x7f060009
-			public const int PlanningButton = 2131099657;
+			// aapt resource value: 0x7f06000c
+			public const int LogOut = 2131099660;
 			
 			// aapt resource value: 0x7f060008
-			public const int ResultsButton = 2131099656;
+			public const int Mede = 2131099656;
+			
+			// aapt resource value: 0x7f060009
+			public const int Plan = 2131099657;
+			
+			// aapt resource value: 0x7f06000b
+			public const int Settings = 2131099659;
 			
 			// aapt resource value: 0x7f060003
 			public const int btnLogin = 2131099651;
@@ -99,8 +99,8 @@ namespace KVS_android
 			// aapt resource value: 0x7f060004
 			public const int btnRegister = 2131099652;
 			
-			// aapt resource value: 0x7f06000c
-			public const int etEmail = 2131099660;
+			// aapt resource value: 0x7f06000d
+			public const int etEmail = 2131099661;
 			
 			// aapt resource value: 0x7f060001
 			public const int etPass = 2131099649;
@@ -108,17 +108,20 @@ namespace KVS_android
 			// aapt resource value: 0x7f060000
 			public const int etUserName = 2131099648;
 			
+			// aapt resource value: 0x7f060005
+			public const int gridLayout1 = 2131099653;
+			
 			// aapt resource value: 0x7f060002
 			public const int loginButton = 2131099650;
 			
-			// aapt resource value: 0x7f06000b
-			public const int logoutButton = 2131099659;
+			// aapt resource value: 0x7f060007
+			public const int rInvoeren = 2131099655;
 			
-			// aapt resource value: 0x7f06000d
-			public const int registerButton = 2131099661;
+			// aapt resource value: 0x7f060006
+			public const int rInzien = 2131099654;
 			
-			// aapt resource value: 0x7f060005
-			public const int welcomeText = 2131099653;
+			// aapt resource value: 0x7f06000e
+			public const int registerButton = 2131099662;
 			
 			static Id()
 			{

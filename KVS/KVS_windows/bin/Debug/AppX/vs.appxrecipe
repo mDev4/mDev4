@@ -22,7 +22,7 @@
     <AppXManifest Include="C:\Users\lincypc\Documents\mDev4\KVS\KVS_windows\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-03-16T15:57:54.857</Modified>
+      <Modified>2016-03-23T12:03:02.753</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -33,22 +33,22 @@
     <AppxPackagedFile Include="C:\Users\lincypc\Documents\mDev4\KVS\KVS_windows\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-03-16T12:56:18.798</Modified>
+      <Modified>2016-03-16T12:56:18.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\lincypc\Documents\mDev4\KVS\KVS_windows\Assets\SmallLogo.scale-100.png">
       <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-03-16T12:56:18.798</Modified>
+      <Modified>2016-03-16T12:56:18.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\lincypc\Documents\mDev4\KVS\KVS_windows\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-03-16T12:56:18.799</Modified>
+      <Modified>2016-03-16T12:56:18.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\lincypc\Documents\mDev4\KVS\KVS_windows\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-03-16T12:56:18.800</Modified>
+      <Modified>2016-03-16T12:56:18.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\lincypc\Documents\mDev4\KVS\KVS_windows\bin\Debug\KVS_windows.xr.xml">
       <PackagePath>KVS_windows.xr.xml</PackagePath>
@@ -56,15 +56,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\lincypc\Documents\mDev4\KVS\KVS_windows\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2016-03-16T15:57:54.388</Modified>
+      <Modified>2016-03-23T12:03:02.741</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\lincypc\Documents\mDev4\KVS\KVS_windows\bin\Debug\HomePage.xbf">
       <PackagePath>HomePage.xbf</PackagePath>
-      <Modified>2016-03-16T15:57:54.389</Modified>
+      <Modified>2016-03-23T12:03:02.754</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\lincypc\Documents\mDev4\KVS\KVS_windows\bin\Debug\LoginPage.xbf">
       <PackagePath>LoginPage.xbf</PackagePath>
-      <Modified>2016-03-16T15:57:54.391</Modified>
+      <Modified>2016-03-23T12:03:02.755</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\lincypc\Documents\mDev4\KVS\KVS_windows\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
