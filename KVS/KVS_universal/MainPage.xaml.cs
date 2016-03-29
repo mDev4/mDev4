@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -25,6 +26,16 @@ namespace KVS_universal
         public MainPage()
         {
             this.InitializeComponent();
+        }
+
+        private void HamburgerButton_Click(object sender, RoutedEventArgs e)
+        {
+            MySplitView.IsPaneOpen = !MySplitView.IsPaneOpen;
+        }
+        
+        private void MenuButton1_Click(object sender, RoutedEventArgs e)
+        {
+            Debug.WriteLine("Home");
         }
     }
 }

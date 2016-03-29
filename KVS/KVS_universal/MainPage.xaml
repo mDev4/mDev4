@@ -7,7 +7,92 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
-    </Grid>
+    <SplitView x:Name="MySplitView" DisplayMode="CompactInline" IsPaneOpen="False" 
+               CompactPaneLength="50" OpenPaneLength="250">
+        <SplitView.Pane>
+            <RelativePanel Background="Gray" HorizontalAlignment="Left" >
+                <Button x:Name="HamburgerButton" FontFamily="Segoe MDL2 Assets" Content="&#xE700;"
+                    Width="50" Height="50" Background="Transparent" Click="HamburgerButton_Click"/>
+                <Button x:Name="HomeButton" FontFamily="Segoe MDL2 Assets"
+                        Width="250" Height="50" Background="Transparent" Click="MenuButton1_Click"
+                        RelativePanel.Below="HamburgerButton">
+                    <Grid Width="250" Margin="0,0,-20,-2">
+                        <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE80F;" 
+                    		FontSize="25" Height="25" HorizontalAlignment="Left" Margin="3,0,0,0" />
+                        <TextBlock FontSize="18" Margin="45,3,10,1">Home</TextBlock>
+                    </Grid>
+                </Button>
+                <Button x:Name="GroupButton" FontFamily="Segoe MDL2 Assets"
+                        Width="250" Height="50" Background="Transparent" Click="MenuButton1_Click"
+                        RelativePanel.Below="HomeButton">
+                    <Grid Width="250" Margin="0,0,-20,-2">
+                        <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE716;" 
+                    		FontSize="25" Height="25" HorizontalAlignment="Left" Margin="3,0,0,0" />
+                        <TextBlock FontSize="18" Margin="45,0,10,4">Klas</TextBlock>
+                    </Grid>
+                </Button>
+                <Button x:Name="ViewResultsButton" FontFamily="Segoe MDL2 Assets"
+                        Width="250" Height="50" Background="Transparent" Click="MenuButton1_Click"
+                        RelativePanel.Below="GroupButton">
+                    <Grid Width="250" Margin="0,0,-20,-2">
+                        <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE8A9;" 
+                    		FontSize="25" Height="25" HorizontalAlignment="Left" Margin="3,0,0,0" />
+                        <TextBlock FontSize="18" Margin="45,0,10,4">Resultaten bekijken</TextBlock>
+                    </Grid>
+                </Button>
+                <Button x:Name="EditResultsButton" FontFamily="Segoe MDL2 Assets"
+                        Width="250" Height="50" Background="Transparent" Click="MenuButton1_Click"
+                        RelativePanel.Below="ViewResultsButton">
+                    <Grid Width="250" Margin="0,0,-20,-2">
+                        <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE70F;" 
+                    		FontSize="25" Height="25" HorizontalAlignment="Left" Margin="3,0,0,0" />
+                        <TextBlock FontSize="18" Margin="45,0,10,4">Resultaten invoeren</TextBlock>
+                    </Grid>
+                </Button>
+                <Button x:Name="Planning" FontFamily="Segoe MDL2 Assets"
+                        Width="250" Height="50" Background="Transparent" Click="MenuButton1_Click"
+                        RelativePanel.Below="EditResultsButton">
+                    <Grid Width="250" Margin="0,0,-20,-2">
+                        <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE787;" 
+                    		FontSize="25" Height="25" HorizontalAlignment="Left" Margin="3,0,0,0" />
+                        <TextBlock FontSize="18" Margin="45,0,10,4">Planning</TextBlock>
+                    </Grid>
+                </Button>
+                <Button x:Name="Messages" FontFamily="Segoe MDL2 Assets"
+                        Width="250" Height="50" Background="Transparent" Click="MenuButton1_Click"
+                        RelativePanel.Below="Planning">
+                    <Grid Width="250" Margin="0,0,-20,-2">
+                        <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE8BD;" 
+                    		FontSize="25" Height="25" HorizontalAlignment="Left" Margin="3,0,0,0" />
+                        <TextBlock FontSize="18" Margin="45,0,10,4">Berichten</TextBlock>
+                    </Grid>
+                </Button>
+                <Button x:Name="Settings" FontFamily="Segoe MDL2 Assets"
+                        Width="250" Height="50" Background="Transparent" Click="MenuButton1_Click"
+                        RelativePanel.Below="Messages">
+                    <Grid Width="250" Margin="0,0,-20,-2">
+                        <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE713;" 
+                    		FontSize="25" Height="25" HorizontalAlignment="Left" Margin="3,0,0,0" />
+                        <TextBlock FontSize="18" Margin="45,0,10,4">Instellingen</TextBlock>
+                    </Grid>
+                </Button>
+                <Button x:Name="Logout" FontFamily="Segoe MDL2 Assets"
+                        Width="250" Height="50" Background="Transparent" Click="MenuButton1_Click"
+                        RelativePanel.AlignBottomWithPanel="True">
+                    <Grid Width="250" Margin="0,0,-20,-2">
+                        <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE892;" 
+                    		FontSize="25" Height="25" HorizontalAlignment="Left" Margin="3,0,0,0" />
+                        <TextBlock FontSize="18" Margin="45,0,10,4">Uitloggen</TextBlock>
+                    </Grid>
+                </Button>
+                
+            </RelativePanel>
+        </SplitView.Pane>
+        <SplitView.Content>
+            <Grid Background="Black">
+                <TextBlock Text="SplitView Basic" FontSize="54" Foreground="White"
+                           HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Grid>
+        </SplitView.Content>
+    </SplitView>
 </Page>
