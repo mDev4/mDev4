@@ -46,6 +46,9 @@ namespace KVS_android
 
                 UserControl.addUser(user);
 
+                Toast.MakeText(this, "Account succesvol aangemaakt", ToastLength.Long);
+                StartActivity(typeof(Login));
+
                 
             };
         }

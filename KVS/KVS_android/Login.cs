@@ -43,13 +43,13 @@ namespace KVS_android
                     }
                     else
                     {
-                        Toast.MakeText(this, "Password was incorrect", ToastLength.Long).Show();
+                        Toast.MakeText(this, "Wachtwoord onjuist", ToastLength.Long).Show();
                     }
 
                 }
                 else
                 {
-                    Toast.MakeText(this, "User not found", ToastLength.Long).Show();
+                    Toast.MakeText(this, "Gebruiker niet gevonden", ToastLength.Long).Show();
                 }
 
             };
