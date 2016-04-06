@@ -19,15 +19,15 @@ namespace KVS_android
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
 
-            Button button1 = FindViewById<Button>(Resource.Id.btnRegister);
+            Button registerButton = FindViewById<Button>(Resource.Id.btnRegister);
 
-            button1.Click += delegate {
+            registerButton.Click += delegate {
                 StartActivity(typeof(Register));
             };
 
-            Button button2 = FindViewById<Button>(Resource.Id.btnLogin);
+            Button loginButton = FindViewById<Button>(Resource.Id.btnLogin);
 
-            button2.Click += delegate {
+            loginButton.Click += delegate {
                 StartActivity(typeof(Login));
             };
 

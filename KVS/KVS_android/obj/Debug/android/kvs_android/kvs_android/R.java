@@ -20,27 +20,35 @@ public final class R {
         public static final int schoolbackground=0x7f020006;
     }
     public static final class id {
-        public static final int Klas=0x7f06000a;
-        public static final int LogOut=0x7f06000c;
-        public static final int Mede=0x7f060008;
-        public static final int Plan=0x7f060009;
-        public static final int Settings=0x7f06000b;
-        public static final int btnLogin=0x7f060003;
-        public static final int btnRegister=0x7f060004;
-        public static final int etEmail=0x7f06000d;
-        public static final int etPass=0x7f060001;
-        public static final int etUserName=0x7f060000;
-        public static final int gridLayout1=0x7f060005;
-        public static final int loginButton=0x7f060002;
-        public static final int rInvoeren=0x7f060007;
-        public static final int rInzien=0x7f060006;
-        public static final int registerButton=0x7f06000e;
+        public static final int LogOut=0x7f06000d;
+        public static final int Mede=0x7f060009;
+        public static final int Plan=0x7f06000a;
+        public static final int Settings=0x7f06000c;
+        public static final int btnLogin=0x7f060004;
+        public static final int btnRegister=0x7f060005;
+        public static final int classButton=0x7f06000b;
+        public static final int dataButton=0x7f060012;
+        public static final int etEmail=0x7f06000e;
+        public static final int etPass=0x7f060002;
+        public static final int etUserName=0x7f060001;
+        public static final int gridLayout1=0x7f060006;
+        public static final int imageView1=0x7f060010;
+        public static final int loginButton=0x7f060003;
+        public static final int rInvoeren=0x7f060008;
+        public static final int rInzien=0x7f060007;
+        public static final int registerButton=0x7f06000f;
+        public static final int resultsButton=0x7f060013;
+        public static final int specialButton=0x7f060014;
+        public static final int studentButton=0x7f060000;
+        public static final int textView1=0x7f060011;
     }
     public static final class layout {
-        public static final int login=0x7f030000;
-        public static final int main=0x7f030001;
-        public static final int menu=0x7f030002;
-        public static final int register=0x7f030003;
+        public static final int group=0x7f030000;
+        public static final int login=0x7f030001;
+        public static final int main=0x7f030002;
+        public static final int menu=0x7f030003;
+        public static final int register=0x7f030004;
+        public static final int student=0x7f030005;
     }
     public static final class string {
         public static final int ApplicationName=0x7f040001;

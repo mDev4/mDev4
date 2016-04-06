@@ -1,3 +1,7 @@
+KVS_android.Group, KVS_android;md5d1d82567df1ca27afb530863f924e1d0.Group
+KVS_android.Group, KVS_android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5d1d82567df1ca27afb530863f924e1d0.Group
+KVS_android.Group;md5d1d82567df1ca27afb530863f924e1d0.Group
+kvs_android.Group;md5d1d82567df1ca27afb530863f924e1d0.Group
 KVS_android.Login, KVS_android;md5d1d82567df1ca27afb530863f924e1d0.Login
 KVS_android.Login, KVS_android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5d1d82567df1ca27afb530863f924e1d0.Login
 KVS_android.Login;md5d1d82567df1ca27afb530863f924e1d0.Login
@@ -14,3 +18,7 @@ KVS_android.Register, KVS_android;md5d1d82567df1ca27afb530863f924e1d0.Register
 KVS_android.Register, KVS_android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5d1d82567df1ca27afb530863f924e1d0.Register
 KVS_android.Register;md5d1d82567df1ca27afb530863f924e1d0.Register
 kvs_android.Register;md5d1d82567df1ca27afb530863f924e1d0.Register
+KVS_android.Student, KVS_android;md5d1d82567df1ca27afb530863f924e1d0.Student
+KVS_android.Student, KVS_android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5d1d82567df1ca27afb530863f924e1d0.Student
+KVS_android.Student;md5d1d82567df1ca27afb530863f924e1d0.Student
+kvs_android.Student;md5d1d82567df1ca27afb530863f924e1d0.Student
