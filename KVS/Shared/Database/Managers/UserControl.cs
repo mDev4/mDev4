@@ -66,5 +66,35 @@ namespace Shared.Database.Managers
             }
             return user;
         }
+
+        public static UserModel getUserById(int id)
+        {
+            UserModel user = new UserModel();
+            using (SqlConnection con = new SqlConnection(DatabaseHelper.dbString))
+            {
+                con.Open();
+
+                using (SqlCommand command = new SqlCommand(
+                    "SELECT * FROM [User] WHERE username = @id", con))
+                {
+                    command.Parameters.Add(new SqlParameter("id", id));
+                    SqlDataReader reader = command.ExecuteReader();
+
+                    while (reader.Read())
+                    {
+                        user.Id = reader.GetInt32(0);
+                        user.Username = reader.GetString(1);
+                        user.Password = reader.GetString(2);
+                        user.Firstname = reader.GetString(3);
+                        user.Lastname = reader.GetString(4);
+                        user.Email = reader.GetString(5);
+                        user.PhoneNumber = reader.GetString(6);
+
+                        return user;
+                    }
+                }
+            }
+            return user;
+        }
     }
 }
