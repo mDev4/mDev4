@@ -22,13 +22,10 @@ namespace KVS_android
             // Set our view from the "menu" layout resource
             SetContentView(Resource.Layout.Group);
 
-            // Create your application here
+            // empty listview is called groupList
+            // functions to click on one 1 item and get the information from the database
 
-            Button studentButton = FindViewById<Button>(Resource.Id.studentButton);
-
-            studentButton.Click += delegate {
-                StartActivity(typeof(Student));
-            };
+            
         }
     }
 }

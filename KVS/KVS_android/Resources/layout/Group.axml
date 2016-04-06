@@ -4,19 +4,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/schoolbackground">
-    <Button
-        android:text="Leerling 1"
+    <ListView
+        android:minWidth="25px"
+        android:minHeight="25px"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/studentButton" />
-    <Button
-        android:text="Leerling 2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/studentButton" />
-    <Button
-        android:text="Leerling 3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/studentButton" />
+        android:layout_height="match_parent"
+        android:id="@+id/groupList" />
 </LinearLayout>
