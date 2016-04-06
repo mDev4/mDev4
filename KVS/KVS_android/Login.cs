@@ -9,6 +9,8 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using Shared.Database.Managers;
+using Shared.Database.Models;
 
 namespace KVS_android
 {
@@ -26,10 +28,30 @@ namespace KVS_android
 
             // Get our button from the layout resource,
             // and attach an event to it
-            Button button = FindViewById<Button>(Resource.Id.loginButton);
+            Button loginButton = FindViewById<Button>(Resource.Id.loginButton);
+            EditText usernameField = FindViewById<EditText>(Resource.Id.etUserName);
+            EditText passwordField = FindViewById<EditText>(Resource.Id.etPass);
 
-            button.Click += delegate {
-                StartActivity(typeof(Menu));
+            loginButton.Click += delegate
+            {
+                if (!UserControl.getUserByUsername(usernameField.Text.ToString()).Equals(null))
+                {
+                    UserModel user = UserControl.getUserByUsername(usernameField.Text.ToString());
+                    if (user.Password == passwordField.Text.ToString())
+                    {
+                        StartActivity(typeof(Menu));
+                    }
+                    else
+                    {
+                        Toast.MakeText(this, "Wachtwoord onjuist", ToastLength.Long).Show();
+                    }
+
+                }
+                else
+                {
+                    Toast.MakeText(this, "Gebruiker niet gevonden", ToastLength.Long).Show();
+                }
+
             };
         }
     }

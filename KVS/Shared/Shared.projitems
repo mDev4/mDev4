@@ -8,4 +8,9 @@
   <PropertyGroup Label="Configuration">
     <Import_RootNamespace>Shared</Import_RootNamespace>
   </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Database\DatabaseHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Database\Managers\UserControl.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Database\Models\UserModel.cs" />
+  </ItemGroup>
 </Project>
