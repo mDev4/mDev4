@@ -21,16 +21,23 @@ namespace KVS_android
             // Get our button from the layout resource,
             // and attach an event to it
             Button classButton = FindViewById<Button>(Resource.Id.classButton);
+            Button logoutButton = FindViewById<Button>(Resource.Id.LogOut);
+            Button rViewButton = FindViewById<Button>(Resource.Id.rInzien); 
 
             classButton.Click += delegate {
                 StartActivity(typeof(Group));
             };
 
-            Button logoutButton = FindViewById<Button>(Resource.Id.LogOut);
-
             logoutButton.Click += delegate {
                 StartActivity(typeof(MainActivity));
             };
+
+            rViewButton.Click += delegate
+            {
+                StartActivity(typeof(detailedResult));
+            };
+
+
         }
     }
 }

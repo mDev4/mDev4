@@ -51,6 +51,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include=".cs" />
     <Compile Include="Group.cs" />
     <Compile Include="Login.cs" />
     <Compile Include="MainActivity.cs" />
@@ -80,6 +81,11 @@
     <AndroidResource Include="Resources\layout\Student.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
+    <AndroidResource Include="Resources\layout\perButtonInsertResult.axml" />
+    <AndroidResource Include="Resources\layout\perButtonInsertResult__.axml" />
+    <AndroidResource Include="Resources\layout\perItemDetailedResult.axml" />
+    <AndroidResource Include="Resources\layout\perStudentDetailedResults.axml" />
+    <AndroidResource Include="Resources\layout\detailedResult.axml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Main.axml" />

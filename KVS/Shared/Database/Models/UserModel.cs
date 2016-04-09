@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Shared.Database.Models
 {
-    class UserModel
+    public class UserModel
     {
         private int id;
         private string username;

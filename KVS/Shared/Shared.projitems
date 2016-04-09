@@ -12,5 +12,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Database\DatabaseHelper.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Database\Managers\UserControl.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Database\Models\UserModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Teacher.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\User.cs" />
   </ItemGroup>
 </Project>
