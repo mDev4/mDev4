@@ -13,22 +13,26 @@ using Android.Widget;
 namespace KVS_android
 {
     [Activity(Label = "Klas")]
-    public class Group : Activity
+    public class Group : ListActivity
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
 
-            // Set our view from the "menu" layout resource
+            // Set our view from the "group" layout resource
             SetContentView(Resource.Layout.Group);
 
-            // Create your application here
+            // empty listview is called groupList
+            // functions to click on one 1 item and get the information from the database
 
-            Button studentButton = FindViewById<Button>(Resource.Id.studentButton);
+            // test button
+            Button button1 = FindViewById<Button>(Resource.Id.button1);
 
-            studentButton.Click += delegate {
+            button1.Click += delegate {
                 StartActivity(typeof(Student));
             };
+
+
         }
     }
 }
