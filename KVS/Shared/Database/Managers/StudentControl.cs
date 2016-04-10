@@ -15,7 +15,7 @@ namespace Shared.Database.Managers
             using (SqlConnection con = new SqlConnection(DatabaseHelper.dbString))
             {
                 con.Open();
-               
+
                 try
                 {
                     using (SqlCommand command = new SqlCommand(
@@ -27,7 +27,7 @@ namespace Shared.Database.Managers
                         command.Parameters.Add(new SqlParameter("birthDate", student.BirthDate));
                         command.Parameters.Add(new SqlParameter("particulars", student.Particulars));
                         command.Parameters.Add(new SqlParameter("group", student.Group));
-                        
+
                         command.ExecuteNonQuery();
                     }
                 }
@@ -36,6 +36,70 @@ namespace Shared.Database.Managers
                     Console.WriteLine(ex.Message);
                 }
             }
+        }
+
+
+        public static StudentModel getStudentByName(string firstName, string lastName)
+        {
+            StudentModel student = new StudentModel();
+            using (SqlConnection con = new SqlConnection(DatabaseHelper.dbString))
+            {
+                con.Open();
+
+                using (SqlCommand command = new SqlCommand(
+                    "SELECT * FROM [Student] WHERE firstName = @firstName AND lastName = @lastName", con))
+                {
+                    command.Parameters.Add(new SqlParameter("firstName", firstName));
+                    command.Parameters.Add(new SqlParameter("lastName", lastName));
+
+                    SqlDataReader reader = command.ExecuteReader();
+
+                    while (reader.Read())
+                    {
+                        student.Id = reader.GetInt32(0);
+                        student.Firstname = reader.GetString(1);
+                        student.Lastname = reader.GetString(2);
+                        student.Studentcode = reader.GetString(3);
+                        student.BirthDate = reader.GetDateTime(4);
+                        student.Particulars = reader.GetString(5);
+                        student.Group = reader.GetString(6);
+
+                        return student;
+                    }
+                }
+            }
+            return student;
+        }
+
+        public static StudentModel getStudentById(int id)
+        {
+            StudentModel student = new StudentModel();
+            using (SqlConnection con = new SqlConnection(DatabaseHelper.dbString))
+            {
+                con.Open();
+
+                using (SqlCommand command = new SqlCommand(
+                    "SELECT * FROM [Student] WHERE Id = @id", con))
+                {
+                    command.Parameters.Add(new SqlParameter("id", id));
+
+                    SqlDataReader reader = command.ExecuteReader();
+
+                    while (reader.Read())
+                    {
+                        student.Id = reader.GetInt32(0);
+                        student.Firstname = reader.GetString(1);
+                        student.Lastname = reader.GetString(2);
+                        student.Studentcode = reader.GetString(3);
+                        student.BirthDate = reader.GetDateTime(4);
+                        student.Particulars = reader.GetString(5);
+                        student.Group = reader.GetString(6);
+
+                        return student;
+                    }
+                }
+            }
+            return student;
         }
     }
 }

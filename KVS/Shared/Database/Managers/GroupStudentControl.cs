@@ -6,5 +6,6 @@ namespace Shared.Database.Managers
 {
     class GroupStudentControl
     {
+        
     }
 }
