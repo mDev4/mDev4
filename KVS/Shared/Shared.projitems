@@ -10,7 +10,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)Database\DatabaseHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Database\Managers\StudentControl.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Database\Managers\UserControl.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Database\Models\AnnouncementModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Database\Models\GroupModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Database\Models\StudentModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Database\Models\UserModel.cs" />
   </ItemGroup>
 </Project>

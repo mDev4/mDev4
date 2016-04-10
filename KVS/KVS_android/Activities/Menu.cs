@@ -29,7 +29,7 @@ namespace KVS_android
             Button annButton = FindViewById<Button>(Resource.Id.annButton);
 
             annButton.Click += delegate {
-                StartActivity(typeof(Announcements));
+                //StartActivity(typeof(Announcements));
             };
 
             Button logoutButton = FindViewById<Button>(Resource.Id.LogOut);

@@ -15,7 +15,6 @@ namespace Shared.Database.Managers
             using (SqlConnection con = new SqlConnection(DatabaseHelper.dbString))
             {
                 con.Open();
-                DateTime date = new DateTime();
                
                 try
                 {
