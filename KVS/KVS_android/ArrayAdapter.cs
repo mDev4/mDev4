@@ -1,50 +1,36 @@
-﻿public class ContactsAdapter : BaseAdapter
-{
-    List<Contact> _contactList;
-    Activity _activity;
+﻿using System;
+using Android.Views;
+using Java.Lang;
 
-    public ContactsAdapter(Activity activity)
+public class ArrayAdapter: Android.Widget.BaseAdapter { 
+    private System.Collections.Generic.List<Java.Lang.Object> list = new System.Collections.Generic.List<Java.Lang.Object>();
+    private View baseView;
+
+    private ArrayAdapter(View view)
     {
-        _activity = activity;
-        FillContacts();
+     baseView = view;
     }
 
-    void FillContacts()
+    public override int Count
     {
-        var uri = ContactsContract.Contacts.ContentUri;
-
-        string[] projection = {
-                ContactsContract.Contacts.InterfaceConsts.Id,
-                ContactsContract.Contacts.InterfaceConsts.DisplayName,
-                ContactsContract.Contacts.InterfaceConsts.PhotoId
-            };
-
-        var cursor = _activity.ManagedQuery(uri, projection, null,
-            null, null);
-
-        _contactList = new List<Contact>();
-
-        if (cursor.MoveToFirst())
+        get
         {
-            do
-            {
-                _contactList.Add(new Contact
-                {
-                    Id = cursor.GetLong(
-                cursor.GetColumnIndex(projection[0])),
-                    DisplayName = cursor.GetString(
-                cursor.GetColumnIndex(projection[1])),
-                    PhotoId = cursor.GetString(
-                cursor.GetColumnIndex(projection[2]))
-                });
-            } while (cursor.MoveToNext());
+            return list.Count;
         }
     }
 
-    class Contact
+    public override Java.Lang.Object GetItem(int position)
     {
-        public long Id { get; set; }
-        public string DisplayName { get; set; }
-        public string PhotoId { get; set; }
+        return list[position];
+    }
+
+    public override long GetItemId(int position)
+    {
+        return position;
+    }
+
+    public override View GetView(int position, View convertView, ViewGroup parent)
+    {
+        throw new NotImplementedException();
     }
 }

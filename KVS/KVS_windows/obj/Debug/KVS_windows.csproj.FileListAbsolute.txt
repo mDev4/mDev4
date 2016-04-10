@@ -72,3 +72,17 @@ C:\Users\lincypc\Documents\mDev4\KVS\KVS_windows\obj\Debug\qualifiers.txt
 C:\Users\lincypc\Documents\mDev4\KVS\KVS_windows\obj\Debug\qualifiers.txt.intermediate
 C:\Users\lincypc\Documents\mDev4\KVS\KVS_windows\obj\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\lincypc\Documents\mDev4\KVS\KVS_windows\obj\Debug\ProjectArchitectures.txt
+C:\Users\Ryan\mDev4\KVS\KVS_windows\obj\Debug\App.g.i.cs
+C:\Users\Ryan\mDev4\KVS\KVS_windows\obj\Debug\App.g.cs
+C:\Users\Ryan\mDev4\KVS\KVS_windows\obj\Debug\HomePage.g.i.cs
+C:\Users\Ryan\mDev4\KVS\KVS_windows\obj\Debug\HomePage.g.cs
+C:\Users\Ryan\mDev4\KVS\KVS_windows\obj\Debug\LoginPage.g.i.cs
+C:\Users\Ryan\mDev4\KVS\KVS_windows\obj\Debug\LoginPage.g.cs
+C:\Users\Ryan\mDev4\KVS\KVS_windows\obj\Debug\XamlTypeInfo.g.cs
+C:\Users\Ryan\mDev4\KVS\KVS_windows\obj\Debug\App.xaml
+C:\Users\Ryan\mDev4\KVS\KVS_windows\obj\Debug\HomePage.xaml
+C:\Users\Ryan\mDev4\KVS\KVS_windows\obj\Debug\LoginPage.xaml
+C:\Users\Ryan\mDev4\KVS\KVS_windows\obj\Debug\App.xbf
+C:\Users\Ryan\mDev4\KVS\KVS_windows\obj\Debug\HomePage.xbf
+C:\Users\Ryan\mDev4\KVS\KVS_windows\obj\Debug\LoginPage.xbf
+C:\Users\Ryan\mDev4\KVS\KVS_windows\obj\Debug\XamlSaveStateFile.xml

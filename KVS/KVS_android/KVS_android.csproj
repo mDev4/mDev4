@@ -51,7 +51,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include=".cs" />
+    <Compile Include="ArrayAdapter.cs" />
     <Compile Include="Group.cs" />
     <Compile Include="Login.cs" />
     <Compile Include="MainActivity.cs" />

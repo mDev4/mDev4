@@ -4,5 +4,9 @@ using System.Text;
 
 namespace Shared.Model
 {
-    class Teacher{    }
+    public class Teacher:User
+    {
+        private List<Class> teacherOf;
+
+    }
 }

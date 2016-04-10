@@ -73,3 +73,4 @@ C:\Users\lincypc\Documents\mDev4\KVS\KVS_android\obj\Debug\R.cs.flag
 C:\Users\lincypc\Documents\mDev4\KVS\KVS_android\obj\Debug\uploadflags.txt
 C:\Users\lincypc\Documents\mDev4\KVS\KVS_android\obj\Debug\KVS_android.dll.mdb
 C:\Users\lincypc\Documents\mDev4\KVS\KVS_android\bin\Debug\KVS_android.dll.mdb
+C:\Users\Ryan\mDev4\KVS\KVS_android\obj\Debug\KVS_android.csprojResolveAssemblyReference.cache
