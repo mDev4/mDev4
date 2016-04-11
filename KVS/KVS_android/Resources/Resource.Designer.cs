@@ -188,37 +188,40 @@ namespace KVS_android
 		{
 			
 			// aapt resource value: 0x7f030000
-			public const int detailedResult = 2130903040;
+			public const int _Listview_Subjects = 2130903040;
 			
 			// aapt resource value: 0x7f030001
-			public const int Group = 2130903041;
+			public const int detailedResult = 2130903041;
 			
 			// aapt resource value: 0x7f030002
-			public const int Login = 2130903042;
+			public const int Group = 2130903042;
 			
 			// aapt resource value: 0x7f030003
-			public const int Main = 2130903043;
+			public const int Login = 2130903043;
 			
 			// aapt resource value: 0x7f030004
-			public const int Menu = 2130903044;
+			public const int Main = 2130903044;
 			
 			// aapt resource value: 0x7f030005
-			public const int perButtonInsertResult = 2130903045;
+			public const int Menu = 2130903045;
 			
 			// aapt resource value: 0x7f030006
-			public const int perButtonInsertResult__ = 2130903046;
+			public const int perButtonInsertResult = 2130903046;
 			
 			// aapt resource value: 0x7f030007
 			public const int perItemDetailedResult = 2130903047;
 			
 			// aapt resource value: 0x7f030008
-			public const int perStudentDetailedResults = 2130903048;
+			public const int perStudent_Group = 2130903048;
 			
 			// aapt resource value: 0x7f030009
 			public const int Register = 2130903049;
 			
 			// aapt resource value: 0x7f03000a
 			public const int Student = 2130903050;
+			
+			// aapt resource value: 0x7f03000b
+			public const int Subjects = 2130903051;
 			
 			static Layout()
 			{

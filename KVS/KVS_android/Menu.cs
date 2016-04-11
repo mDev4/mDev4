@@ -22,7 +22,8 @@ namespace KVS_android
             // and attach an event to it
             Button classButton = FindViewById<Button>(Resource.Id.classButton);
             Button logoutButton = FindViewById<Button>(Resource.Id.LogOut);
-            Button rViewButton = FindViewById<Button>(Resource.Id.rInzien); 
+            Button rViewButton = FindViewById<Button>(Resource.Id.rInzien);
+			Button rInsertButton = FindViewById<Button> (Resource.Id.rInvoeren);
 
             classButton.Click += delegate {
                 StartActivity(typeof(Group));
@@ -34,8 +35,13 @@ namespace KVS_android
 
             rViewButton.Click += delegate
             {
-                StartActivity(typeof(detailedResult));
+                //StartActivity(typeof());
             };
+
+			rViewButton.Click += delegate
+			{
+				StartActivity(typeof(Subjects));
+			};
 
 
         }

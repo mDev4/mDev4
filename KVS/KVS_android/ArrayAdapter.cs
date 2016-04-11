@@ -1,14 +1,17 @@
 ﻿using System;
 using Android.Views;
 using Java.Lang;
+using KVS_android;
 
 public class ArrayAdapter: Android.Widget.BaseAdapter { 
     private System.Collections.Generic.List<Java.Lang.Object> list = new System.Collections.Generic.List<Java.Lang.Object>();
     private View baseView;
+	private Int32 layout;
 
-    private ArrayAdapter(View view)
+	private ArrayAdapter(View view , Int32 layout)
     {
-     baseView = view;
+        baseView = view;
+		this.layout = layout;
     }
 
     public override int Count
@@ -31,6 +34,26 @@ public class ArrayAdapter: Android.Widget.BaseAdapter {
 
     public override View GetView(int position, View convertView, ViewGroup parent)
     {
-        throw new NotImplementedException();
+		if (layout == Resource.Layout._Listview_Subjects){
+			For_Subjects (convertView,parent);
+		}
+		else if (layout == Resource.Layout.perItemDetailedResult){
+			For_AddingResults (convertView,parent);
+		}
+		else if (layout == Resource.Layout.perStudent_Group){
+			
+		}
     }
+
+	public View For_Subjects(View convertView,ViewGroup parent){
+		
+	}
+
+	public View For_AddingResults(View convertView,ViewGroup parent){
+	
+	}
+
+	public View For_Student_Group(View convertView,ViewGroup parent){
+	}
+		
 }
