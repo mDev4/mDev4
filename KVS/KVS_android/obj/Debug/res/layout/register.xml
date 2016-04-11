@@ -1,1 +1,97 @@
-<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:background="@drawable/schoolbackground" xmlns:android="http://schemas.android.com/apk/res/android"><LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" android:padding="10dp" android:background="@drawable/linearlayout_bg"><EditText android:id="@+id/etFirstName" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/edittext_top_bg" android:padding="10dp" android:hint="Voornaam" android:textColorHint="#bbbbbb" android:drawableLeft="@android:drawable/ic_dialog_info" android:layout_marginBottom="0.0dp" android:textColor="@android:color/black" android:drawablePadding="10dp" /><EditText android:id="@+id/etLastname" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/edittext_top_bg" android:padding="10dp" android:hint="Achternaam" android:textColorHint="#bbbbbb" android:drawableLeft="@android:drawable/ic_dialog_info" android:layout_marginBottom="0.0dp" android:textColor="@android:color/black" android:drawablePadding="10dp" /><EditText android:id="@+id/etEmail" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/edittext_top_bg" android:padding="10dp" android:hint="Email" android:textColorHint="#bbbbbb" android:drawableLeft="@android:drawable/ic_dialog_email" android:layout_marginBottom="0.0dp" android:textColor="@android:color/black" android:drawablePadding="10dp" /><EditText android:id="@+id/etUserName" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/edittext_defealt_bg" android:layout_marginTop="-2dp" android:padding="10dp" android:hint="Gebruikersnaam" android:textColorHint="#bbbbbb" android:drawableLeft="@android:drawable/ic_dialog_info" android:textColor="@android:color/black" android:drawablePadding="10dp" /><EditText android:id="@+id/etPass" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/edittext_bottom_bg" android:layout_marginTop="-2dp" android:padding="10dp" android:hint="Wachtwoord" android:textColorHint="#bbbbbb" android:password="true" android:drawableLeft="@android:drawable/ic_lock_idle_lock" android:textColor="@android:color/black" android:drawablePadding="18dp" /><EditText android:id="@+id/etPhone" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/edittext_bottom_bg" android:layout_marginTop="-2dp" android:padding="10dp" android:hint="Telefoonnummer" android:textColorHint="#bbbbbb" android:drawableLeft="@android:drawable/ic_menu_call" android:textColor="@android:color/black" android:drawablePadding="10dp" /><Button android:id="@+id/registerButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="10dp" android:layout_margin="4dp" android:text="Registreer" style="@style/DefaultButtonText" android:background="@drawable/button_default_bg" android:onClick="registerUser" /></LinearLayout></RelativeLayout>
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/schoolbackground">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="10dp"
+        android:background="@drawable/linearlayout_bg">
+        <EditText
+            android:id="@+id/etFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_top_bg"
+            android:padding="10dp"
+            android:hint="Voornaam"
+            android:textColorHint="#bbbbbb"
+            android:drawableLeft="@android:drawable/ic_dialog_info"
+            android:layout_marginBottom="0.0dp"
+            android:textColor="@android:color/black"
+            android:drawablePadding="10dp" />
+        <EditText
+            android:id="@+id/etLastname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_top_bg"
+            android:padding="10dp"
+            android:hint="Achternaam"
+            android:textColorHint="#bbbbbb"
+            android:drawableLeft="@android:drawable/ic_dialog_info"
+            android:layout_marginBottom="0.0dp"
+            android:textColor="@android:color/black"
+            android:drawablePadding="10dp" />
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_top_bg"
+            android:padding="10dp"
+            android:hint="Email"
+            android:textColorHint="#bbbbbb"
+            android:drawableLeft="@android:drawable/ic_dialog_email"
+            android:layout_marginBottom="0.0dp"
+            android:textColor="@android:color/black"
+            android:drawablePadding="10dp" />
+        <EditText
+            android:id="@+id/etUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_defealt_bg"
+            android:layout_marginTop="-2dp"
+            android:padding="10dp"
+            android:hint="Gebruikersnaam"
+            android:textColorHint="#bbbbbb"
+            android:drawableLeft="@android:drawable/ic_dialog_info"
+            android:textColor="@android:color/black"
+            android:drawablePadding="10dp" />
+        <EditText
+            android:id="@+id/etPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_bottom_bg"
+            android:layout_marginTop="-2dp"
+            android:padding="10dp"
+            android:hint="Wachtwoord"
+            android:textColorHint="#bbbbbb"
+            android:password="true"
+            android:drawableLeft="@android:drawable/ic_lock_idle_lock"
+            android:textColor="@android:color/black"
+            android:drawablePadding="18dp" />
+        <EditText
+            android:id="@+id/etPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_bottom_bg"
+            android:layout_marginTop="-2dp"
+            android:padding="10dp"
+            android:hint="Telefoonnummer"
+            android:textColorHint="#bbbbbb"
+            android:drawableLeft="@android:drawable/ic_menu_call"
+            android:textColor="@android:color/black"
+            android:drawablePadding="10dp" />
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_margin="4dp"
+            android:text="Registreer"
+            style="@style/DefaultButtonText"
+            android:background="@drawable/button_default_bg"
+            android:onClick="registerUser" />
+    </LinearLayout>
+</RelativeLayout>

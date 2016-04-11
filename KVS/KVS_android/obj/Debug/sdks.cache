@@ -2,7 +2,7 @@
 <Sdk>
   <AndroidApiLevel>23</AndroidApiLevel>
   <AndroidApiLevelName>23</AndroidApiLevelName>
-  <AndroidNdkPath>C:\ProgramData\Microsoft\AndroidNDK\android-ndk-r10e\</AndroidNdkPath>
+  <AndroidNdkPath>C:\Users\Ryan\Documents\Android\ndk\android-ndk-r10e</AndroidNdkPath>
   <AndroidSdkBuildToolsPath>C:\Users\Ryan\AppData\Local\Android\android-sdk\build-tools\23.0.1</AndroidSdkBuildToolsPath>
   <AndroidSdkBuildToolsBinPath>C:\Users\Ryan\AppData\Local\Android\android-sdk\build-tools\23.0.1</AndroidSdkBuildToolsBinPath>
   <AndroidSdkPath>C:\Users\Ryan\AppData\Local\Android\android-sdk</AndroidSdkPath>
