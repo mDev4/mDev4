@@ -28,6 +28,8 @@ namespace KVS_android
             // test button
 			Button button1 = FindViewById<Button>(Resource.Id.button1);
 			ArrayAdapter adapter = new ArrayAdapter (Resource.Layout.perStudent_Group,this,new List<Java.Lang.Object>());
+			ListAdapter = adapter;
+
             //button1.Click += delegate {
               //  StartActivity(typeof(Student));
             //};

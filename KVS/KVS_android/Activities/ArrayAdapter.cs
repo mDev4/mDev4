@@ -76,6 +76,8 @@ public class ArrayAdapter: Android.Widget.BaseAdapter {
 		text.Click += delegate {
 			//baseContext.StartActivity(intent);
 		};
+		Console.WriteLine ();
+		Console.ReadLine ();
 		return convertView;
 	}
 		
