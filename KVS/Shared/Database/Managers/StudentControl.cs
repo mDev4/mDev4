@@ -3,12 +3,46 @@ using System.Collections;
 using System.Text;
 using System.Data.SqlClient;
 using Shared.Database.Models;
-
+using System.Collections.Generic;
 
 namespace Shared.Database.Managers
 {
     class StudentControl
     {
+
+        public static List<StudentModel> getStudentsByGroup(GroupModel group)
+        {
+            List<StudentModel> students = new List<StudentModel>();
+            using (SqlConnection con = new SqlConnection(DatabaseHelper.dbString))
+            {
+                con.Open();
+
+                using (SqlCommand command = new SqlCommand(
+                    "SELECT * FROM [Student] WHERE group = @group", con))
+                {
+                    command.Parameters.Add(new SqlParameter("group", group.Name));
+
+                    SqlDataReader reader = command.ExecuteReader();
+
+                    while (reader.Read())
+                    {
+                        StudentModel student = new StudentModel();
+                        student.Id = reader.GetInt32(0);
+                        student.Firstname = reader.GetString(1);
+                        student.Lastname = reader.GetString(2);
+                        student.Studentcode = reader.GetString(3);
+                        student.BirthDate = reader.GetDateTime(4);
+                        student.Particulars = reader.GetString(5);
+                        student.Group = reader.GetString(6);
+
+                        students.Add(student);
+                    }
+                }
+            }
+            return students;
+        }
+
+        
 
         public static void addStudent(StudentModel student)
         {
