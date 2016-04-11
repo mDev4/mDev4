@@ -96,7 +96,11 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
+<<<<<<< HEAD
     <Reference Include="System.ComponentModel.DataAnnotations" />
+=======
+    <Reference Include="System.Data" />
+>>>>>>> feature/groupOverview
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Xamarin.iOS" />
