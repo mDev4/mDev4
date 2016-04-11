@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Shared.Database.Models
 {
-	class StudentModel:Java.Lang.Object
+	class StudentModel
     {
         private int id;
         private string firstname;

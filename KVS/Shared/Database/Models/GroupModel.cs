@@ -11,6 +11,20 @@ namespace Shared.Database.Models
         private string name;
         private int currYear;
 
+        public GroupModel(DateTime startYear, DateTime currCalendarYear, string name, int currYear)
+        {
+            this.startYear = startYear;
+            this.currCalendarYear = currCalendarYear;
+            this.name = name;
+            this.currYear = currYear;
+        }
+
+        public GroupModel()
+        {
+
+        }
+
+
         public DateTime StartYear
         {
             get
