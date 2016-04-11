@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
+using KVS_android;
 using Android.App;
 using Android.Content;
 using Android.OS;
@@ -26,11 +26,11 @@ namespace KVS_android
             // functions to click on one 1 item and get the information from the database
 
             // test button
-            Button button1 = FindViewById<Button>(Resource.Id.button1);
-
-            button1.Click += delegate {
-                StartActivity(typeof(Student));
-            };
+			Button button1 = FindViewById<Button>(Resource.Id.button1);
+			ArrayAdapter adapter = new ArrayAdapter (Resource.Layout.perStudent_Group,this,new List<Java.Lang.Object>());
+            //button1.Click += delegate {
+              //  StartActivity(typeof(Student));
+            //};
 
 
         }

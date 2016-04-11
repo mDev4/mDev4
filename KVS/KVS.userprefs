@@ -1,4 +1,4 @@
-﻿<Properties StartupItem="KVS_android\KVS_android.csproj">
+﻿<Properties StartupItem="KVS_android\KVS_android.csproj" RefactoringSettings.EnableRefactorings="True">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.6c364c50" />
   <MonoDevelop.Ide.Workbench ActiveDocument="KVS_windows\MainPage.xaml">
     <Files>
@@ -10,4 +10,5 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.KVS__android AndroidDesignerPreferredDevice="Nexus 4" />
 </Properties>

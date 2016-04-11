@@ -1,3 +1,11 @@
+ArrayAdapter, KVS_android;md55242ad71fe28d64cfa0bca3dbd85c001.ArrayAdapter
+ArrayAdapter, KVS_android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md55242ad71fe28d64cfa0bca3dbd85c001.ArrayAdapter
+ArrayAdapter;md55242ad71fe28d64cfa0bca3dbd85c001.ArrayAdapter
+ArrayAdapter;md55242ad71fe28d64cfa0bca3dbd85c001.ArrayAdapter
+Shared.Database.Models.StudentModel, KVS_android;md58b3f7bc9a40e61a5e3696d404350dc37.StudentModel
+Shared.Database.Models.StudentModel, KVS_android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md58b3f7bc9a40e61a5e3696d404350dc37.StudentModel
+Shared.Database.Models.StudentModel;md58b3f7bc9a40e61a5e3696d404350dc37.StudentModel
+shared.database.models.StudentModel;md58b3f7bc9a40e61a5e3696d404350dc37.StudentModel
 KVS_android.Group, KVS_android;md5d1d82567df1ca27afb530863f924e1d0.Group
 KVS_android.Group, KVS_android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5d1d82567df1ca27afb530863f924e1d0.Group
 KVS_android.Group;md5d1d82567df1ca27afb530863f924e1d0.Group

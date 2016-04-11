@@ -2,7 +2,7 @@ package md5d1d82567df1ca27afb530863f924e1d0;
 
 
 public class Group
-	extends android.app.Activity
+	extends android.app.ListActivity
 	implements
 		mono.android.IGCUserPeer
 {

@@ -5,6 +5,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using Shared.Database.Managers;
 
 namespace KVS_android
 {
@@ -30,6 +31,8 @@ namespace KVS_android
             loginButton.Click += delegate {
                 StartActivity(typeof(Login));
             };
+
+			StudentControl.addStudent(new Shared.Database.Models.StudentModel ("Henk","Kast"));
 
         }
 
