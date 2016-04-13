@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Shared.Database.Models
 {
-    class StudentModel
+	class StudentModel
     {
         private int id;
         private string firstname;
@@ -13,6 +13,14 @@ namespace Shared.Database.Models
         private DateTime birthDate;
         private string particulars; //allergies etc
         private string group; //group a student is in
+
+		public StudentModel(string firstname, string lastname){
+			this.firstname = firstname;
+			this.lastname = lastname;
+		}
+
+		public StudentModel(){
+		}
 
         public int Id
         {

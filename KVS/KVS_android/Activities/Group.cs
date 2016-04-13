@@ -2,19 +2,23 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
+using KVS_android;
 using Android.App;
 using Android.Content;
 using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using Shared.Database.Models;
+using Shared.Database.Managers;
 
 namespace KVS_android
 {
     [Activity(Label = "Klas")]
     public class Group : ListActivity
     {
+        private List<GroupModel> groups;
+        private string[] groupNames;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -26,11 +30,20 @@ namespace KVS_android
             // functions to click on one 1 item and get the information from the database
 
             // test button
-            Button button1 = FindViewById<Button>(Resource.Id.button1);
+			Button button1 = FindViewById<Button>(Resource.Id.button1);
 
-            button1.Click += delegate {
-                StartActivity(typeof(Student));
-            };
+            //add groups
+            groups = GroupControl.getAllGroups();
+           
+            
+			GroupScreenAdapter adapter = new GroupScreenAdapter(this, groups);
+			ListAdapter = adapter;
+            
+            adapter.NotifyDataSetChanged();
+
+            //button1.Click += delegate {
+              //  StartActivity(typeof(Student));
+            //};
 
 
         }

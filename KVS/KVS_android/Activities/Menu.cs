@@ -28,18 +28,14 @@ namespace KVS_android
             classButton.Click += delegate {
                 StartActivity(typeof(Group));
             };
-
-<<<<<<< HEAD:KVS/KVS_android/Menu.cs
-=======
             Button annButton = FindViewById<Button>(Resource.Id.annButton);
 
             annButton.Click += delegate {
                 //StartActivity(typeof(Announcements));
             };
 
-            Button logoutButton = FindViewById<Button>(Resource.Id.LogOut);
+            logoutButton = FindViewById<Button>(Resource.Id.LogOut);
 
->>>>>>> feature/groupOverview:KVS/KVS_android/Activities/Menu.cs
             logoutButton.Click += delegate {
                 StartActivity(typeof(MainActivity));
             };
@@ -51,7 +47,7 @@ namespace KVS_android
 
 			rViewButton.Click += delegate
 			{
-				StartActivity(typeof(Subjects));
+				//StartActivity(typeof());
 			};
 
 
