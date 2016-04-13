@@ -91,7 +91,36 @@ namespace Shared.Database.Managers
             }
             return group;
         }
-    }
 
+
+        public static List<GroupModel> getAllGroups()
+        {
+            List<GroupModel> groups = new List<GroupModel>();
+            using (SqlConnection con = new SqlConnection(DatabaseHelper.dbString))
+            {
+                con.Open();
+
+                using (SqlCommand command = new SqlCommand(
+                    "SELECT * FROM [Group]", con))
+                {
+                    SqlDataReader reader = command.ExecuteReader();
+
+                    while (reader.Read())
+                    {
+                        GroupModel group = new GroupModel();
+                        group.StartYear = DateTime.Parse(reader.GetString(0));
+                        group.Name = reader.GetString(1);
+                        group.CurrCalendarYear = DateTime.Parse(reader.GetString(2));                     
+                        group.CurrYear = reader.GetInt32(3);
+
+                        groups.Add(group);
+
+                    }
+                }
+            }
+            return groups;
+        }
+
+    }
 }
 

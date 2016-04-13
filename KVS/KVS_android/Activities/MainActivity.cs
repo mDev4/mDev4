@@ -32,7 +32,7 @@ namespace KVS_android
                 StartActivity(typeof(Login));
             };
 
-			StudentControl.addStudent(new Shared.Database.Models.StudentModel ("Henk","Kast"));
+			
 
         }
 

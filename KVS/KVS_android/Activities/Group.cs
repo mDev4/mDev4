@@ -10,13 +10,14 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Shared.Database.Models;
+using Shared.Database.Managers;
 
 namespace KVS_android
 {
     [Activity(Label = "Klas")]
     public class Group : ListActivity
     {
-        private List<GroupModel> groups = new List<GroupModel>();
+        private List<GroupModel> groups;
         private string[] groupNames;
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -32,18 +33,10 @@ namespace KVS_android
 			Button button1 = FindViewById<Button>(Resource.Id.button1);
 
             //add groups
-            DateTime date = new DateTime(1997, 8, 23);
-            GroupModel group = new GroupModel(date, date, "GROUP 1", 1);
-            GroupModel group1 = new GroupModel(date, date, "GROUP 2", 2);
-
-            groupNames = new String[2];
-            groupNames[0] = group.Name;
-            groupNames[1] = group1.Name;
-
-            groups.Add(group);
-            groups.Add(group1);
+            groups = GroupControl.getAllGroups();
+           
             
-			ArrayAdapter adapter = new ArrayAdapter(this, Android.Resource.Layout.SimpleListItem1, groupNames);
+			GroupScreenAdapter adapter = new GroupScreenAdapter(this, groups);
 			ListAdapter = adapter;
             
             adapter.NotifyDataSetChanged();

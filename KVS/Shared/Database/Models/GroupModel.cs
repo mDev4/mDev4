@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Shared.Database.Models
 {
-    class GroupModel
+    public class GroupModel
     {
         private DateTime startYear;
         private DateTime currCalendarYear;

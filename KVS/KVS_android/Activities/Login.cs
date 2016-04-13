@@ -34,22 +34,22 @@ namespace KVS_android
 
             loginButton.Click += delegate
             {
-                //if (!UserControl.getUserByUsername(usernameField.Text.ToString()).Equals(null))
+                if (!UserControl.getUserByUsername(usernameField.Text.ToString()).Equals(null))
                 {
-                    //UserModel user = UserControl.getUserByUsername(usernameField.Text.ToString());
-                    //if (user.Password == passwordField.Text.ToString())
+                    UserModel user = UserControl.getUserByUsername(usernameField.Text.ToString());
+                    if (user.Password == passwordField.Text.ToString())
                     {
                         StartActivity(typeof(Menu));
                     }
-                    //else
+                    else
                     {
-                        //Toast.MakeText(this, "Wachtwoord onjuist", ToastLength.Long).Show();
+                        Toast.MakeText(this, "Wachtwoord onjuist", ToastLength.Long).Show();
                     }
 
                 }
-                //else
+                else
                 {
-                    //Toast.MakeText(this, "Gebruiker niet gevonden", ToastLength.Long).Show();
+                    Toast.MakeText(this, "Gebruiker niet gevonden", ToastLength.Long).Show();
                 }
 
             };
