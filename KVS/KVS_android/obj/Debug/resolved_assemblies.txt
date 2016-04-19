@@ -1,16 +1,16 @@
-C:\Users\Ryan\Documents\mDev4\KVS\KVS_android\obj\Debug\assemblies\KVS_android.dll
-C:\Users\Ryan\Documents\mDev4\KVS\KVS_android\obj\Debug\assemblies\Microsoft.CSharp.dll
-C:\Users\Ryan\Documents\mDev4\KVS\KVS_android\obj\Debug\assemblies\Mono.Android.dll
-C:\Users\Ryan\Documents\mDev4\KVS\KVS_android\obj\Debug\assemblies\mscorlib.dll
-C:\Users\Ryan\Documents\mDev4\KVS\KVS_android\obj\Debug\assemblies\System.Core.dll
-C:\Users\Ryan\Documents\mDev4\KVS\KVS_android\obj\Debug\assemblies\System.Data.dll
-C:\Users\Ryan\Documents\mDev4\KVS\KVS_android\obj\Debug\assemblies\System.dll
-C:\Users\Ryan\Documents\mDev4\KVS\KVS_android\obj\Debug\assemblies\System.Xml.dll
-C:\Users\Ryan\Documents\mDev4\KVS\KVS_android\obj\Debug\assemblies\System.Xml.Linq.dll
-C:\Users\Ryan\Documents\mDev4\KVS\KVS_android\obj\Debug\assemblies\Mono.CSharp.dll
-C:\Users\Ryan\Documents\mDev4\KVS\KVS_android\obj\Debug\assemblies\System.Runtime.Serialization.dll
-C:\Users\Ryan\Documents\mDev4\KVS\KVS_android\obj\Debug\assemblies\System.ServiceModel.Internals.dll
-C:\Users\Ryan\Documents\mDev4\KVS\KVS_android\obj\Debug\assemblies\System.Numerics.dll
-C:\Users\Ryan\Documents\mDev4\KVS\KVS_android\obj\Debug\assemblies\System.Transactions.dll
-C:\Users\Ryan\Documents\mDev4\KVS\KVS_android\obj\Debug\assemblies\Mono.Data.Tds.dll
-C:\Users\Ryan\Documents\mDev4\KVS\KVS_android\obj\Debug\assemblies\Mono.Security.dll
+C:\Users\lincy\Documents\mDev4 - Copy\KVS\KVS_android\obj\Debug\assemblies\KVS_android.dll
+C:\Users\lincy\Documents\mDev4 - Copy\KVS\KVS_android\obj\Debug\assemblies\Microsoft.CSharp.dll
+C:\Users\lincy\Documents\mDev4 - Copy\KVS\KVS_android\obj\Debug\assemblies\Mono.Android.dll
+C:\Users\lincy\Documents\mDev4 - Copy\KVS\KVS_android\obj\Debug\assemblies\mscorlib.dll
+C:\Users\lincy\Documents\mDev4 - Copy\KVS\KVS_android\obj\Debug\assemblies\System.Core.dll
+C:\Users\lincy\Documents\mDev4 - Copy\KVS\KVS_android\obj\Debug\assemblies\System.Data.dll
+C:\Users\lincy\Documents\mDev4 - Copy\KVS\KVS_android\obj\Debug\assemblies\System.dll
+C:\Users\lincy\Documents\mDev4 - Copy\KVS\KVS_android\obj\Debug\assemblies\System.Xml.dll
+C:\Users\lincy\Documents\mDev4 - Copy\KVS\KVS_android\obj\Debug\assemblies\System.Xml.Linq.dll
+C:\Users\lincy\Documents\mDev4 - Copy\KVS\KVS_android\obj\Debug\assemblies\Mono.CSharp.dll
+C:\Users\lincy\Documents\mDev4 - Copy\KVS\KVS_android\obj\Debug\assemblies\System.Runtime.Serialization.dll
+C:\Users\lincy\Documents\mDev4 - Copy\KVS\KVS_android\obj\Debug\assemblies\System.ServiceModel.Internals.dll
+C:\Users\lincy\Documents\mDev4 - Copy\KVS\KVS_android\obj\Debug\assemblies\System.Numerics.dll
+C:\Users\lincy\Documents\mDev4 - Copy\KVS\KVS_android\obj\Debug\assemblies\System.Transactions.dll
+C:\Users\lincy\Documents\mDev4 - Copy\KVS\KVS_android\obj\Debug\assemblies\Mono.Data.Tds.dll
+C:\Users\lincy\Documents\mDev4 - Copy\KVS\KVS_android\obj\Debug\assemblies\Mono.Security.dll

@@ -20,7 +20,8 @@
             android:textColorHint="#cccccc"
             android:drawableLeft="@android:drawable/ic_dialog_info"
             android:textColor="@android:color/black"
-            android:drawablePadding="10dp" />
+            android:drawablePadding="10dp"
+            android:singleLine="true" />
         <EditText
             android:id="@+id/etPass"
             android:layout_width="match_parent"
@@ -33,7 +34,8 @@
             android:password="true"
             android:drawableLeft="@android:drawable/ic_lock_idle_lock"
             android:textColor="@android:color/black"
-            android:drawablePadding="10dp" />
+            android:drawablePadding="10dp"
+            android:singleLine="true" />
         <Button
             android:id="@+id/loginButton"
             android:layout_width="match_parent"
