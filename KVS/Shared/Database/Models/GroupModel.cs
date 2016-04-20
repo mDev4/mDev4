@@ -6,6 +6,7 @@ namespace Shared.Database.Models
 {
     public class GroupModel
     {
+        private int id;
         private DateTime startYear;
         private DateTime currCalendarYear;
         private string name;
@@ -71,6 +72,23 @@ namespace Shared.Database.Models
             {
                 currYear = value;
             }
+        }
+
+        public int Id
+        {
+            get
+            {
+                return id;
+            }
+            set
+            {
+                id = value;
+            }
+        }
+
+        public override string ToString()
+        {
+            return id.ToString();
         }
     }
 }

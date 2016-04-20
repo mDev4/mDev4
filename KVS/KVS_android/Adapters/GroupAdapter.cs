@@ -1,10 +1,10 @@
 ﻿using System;
-using Android.Views;
-using Android.Widget;
-using Android.App;
 using Shared.Database.Models;
 using System.Collections.Generic;
 using Shared.Database.Managers;
+using Android.Widget;
+using Android.App;
+using Android.Views;
 
 public class GroupScreenAdapter : BaseAdapter<GroupModel>
 {

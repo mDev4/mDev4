@@ -7,54 +7,38 @@ using System.Data.SqlClient;
 
 namespace Shared.Database.Managers
 {
+    /*
+     * Class for reading and writing data into the Group table of the database 
+     */
     class GroupControl
     {
-
-        public static void addStudentToGroup(StudentModel student, GroupModel group)
-        {
-            using (SqlConnection con = new SqlConnection(DatabaseHelper.dbString))
-            {
-                con.Open();
-
-                try
-                {
-                    using (SqlCommand command = new SqlCommand(
-                        "INSERT INTO [Group_Student] VALUES(@group_currentCalendarYear, @group_name, @student_id)", con))
-                    {
-                        command.Parameters.Add(new SqlParameter("group_currentCalendarYear", group.CurrCalendarYear));
-                        command.Parameters.Add(new SqlParameter("group_name", group.Name));
-                        command.Parameters.Add(new SqlParameter("student_id", student.Id));
-
-                        command.ExecuteNonQuery();
-                    }
-                }
-                catch (SqlException ex)
-                {
-                    Console.WriteLine(ex.Message);
-                }
-            }
-        }
-
-        public static GroupModel getGroupByName(string name)
+        /*
+        * Gets a group by looking at its id and returns it
+        */      
+        public static GroupModel getGroupById(string id)
         {
             GroupModel group = new GroupModel();
+            // Making sure to use the right database connection
             using (SqlConnection con = new SqlConnection(DatabaseHelper.dbString))
             {
                 con.Open();
 
                 using (SqlCommand command = new SqlCommand(
-                    "SELECT * FROM [Group] WHERE name = @name", con))
+                    "SELECT * FROM " + DatabaseHelper.GROUP_TABLE + " WHERE id = @id", con)) // Query to execute
                 {
-                    command.Parameters.Add(new SqlParameter("name", name));
+                    command.Parameters.Add(new SqlParameter("id", id)); // Adding the given parameters to the query
 
-                    SqlDataReader reader = command.ExecuteReader();
+                    SqlDataReader reader = command.ExecuteReader(); // Execute query
 
+                    // Getting result(s) from query
                     while (reader.Read())
                     {
-                        group.StartYear = reader.GetDateTime(0);
+                        // Assigning values from the result of the query to a new GroupModel object to use in the app
+                        group.StartYear = DateTime.Parse(reader.GetString(0));
                         group.Name = reader.GetString(1);
-                        group.CurrCalendarYear = reader.GetDateTime(2);
+                        group.CurrCalendarYear = DateTime.Parse(reader.GetString(2));
                         group.CurrYear = reader.GetInt32(3);
+                        group.Id = reader.GetInt32(4);
 
                         return group;
                     }
@@ -62,63 +46,38 @@ namespace Shared.Database.Managers
             }
             return group;
         }
-
-        public static GroupModel getGroupByNameAndYear(string name, DateTime currCal)
-        {
-            GroupModel group = new GroupModel();
-            using (SqlConnection con = new SqlConnection(DatabaseHelper.dbString))
-            {
-                con.Open();
-
-                using (SqlCommand command = new SqlCommand(
-                    "SELECT * FROM [Group] WHERE name = @name AND currentCalendarYear = @currentCalendarYear", con))
-                {
-                    command.Parameters.Add(new SqlParameter("name", name));
-                    command.Parameters.Add(new SqlParameter("currentCalendarYear", currCal));
-
-                    SqlDataReader reader = command.ExecuteReader();
-
-                    while (reader.Read())
-                    {
-                        group.StartYear = reader.GetDateTime(0);
-                        group.Name = reader.GetString(1);
-                        group.CurrCalendarYear = reader.GetDateTime(2);
-                        group.CurrYear = reader.GetInt32(3);
-
-                        return group;
-                    }
-                }
-            }
-            return group;
-        }
-
-
+        /*
+        * Gets a List of all groups that have ever existed and exist now.
+        */
         public static List<GroupModel> getAllGroups()
         {
             List<GroupModel> groups = new List<GroupModel>();
-            using (SqlConnection con = new SqlConnection(DatabaseHelper.dbString))
+            using (SqlConnection con = new SqlConnection(DatabaseHelper.dbString)) // Using the right connection
             {
                 con.Open();
 
                 using (SqlCommand command = new SqlCommand(
-                    "SELECT * FROM [Group]", con))
+                    "SELECT * FROM " + DatabaseHelper.GROUP_TABLE, con)) // Query to execute
                 {
-                    SqlDataReader reader = command.ExecuteReader();
+                    SqlDataReader reader = command.ExecuteReader(); // Executing query
 
+                    // Getting result(s) from query
                     while (reader.Read())
                     {
+                        // Assigning values from results to new GroupModel Object
                         GroupModel group = new GroupModel();
                         group.StartYear = DateTime.Parse(reader.GetString(0));
                         group.Name = reader.GetString(1);
-                        group.CurrCalendarYear = DateTime.Parse(reader.GetString(2));                     
+                        group.CurrCalendarYear = DateTime.Parse(reader.GetString(2));
                         group.CurrYear = reader.GetInt32(3);
 
+                        // Adding GroupModel Object to List
                         groups.Add(group);
 
                     }
                 }
             }
-            return groups;
+            return groups; // Give back List of all Groups
         }
 
     }

@@ -18,7 +18,7 @@ namespace KVS_android
     public class Group : ListActivity
     {
         private List<GroupModel> groups;
-        private string[] groupNames;
+        private ListView groupsList;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -26,26 +26,25 @@ namespace KVS_android
             // Set our view from the "group" layout resource
             SetContentView(Resource.Layout.Group);
 
-            // empty listview is called groupList
-            // functions to click on one 1 item and get the information from the database
-
-            // test button
-			Button button1 = FindViewById<Button>(Resource.Id.button1);
-
-            //add groups
+            //init
             groups = GroupControl.getAllGroups();
-           
-            
-			GroupScreenAdapter adapter = new GroupScreenAdapter(this, groups);
-			ListAdapter = adapter;
-            
+            groupsList = FindViewById<ListView>(Android.Resource.Id.List);
+
+
+            GroupScreenAdapter adapter = new GroupScreenAdapter(this, groups);
+            ListAdapter = adapter;
+
             adapter.NotifyDataSetChanged();
 
-            //button1.Click += delegate {
-              //  StartActivity(typeof(Student));
-            //};
+            groupsList.ItemClick += (sender, e) =>
+            {
+                GroupModel group = groups[e.Position];
+                Console.WriteLine("Clicked " + group.Name);
 
-
+                Intent intent = new Intent(this, typeof(StudentsInGroup));
+                intent.PutExtra("groupId", group.Id);
+                StartActivity(intent);
+            };
         }
     }
 }

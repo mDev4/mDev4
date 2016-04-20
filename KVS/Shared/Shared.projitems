@@ -25,7 +25,4 @@
     <Compile Include="$(MSBuildThisFileDirectory)Model\Teacher.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\User.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="$(MSBuildThisFileDirectory)Adapters\" />
-  </ItemGroup>
 </Project>

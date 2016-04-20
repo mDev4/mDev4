@@ -52,10 +52,12 @@
     <Compile Include="Activities\MainActivity.cs" />
     <Compile Include="Activities\Menu.cs" />
     <Compile Include="Activities\Register.cs" />
-    <Compile Include="Adapters\ArrayAdapter.cs" />
+    <Compile Include="Adapters\GroupAdapter.cs" />
+    <Compile Include="Adapters\StudentAdapter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Activities\Student.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
+    <Compile Include="Activities\StudentsInGroup.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="GettingStarted.Xamarin" />
@@ -83,6 +85,9 @@
     <None Include="Resources\layout\CustomRow.axml" />
     <None Include="Resources\layout\insertResult.axml" />
     <None Include="Resources\layout\packages.config" />
+    <AndroidResource Include="Resources\layout\StudentsInGroup.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
     <None Include="Resources\layout\Subjects.axml" />
   </ItemGroup>
   <ItemGroup>
