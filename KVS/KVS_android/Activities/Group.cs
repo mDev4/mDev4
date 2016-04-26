@@ -19,6 +19,7 @@ namespace KVS_android
     {
         private List<GroupModel> groups;
         private ListView groupsList;
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -29,6 +30,8 @@ namespace KVS_android
             //init
             groups = GroupControl.getAllGroups();
             groupsList = FindViewById<ListView>(Android.Resource.Id.List);
+
+
 
 
             GroupScreenAdapter adapter = new GroupScreenAdapter(this, groups);
@@ -45,6 +48,27 @@ namespace KVS_android
                 intent.PutExtra("groupId", group.Id);
                 StartActivity(intent);
             };
+
+            //spinner magicz
+            Spinner spinner = FindViewById<Spinner>(Resource.Id.spinner);
+
+            spinner.ItemSelected += new EventHandler<AdapterView.ItemSelectedEventArgs>(spinner_ItemSelected);
+            var spinnerAdapter = ArrayAdapter.CreateFromResource(
+                    this, Resource.Array.years_array, Android.Resource.Layout.SimpleSpinnerItem);
+
+            spinnerAdapter.SetDropDownViewResource(Android.Resource.Layout.SimpleSpinnerDropDownItem);
+            spinner.Adapter = spinnerAdapter;
+
+
+
+        }
+
+        private void spinner_ItemSelected(object sender, AdapterView.ItemSelectedEventArgs e)
+        {
+            Spinner spinner = (Spinner)sender;
+
+            string toast = string.Format("The planet is {0}", spinner.GetItemAtPosition(e.Position));
+            Toast.MakeText(this, toast, ToastLength.Long).Show();
         }
     }
 }
