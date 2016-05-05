@@ -1,20 +1,21 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+<menu xmlns:android="http://schemas.android.com/apk/res/android" 
+      android:id="@+id/nav_view">
   <group android:checkableBehavior="single">
     <item
-      android:id="@+id/nav_home"
+      android:id="@+id/nav_menu"
       android:icon="@drawable/ic_home_black_24dp"
-      android:title="Home" />
+      android:title="Main Menu" />
     <item
-      android:id="@+id/nav_messages"
+      android:id="@+id/nav_klas"
       android:icon="@drawable/ic_supervisor_account_black_24dp"
       android:title="Klas" />
     <item
-      android:id="@+id/nav_friends"
+      android:id="@+id/nav_ann"
       android:icon="@drawable/ic_question_answer_black_24dp"
       android:title="Mededelingen" />
     <item
-      android:id="@+id/nav_discussion"
+      android:id="@+id/nav_results"
       android:icon="@drawable/ic_devices_black_24dp"
       android:title="Resultaten" />
   </group>

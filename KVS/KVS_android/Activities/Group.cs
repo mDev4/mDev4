@@ -39,6 +39,7 @@ namespace KVS_android
 
             adapter.NotifyDataSetChanged();
 
+<<<<<<< develop
             groupsList.ItemClick += (sender, e) =>
             {
                 GroupModel group = groups[e.Position];
@@ -66,6 +67,17 @@ namespace KVS_android
         private void spinner_ItemSelected(object sender, AdapterView.ItemSelectedEventArgs e)
         {
             Spinner spinner = (Spinner)sender;
+=======
+            //button1.Click += delegate {
+            //  StartActivity(typeof(Student));
+            //};
+
+            var newFragment = new FragmentMainMenu();
+            var ft = FragmentManager.BeginTransaction();
+            ft.Add(Resource.Id.frameLayout2, newFragment);
+            ft.Commit();
+
+>>>>>>> Knoppen werkend
 
             string toast = string.Format("The planet is {0}", spinner.GetItemAtPosition(e.Position));
             Toast.MakeText(this, toast, ToastLength.Long).Show();
