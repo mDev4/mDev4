@@ -27,13 +27,13 @@ namespace KVS_android
             SetContentView(Resource.Layout.StudentsInGroup);
             //init
             
-            studentList = FindViewById<ListView>(Android.Resource.Id.List);
+           // studentList = FindViewById<ListView>(Android.Resource.Id.List);
 
 
-            StudentAdapter adapter = new StudentAdapter(this, students);
-            ListAdapter = adapter;
+            //StudentAdapter adapter = new StudentAdapter(this, students);
+            //ListAdapter = adapter;
 
-            adapter.NotifyDataSetChanged();       
+           // adapter.NotifyDataSetChanged();       
         }
     }
 }

@@ -19,6 +19,7 @@ namespace KVS_android
     {
         private List<GroupModel> groups;
         private ListView groupsList;
+        private GroupScreenAdapter listAdapter;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -26,28 +27,6 @@ namespace KVS_android
 
             // Set our view from the "group" layout resource
             SetContentView(Resource.Layout.Group);
-
-            //init
-            groups = GroupControl.getAllGroups();
-            groupsList = FindViewById<ListView>(Android.Resource.Id.List);
-
-
-
-
-            GroupScreenAdapter adapter = new GroupScreenAdapter(this, groups);
-            ListAdapter = adapter;
-
-            adapter.NotifyDataSetChanged();
-
-            groupsList.ItemClick += (sender, e) =>
-            {
-                GroupModel group = groups[e.Position];
-                Console.WriteLine("Clicked " + group.Name);
-
-                Intent intent = new Intent(this, typeof(StudentsInGroup));
-                intent.PutExtra("groupId", group.Id);
-                StartActivity(intent);
-            };
 
             //spinner magicz
             Spinner spinner = FindViewById<Spinner>(Resource.Id.spinner);
@@ -59,16 +38,49 @@ namespace KVS_android
             spinnerAdapter.SetDropDownViewResource(Android.Resource.Layout.SimpleSpinnerDropDownItem);
             spinner.Adapter = spinnerAdapter;
 
+            //init
+            groups = GroupControl.getAllGroups();
+            groupsList = FindViewById<ListView>(Android.Resource.Id.List);
+            listAdapter = new GroupScreenAdapter(this, groups);
+            groupsList.Adapter = listAdapter;
+
+            listAdapter.NotifyDataSetChanged();
+
+            groupsList.ItemClick += (sender, e) =>
+            {
+                //get clicked group
+                GroupModel group = groups[e.Position];
+                Console.WriteLine("Clicked " + group.Name);
+
+                //go to overview of clicked group
+                Intent intent = new Intent(this, typeof(StudentsInGroup));
+                intent.PutExtra("groupId", group.Id);
+                StartActivity(intent);
+            };
+
+
+
 
 
         }
 
+        //updates the listview of groups according to selected year in spinner
         private void spinner_ItemSelected(object sender, AdapterView.ItemSelectedEventArgs e)
         {
+            //getting selected year from spinner
             Spinner spinner = (Spinner)sender;
+            string yearString = string.Format((string)spinner.GetItemAtPosition(e.Position));
+            int year = Int32.Parse(yearString);
 
-            string toast = string.Format("The planet is {0}", spinner.GetItemAtPosition(e.Position));
-            Toast.MakeText(this, toast, ToastLength.Long).Show();
+            //getting all groups by selected year
+            groups = GroupControl.getGroupsByAcademicYear(year);
+
+            //redefining adapter (workaround, using existing adapter somehow didn't work)
+            listAdapter = new GroupScreenAdapter(this, groups);
+            groupsList.Adapter = listAdapter;
+            listAdapter.NotifyDataSetChanged();
         }
+
+
     }
 }
