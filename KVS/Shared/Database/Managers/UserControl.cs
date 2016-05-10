@@ -68,7 +68,7 @@ namespace Shared.Database.Managers
                     while (reader.Read())
                     {
                         // Adding data from result to Usable StudentModel Object
-                        user.Id = reader.GetInt32(0);
+                        user.Id = reader.GetInt16(0);
                         user.Username = reader.GetString(1);
                         user.Password = reader.GetString(2);
                         user.Firstname = reader.GetString(3);
@@ -106,7 +106,7 @@ namespace Shared.Database.Managers
                     while (reader.Read())
                     {
                         // Adding data from results to new UserModel Object
-                        user.Id = reader.GetInt32(0);
+                        user.Id = reader.GetInt16(0);
                         user.Username = reader.GetString(1);
                         user.Password = reader.GetString(2);
                         user.Firstname = reader.GetString(3);

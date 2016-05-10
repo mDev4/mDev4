@@ -7,12 +7,12 @@ namespace Shared.Database.Models
     public class GroupModel
     {
         private int id;
-        private DateTime startYear;
-        private DateTime currCalendarYear;
+        private int startYear;
+        private int currCalendarYear;
         private string name;
         private int currYear;
 
-        public GroupModel(DateTime startYear, DateTime currCalendarYear, string name, int currYear)
+        public GroupModel(int startYear, int currCalendarYear, string name, int currYear)
         {
             this.startYear = startYear;
             this.currCalendarYear = currCalendarYear;
@@ -26,7 +26,7 @@ namespace Shared.Database.Models
         }
 
 
-        public DateTime StartYear
+        public int StartYear
         {
             get
             {
@@ -38,7 +38,7 @@ namespace Shared.Database.Models
             }
         }
 
-        public DateTime CurrCalendarYear
+        public int CurrCalendarYear
         {
             get
             {

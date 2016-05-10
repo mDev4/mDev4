@@ -73,7 +73,7 @@ namespace KVS_android
             int year = Int32.Parse(yearString);
 
             //getting all groups by selected year
-            groups = GroupControl.getGroupsByAcademicYear(year);
+            groups = GroupControl.getGroupsByAcademicYear(year.ToString());
 
             //redefining adapter (workaround, using existing adapter somehow didn't work)
             listAdapter = new GroupScreenAdapter(this, groups);
