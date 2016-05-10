@@ -18,22 +18,22 @@ namespace KVS_android
     [Activity(Label = "StudentsInGroup")]
     public class StudentsInGroup : ListActivity
     {
-        private ListView studentList;
         private List<StudentModel> students;
+        private ListView studentsList;
+        private GroupScreenAdapter studentAdapter;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.StudentsInGroup);
+
             //init
-            
-           // studentList = FindViewById<ListView>(Android.Resource.Id.List);
+            students = GroupStudentControl.getStudentsByGroup(Intent.GetStringExtra("groupId"));
+            studentsList = FindViewById<ListView>(Android.Resource.Id.List);
+            studentAdapter = new GroupScreenAdapter(this, students);
+            studentsList.Adapter = studentAdapter;
 
-
-            //StudentAdapter adapter = new StudentAdapter(this, students);
-            //ListAdapter = adapter;
-
-           // adapter.NotifyDataSetChanged();       
+            studentAdapter.NotifyDataSetChanged();
         }
     }
 }
