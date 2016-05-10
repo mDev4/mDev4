@@ -10,4 +10,11 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@id/android:list" />
+    <FrameLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:background="@android:color/background_light"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/frameLayoutAnnouncements" />
 </LinearLayout>

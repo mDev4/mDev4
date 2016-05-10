@@ -4,6 +4,13 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@drawable/schoolbackground">
+    <FrameLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:background="@android:color/background_light"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/frameLayoutStudent" />
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
