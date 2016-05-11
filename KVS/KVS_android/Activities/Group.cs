@@ -54,7 +54,7 @@ namespace KVS_android
 
                 //go to overview of clicked group
                 Intent intent = new Intent(this, typeof(StudentsInGroup));
-                intent.PutExtra("groupId", group.Id);
+                intent.PutExtra("groupId", group.Id.ToString());
                 StartActivity(intent);
             };
 

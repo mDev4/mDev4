@@ -90,7 +90,7 @@ namespace Shared.Database.Managers
         public static List<GroupModel> getGroupsByAcademicYear(string academicYear)
         {
             List<GroupModel> groups = new List<GroupModel>();
-            GroupModel group = new GroupModel();
+            
             // Making sure to use the right database connection
             using (SqlConnection con = new SqlConnection(DatabaseHelper.dbString))
             {
@@ -106,6 +106,7 @@ namespace Shared.Database.Managers
                     // Getting result(s) from query
                     while (reader.Read())
                     {
+                        GroupModel group = new GroupModel();
                         // Assigning values from the result of the query to a new GroupModel object to use in the app
                         group.Name = reader.GetString(0);
                         group.CurrYear = reader.GetInt16(1);
