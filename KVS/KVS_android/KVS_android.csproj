@@ -82,6 +82,7 @@
     <Compile Include="Activities\MainActivity.cs" />
     <Compile Include="Activities\Menu.cs" />
     <Compile Include="Activities\Register.cs" />
+    <Compile Include="Adapters\FragmentMainMenu.cs" />
     <Compile Include="Adapters\GroupAdapter.cs" />
     <Compile Include="Adapters\StudentAdapter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -94,6 +95,8 @@
     <None Include="packages.config" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
+    <AndroidResource Include="Resources\drawable\ic_supervisor_account_black_24dp.png" />
+    <AndroidResource Include="Resources\layout\fragment_layout.axml" />
     <AndroidResource Include="Resources\layout\Menu.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
@@ -113,12 +116,10 @@
     <AndroidResource Include="Resources\layout\perStudent_Group.axml" />
     <None Include="Resources\layout\Announcements.axml" />
     <None Include="Resources\layout\CustomRow.axml" />
+    <AndroidResource Include="Resources\layout\Header.axml" />
     <None Include="Resources\layout\insertResult.axml" />
     <None Include="Resources\layout\packages.config" />
     <AndroidResource Include="Resources\layout\StudentsInGroup.axml">
-      <SubType>AndroidResource</SubType>
-    </AndroidResource>
-    <AndroidResource Include="Resources\layout\StudentsInGroup2.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
     <None Include="Resources\layout\Subjects.axml" />
@@ -157,6 +158,18 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\ic_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\menu\navmenu.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ic_devices_black_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ic_home_black_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ic_question_answer_black_24dp.png" />
   </ItemGroup>
   <Import Project="..\Shared\Shared.projitems" Label="Shared" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

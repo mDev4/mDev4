@@ -12,6 +12,8 @@ using Android.Widget;
 using Android.Support.V4.Widget;
 using Android.Support.Design.Widget;
 
+using KVS_android;
+
 namespace KVS_android
 {
 	public class FragmentMainMenu : Fragment
@@ -55,13 +57,13 @@ namespace KVS_android
                         StartActivity(intent);
                     }
                     break;
-                case (Resource.Id.nav_results):
-                    if (this.Activity.GetType() != typeof(Activities.Results))
-                    {
-                        var intent = new Intent(this.Activity, typeof(Activities.Results));
-                        StartActivity(intent);
-                    }
-                    break;
+              //  case (Resource.Id.nav_results):
+                //    if (this.Activity.GetType() != typeof(Results))
+                  //  {
+                   //     var intent = new Intent(this.Activity, typeof(Results));
+                    //    StartActivity(intent);
+                   // }
+                   // break;
             }
 
             // Close drawer
