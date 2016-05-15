@@ -1,5 +1,0 @@
-KVS/KVS_android/bin
-KVS/KVS_android/obj
-.userprefs
-.java
-.cache
