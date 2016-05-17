@@ -71,13 +71,14 @@ namespace Shared.Database.Managers
                     while (reader.Read())
                     {
                         // Converting result to StudentModel
-                        student.Id = reader.GetInt16(0);
+                        student.Id = reader.GetInt32(0);
                         student.Studentcode = reader.GetString(1);
                         student.Particulars = reader.GetString(2);
-                        student.BirthDate = reader.GetDateTime(3);
+                        student.BirthDate = DateTime.Parse(reader.GetString(3));
                         student.Firstname = reader.GetString(4);
-                        student.Lastname = reader.GetString(5);
-                        student.StartYear = reader.GetInt16(6);
+                        student.Middlename = reader.GetString(5);
+                        student.Lastname = reader.GetString(6);
+                        student.StartYear = reader.GetInt16(7);
 
                         return student;
                     }
@@ -109,13 +110,14 @@ namespace Shared.Database.Managers
                     while (reader.Read())
                     {
                         // Converting result to StudentModel
-                        student.Id = reader.GetInt16(0);
+                        student.Id = reader.GetInt32(0);
                         student.Studentcode = reader.GetString(1);
                         student.Particulars = reader.GetString(2);
                         student.BirthDate = DateTime.Parse(reader.GetString(3));
                         student.Firstname = reader.GetString(4);
-                        student.Lastname = reader.GetString(5);
-                        student.StartYear = reader.GetInt16(6);
+                        student.Middlename = reader.GetString(5);
+                        student.Lastname = reader.GetString(6);
+                        student.StartYear = reader.GetInt16(7);
 
                         return student;
                     }

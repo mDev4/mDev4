@@ -8,6 +8,7 @@ namespace Shared.Database.Models
     {
         private int id;
         private string firstname;
+        private string middlename;
         private string lastname;
         private string studentCode;
         private DateTime birthDate;
@@ -44,6 +45,18 @@ namespace Shared.Database.Models
             set
             {
                 firstname = value;
+            }
+        }
+
+        public string Middlename
+        {
+            get
+            {
+                return middlename;
+            }
+            set
+            {
+                middlename = value;
             }
         }
 
