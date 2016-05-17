@@ -1925,6 +1925,9 @@ namespace KVS_android
 			// aapt resource value: 0x7f06003d
 			public const int activity_chooser_view_content = 2131099709;
 			
+			// aapt resource value: 0x7f060077
+			public const int addGroupButton = 2131099767;
+			
 			// aapt resource value: 0x7f060049
 			public const int alertTitle = 2131099721;
 			
@@ -2144,17 +2147,17 @@ namespace KVS_android
 			// aapt resource value: 0x7f060096
 			public const int nameStudent = 2131099798;
 			
+			// aapt resource value: 0x7f06009d
+			public const int nav_ann = 2131099805;
+			
 			// aapt resource value: 0x7f06009c
-			public const int nav_ann = 2131099804;
+			public const int nav_klas = 2131099804;
 			
 			// aapt resource value: 0x7f06009b
-			public const int nav_klas = 2131099803;
+			public const int nav_menu = 2131099803;
 			
-			// aapt resource value: 0x7f06009a
-			public const int nav_menu = 2131099802;
-			
-			// aapt resource value: 0x7f06009d
-			public const int nav_results = 2131099805;
+			// aapt resource value: 0x7f06009e
+			public const int nav_results = 2131099806;
 			
 			// aapt resource value: 0x7f060075
 			public const int nav_view = 2131099765;
@@ -2216,8 +2219,8 @@ namespace KVS_android
 			// aapt resource value: 0x7f060039
 			public const int scrollable = 2131099705;
 			
-			// aapt resource value: 0x7f060076
-			public const int searchView = 2131099766;
+			// aapt resource value: 0x7f06009a
+			public const int searchView = 2131099802;
 			
 			// aapt resource value: 0x7f06005e
 			public const int search_badge = 2131099742;
@@ -2276,8 +2279,8 @@ namespace KVS_android
 			// aapt resource value: 0x7f060045
 			public const int spacer = 2131099717;
 			
-			// aapt resource value: 0x7f060077
-			public const int spinner = 2131099767;
+			// aapt resource value: 0x7f060076
+			public const int spinner = 2131099766;
 			
 			// aapt resource value: 0x7f060008
 			public const int split_action_bar = 2131099656;
