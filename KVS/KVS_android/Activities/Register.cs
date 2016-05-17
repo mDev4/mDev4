@@ -44,11 +44,18 @@ namespace KVS_android
                 user.Email = emailField.Text.ToString();
                 user.PhoneNumber = phoneField.Text.ToString();
 
-                UserControl.addUser(user);
-
-                Toast.MakeText(this, "Account succesvol aangemaakt", ToastLength.Long);
-                StartActivity(typeof(Login));
-
+                // Check if all inputfields are filled in
+                if (user.Firstname == String.Empty || user.Lastname == String.Empty || user.Username == String.Empty || user.Password == String.Empty || user.Email == String.Empty || user.PhoneNumber == String.Empty)
+                {
+                    Toast.MakeText(this, "Niet alle velden zijn ingevuld!", ToastLength.Long).Show();
+                    Console.WriteLine("Niet alle velden zijn ingevuld error melding...");
+                }
+                else {
+                    // User succesfully added
+                    UserControl.addUser(user);
+                    Toast.MakeText(this, "Gebruiker succesvol aangemaakt", ToastLength.Long).Show();
+                    StartActivity(typeof(Login));
+                }
                 
             };
         }
