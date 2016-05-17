@@ -82,6 +82,7 @@
     <Compile Include="Activities\MainActivity.cs" />
     <Compile Include="Activities\Menu.cs" />
     <Compile Include="Activities\Register.cs" />
+    <Compile Include="Activities\Results.cs" />
     <Compile Include="Adapters\FragmentMainMenu.cs" />
     <Compile Include="Adapters\GroupAdapter.cs" />
     <Compile Include="Adapters\StudentAdapter.cs" />
@@ -92,11 +93,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="GettingStarted.Xamarin" />
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
     <AndroidResource Include="Resources\drawable\ic_supervisor_account_black_24dp.png" />
-    <AndroidResource Include="Resources\layout\fragment_layout.axml" />
+    <AndroidResource Include="Resources\layout\fragment_layout.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
     <AndroidResource Include="Resources\layout\Menu.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
@@ -117,7 +122,7 @@
     <None Include="Resources\layout\Announcements.axml" />
     <None Include="Resources\layout\CustomRow.axml" />
     <AndroidResource Include="Resources\layout\Header.axml" />
-    <None Include="Resources\layout\insertResult.axml" />
+    <AndroidResource Include="Resources\layout\insertResult.axml" />
     <None Include="Resources\layout\packages.config" />
     <AndroidResource Include="Resources\layout\StudentsInGroup.axml">
       <SubType>AndroidResource</SubType>

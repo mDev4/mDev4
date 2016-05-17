@@ -7,11 +7,12 @@ using System.Collections.Generic;
 
 namespace Shared.Database.Managers
 {
-    class StudentControl
-    {
         /*
          * Class for reading and writing data into the Student table of the database 
          */
+    class StudentControl
+    {
+        
 
         /*
         * Adds a student to the database with given data
@@ -26,7 +27,7 @@ namespace Shared.Database.Managers
                 {
                     // Query
                     using (SqlCommand command = new SqlCommand(
-                        "INSERT INTO " + DatabaseHelper.STUDENT_TABLE + " VALUES(@firstName, @lastName, @studentCode, @birthDate, @particulars, @group)", con))
+                        "INSERT INTO " + DatabaseHelper.STUDENT_TABLE + " VALUES(@firstName, @lastName, @studentCode, @birthDate, @particulars, @startYear)", con))
                     {  
                         // Adding right data to the query
                         command.Parameters.Add(new SqlParameter("firstName", student.Firstname));
@@ -34,7 +35,7 @@ namespace Shared.Database.Managers
                         command.Parameters.Add(new SqlParameter("studentCode", student.Studentcode));
                         command.Parameters.Add(new SqlParameter("birthDate", student.BirthDate));
                         command.Parameters.Add(new SqlParameter("particulars", student.Particulars));
-                        command.Parameters.Add(new SqlParameter("group", student.Group));
+                        command.Parameters.Add(new SqlParameter("startYear", student.StartYear));
 
                         command.ExecuteNonQuery(); // Execute query
                     }
@@ -69,14 +70,14 @@ namespace Shared.Database.Managers
                     // Getting result from query
                     while (reader.Read())
                     {
-                        // Converting result to StudentModel 
-                        student.Id = reader.GetInt32(0);
-                        student.Firstname = reader.GetString(1);
-                        student.Lastname = reader.GetString(2);
-                        student.Studentcode = reader.GetString(3);
-                        student.BirthDate = reader.GetDateTime(4);
-                        student.Particulars = reader.GetString(5);
-                        student.Group = reader.GetString(6);
+                        // Converting result to StudentModel
+                        student.Id = reader.GetInt16(0);
+                        student.Studentcode = reader.GetString(1);
+                        student.Particulars = reader.GetString(2);
+                        student.BirthDate = reader.GetDateTime(3);
+                        student.Firstname = reader.GetString(4);
+                        student.Lastname = reader.GetString(5);
+                        student.StartYear = reader.GetInt16(6);
 
                         return student;
                     }
@@ -88,7 +89,7 @@ namespace Shared.Database.Managers
         /*
         * Getting a student from the database by name
         */
-        public static StudentModel getStudentById(int id)
+        public static StudentModel getStudentById(string id)
         {
             StudentModel student = new StudentModel();
             using (SqlConnection con = new SqlConnection(DatabaseHelper.dbString))// Using right connection
@@ -108,13 +109,13 @@ namespace Shared.Database.Managers
                     while (reader.Read())
                     {
                         // Converting result to StudentModel
-                        student.Id = reader.GetInt32(0);
-                        student.Firstname = reader.GetString(1);
-                        student.Lastname = reader.GetString(2);
-                        student.Studentcode = reader.GetString(3);
-                        student.BirthDate = reader.GetDateTime(4);
-                        student.Particulars = reader.GetString(5);
-                        student.Group = reader.GetString(6);
+                        student.Id = reader.GetInt16(0);
+                        student.Studentcode = reader.GetString(1);
+                        student.Particulars = reader.GetString(2);
+                        student.BirthDate = DateTime.Parse(reader.GetString(3));
+                        student.Firstname = reader.GetString(4);
+                        student.Lastname = reader.GetString(5);
+                        student.StartYear = reader.GetInt16(6);
 
                         return student;
                     }

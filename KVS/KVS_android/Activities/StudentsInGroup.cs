@@ -36,6 +36,18 @@ namespace KVS_android
             studentsList.Adapter = studentAdapter;
 
             studentAdapter.NotifyDataSetChanged();
+
+            studentsList.ItemClick += (sender, e) =>
+            {
+                //get clicked group
+                StudentModel student = students[e.Position];
+                Console.WriteLine("Clicked " + student.Firstname);
+
+                //go to overview of clicked group
+                Intent intent = new Intent(this, typeof(Student));
+                intent.PutExtra("studentId", student.Id.ToString());
+                StartActivity(intent);
+            };
         }
     }
 }

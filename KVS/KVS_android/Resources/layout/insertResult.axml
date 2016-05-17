@@ -12,7 +12,7 @@
         android:background="@android:color/background_light"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/frameLayout1" />
+        android:id="@+id/frameLayoutDetailedResult" />
     <ListView
         android:minWidth="25px"
         android:minHeight="25px"

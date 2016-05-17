@@ -12,7 +12,7 @@ namespace Shared.Database.Models
         private string studentCode;
         private DateTime birthDate;
         private string particulars; //allergies etc
-        private string group; //group a student is in
+        private int startYear;
 
 		public StudentModel(string firstname, string lastname){
 			this.firstname = firstname;
@@ -95,15 +95,15 @@ namespace Shared.Database.Models
             }
         }
 
-        public string Group
+        public int StartYear
         {
             get
             {
-                return group;
+                return startYear;
             }
             set
             {
-                group = value;
+                startYear = value;
             }
 
 
