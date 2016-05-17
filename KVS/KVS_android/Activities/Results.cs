@@ -20,13 +20,13 @@ namespace KVS_android.Activities
         {
             base.OnCreate(savedInstanceState);
             base.SetTheme(Resource.Style.Base_V7_Theme_AppCompat);
+
             SetContentView(Resource.Layout.insertResult);
 
             var newFragment = new FragmentMainMenu();
             var ft = FragmentManager.BeginTransaction();
-			ft.Add(Resource.Id.frameLayoutDetailedResult, newFragment);
+            ft.Add(Resource.Id.frameLayout1, newFragment);
             ft.Commit();
-
         }
     }
 }

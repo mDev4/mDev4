@@ -34,24 +34,35 @@ namespace KVS_android
 
             loginButton.Click += delegate
             {
-                if (!UserControl.getUserByUsername(usernameField.Text.ToString()).Equals(null))
+                // If the EditText from the usernameField is empty, display toast message
+                if (usernameField.Text.Equals(""))
                 {
+                    Toast.MakeText(this, "Voer uw gebruikersnaam in", ToastLength.Long).Show();
+                }
+                else {
+                    // If text is not empty, get the user by username (the editted text from usernameField)
                     UserModel user = UserControl.getUserByUsername(usernameField.Text.ToString());
-                    if (user.Password == passwordField.Text.ToString())
+
+                    // If this username is correct...
+                    if (user.Username == usernameField.Text.ToString())
                     {
-                        StartActivity(typeof(Menu));
+                        // If this password is correct, start Menu activity
+                        if (user.Password == passwordField.Text.ToString())
+                        {
+                            StartActivity(typeof(Menu));
+                        }
+                        // If not correct or empty, display toast message
+                        else
+                        {
+                            Toast.MakeText(this, "Wachtwoord onjuist", ToastLength.Long).Show();
+                        }
                     }
+                    // If username is not correct, display toast message
                     else
                     {
-                        Toast.MakeText(this, "Wachtwoord onjuist", ToastLength.Long).Show();
+                        Toast.MakeText(this, "Gebruikersnaam onjuist", ToastLength.Long).Show();
                     }
-
                 }
-                else
-                {
-                    Toast.MakeText(this, "Gebruiker niet gevonden", ToastLength.Long).Show();
-                }
-
             };
         }
     }

@@ -20,14 +20,11 @@ namespace KVS_android
 			base.SetTheme (Resource.Style.Base_V7_Theme_AppCompat);
             // Set our view from the "menu" layout resource
             SetContentView(Resource.Layout.Menu);
-            
+
 			var newFragment = new FragmentMainMenu ();
 			var ft = FragmentManager.BeginTransaction ();
 			ft.Add (Resource.Id.frameLayout1, newFragment);
 			ft.Commit ();
-
-
-
         }
     }
 }

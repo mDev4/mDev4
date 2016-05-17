@@ -57,11 +57,6 @@ namespace KVS_android
                 intent.PutExtra("groupId", group.Id.ToString());
                 StartActivity(intent);
             };
-
-
-
-
-
         }
 
         //updates the listview of groups according to selected year in spinner
@@ -69,6 +64,17 @@ namespace KVS_android
         {
             //getting selected year from spinner
             Spinner spinner = (Spinner)sender;
+
+            //button1.Click += delegate {
+            //  StartActivity(typeof(Student));
+            //};
+
+            /*var newFragment = new FragmentMainMenu();
+            var ft = FragmentManager.BeginTransaction();
+            ft.Add(Resource.Id.frameLayout2, newFragment);
+            ft.Commit();
+            */
+
             string yearString = string.Format((string)spinner.GetItemAtPosition(e.Position));
             int year = Int32.Parse(yearString);
 
