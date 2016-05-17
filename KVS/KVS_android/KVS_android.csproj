@@ -199,12 +199,12 @@
  -->
   <ItemGroup>
     <XamarinComponentReference Include="xamandroidsupportdesign">
-      <Version>23.1.1.1</Version>
       <Visible>False</Visible>
+      <Version>23.2.1</Version>
     </XamarinComponentReference>
     <XamarinComponentReference Include="xamandroidsupportv7appcompat">
-      <Version>23.1.1.1</Version>
       <Visible>False</Visible>
+      <Version>23.2.1</Version>
     </XamarinComponentReference>
   </ItemGroup>
 </Project>
