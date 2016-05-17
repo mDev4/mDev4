@@ -2,11 +2,13 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/schoolbackground">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:background="@drawable/linearlayout_bg">
         <SearchView
             android:id="@+id/searchView"
             android:layout_width="300dp"
@@ -25,5 +27,6 @@
         android:minHeight="25px"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@id/android:list" />
+        android:id="@id/android:list"
+        android:background="@drawable/linearlayout_bg" />
 </LinearLayout>

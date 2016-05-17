@@ -3,16 +3,19 @@
     xmlns:fab="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/schoolbackground">
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dip"
-        android:text="@string/year_prompt" />
+        android:text="@string/year_prompt"
+        android:background="@drawable/linearlayout_bg"
+        android:textSize="20dp" />
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:background="@drawable/linearlayout_bg">
         <Spinner
             android:id="@+id/spinner"
             android:layout_width="wrap_content"
@@ -31,5 +34,6 @@
         android:minHeight="25px"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@id/android:list" />
+        android:id="@id/android:list"
+        android:background="@drawable/linearlayout_bg" />
 </LinearLayout>

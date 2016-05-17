@@ -4,11 +4,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:minWidth="25px"
-    android:minHeight="25px">
+    android:minHeight="25px"
+    android:background="@drawable/schoolbackground">
     <FrameLayout
         android:minWidth="25px"
         android:minHeight="25px"
-        android:background="@android:color/background_light"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/frameLayoutSubjects" />
@@ -19,11 +19,13 @@
         android:gravity="center"
         android:id="@+id/textView1"
         android:textSize="21sp"
-        android:layout_marginTop="5dp" />
+        android:layout_marginTop="5dp"
+        android:background="@drawable/linearlayout_bg" />
     <ListView
         android:minWidth="25px"
         android:minHeight="25px"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/listView1" />
+        android:id="@+id/listView1"
+        android:background="@drawable/linearlayout_bg" />
 </LinearLayout>

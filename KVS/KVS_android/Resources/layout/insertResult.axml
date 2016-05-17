@@ -5,11 +5,10 @@
     android:layout_height="match_parent"
     android:minWidth="25px"
     android:minHeight="25px"
-    android:background="@drawable/linearlayout_bg">
+    android:background="@drawable/schoolbackground">
     <FrameLayout
         android:minWidth="25px"
         android:minHeight="25px"
-        android:background="@android:color/background_light"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/frameLayout1" />
@@ -18,5 +17,6 @@
         android:minHeight="25px"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@drawable/linearlayout_bg"
         android:id="@+id/listView1" />
 </LinearLayout>
