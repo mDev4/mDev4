@@ -12,6 +12,11 @@ using Android.Widget;
 using Android.Support.V4.Widget;
 using Android.Support.Design.Widget;
 
+<<<<<<< HEAD
+=======
+using KVS_android;
+
+>>>>>>> develop
 namespace KVS_android
 {
 	public class FragmentMainMenu : Fragment
@@ -44,7 +49,11 @@ namespace KVS_android
                 case (Resource.Id.nav_ann):
                     if (this.Activity.GetType() != typeof(Menu))
                     {
+<<<<<<< HEAD
                         var intent = new Intent(this.Activity, typeof(Menu));
+=======
+					var intent = new Intent(this.Activity, typeof(Menu));
+>>>>>>> develop
                         StartActivity(intent);
                     }
                     break;
@@ -55,6 +64,7 @@ namespace KVS_android
                         StartActivity(intent);
                     }
                     break;
+<<<<<<< HEAD
                 case (Resource.Id.nav_results):
                     if (this.Activity.GetType() != typeof(Activities.Results))
                     {
@@ -62,6 +72,15 @@ namespace KVS_android
                         StartActivity(intent);
                     }
                     break;
+=======
+              //  case (Resource.Id.nav_results):
+                //    if (this.Activity.GetType() != typeof(Results))
+                  //  {
+                   //     var intent = new Intent(this.Activity, typeof(Results));
+                    //    StartActivity(intent);
+                   // }
+                   // break;
+>>>>>>> develop
             }
 
             // Close drawer

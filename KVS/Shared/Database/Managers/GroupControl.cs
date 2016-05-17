@@ -14,13 +14,15 @@ namespace Shared.Database.Managers
     {
         /*
         * Gets a group by looking at its id and returns it
-        */      
+        */
         public static GroupModel getGroupById(string id)
         {
+
             GroupModel group = new GroupModel();
             // Making sure to use the right database connection
             using (SqlConnection con = new SqlConnection(DatabaseHelper.dbString))
             {
+
                 con.Open();
 
                 using (SqlCommand command = new SqlCommand(
@@ -34,11 +36,11 @@ namespace Shared.Database.Managers
                     while (reader.Read())
                     {
                         // Assigning values from the result of the query to a new GroupModel object to use in the app
-                        group.StartYear = DateTime.Parse(reader.GetString(0));
-                        group.Name = reader.GetString(1);
-                        group.CurrCalendarYear = DateTime.Parse(reader.GetString(2));
-                        group.CurrYear = reader.GetInt32(3);
-                        group.Id = reader.GetInt32(4);
+                        group.Name = reader.GetString(0);
+                        group.CurrYear = reader.GetInt16(1);
+                        group.Id = reader.GetInt16(2);
+                        group.CurrCalendarYear = reader.GetInt16(3);
+                        group.StartYear = reader.GetInt16(4);
 
                         return group;
                     }
@@ -64,12 +66,14 @@ namespace Shared.Database.Managers
                     // Getting result(s) from query
                     while (reader.Read())
                     {
-                        // Assigning values from results to new GroupModel Object
                         GroupModel group = new GroupModel();
-                        group.StartYear = DateTime.Parse(reader.GetString(0));
-                        group.Name = reader.GetString(1);
-                        group.CurrCalendarYear = DateTime.Parse(reader.GetString(2));
-                        group.CurrYear = reader.GetInt32(3);
+                        // Assigning values from results to new GroupModel Object
+                        group.Name = reader.GetString(0);
+                        group.CurrYear = reader.GetInt16(1);
+                        group.Id = reader.GetInt16(2);
+                        group.CurrCalendarYear = reader.GetInt16(3);
+                        group.StartYear = reader.GetInt16(4);
+
 
                         // Adding GroupModel Object to List
                         groups.Add(group);
@@ -78,6 +82,43 @@ namespace Shared.Database.Managers
                 }
             }
             return groups; // Give back List of all Groups
+        }
+
+        /*
+       * Gets a group by looking at its id and returns it
+       */
+        public static List<GroupModel> getGroupsByAcademicYear(string academicYear)
+        {
+            List<GroupModel> groups = new List<GroupModel>();
+            
+            // Making sure to use the right database connection
+            using (SqlConnection con = new SqlConnection(DatabaseHelper.dbString))
+            {
+                con.Open();
+
+                using (SqlCommand command = new SqlCommand(
+                    "SELECT * FROM " + DatabaseHelper.GROUP_TABLE + " WHERE current_academic_year = @academicYear", con)) // Query to execute
+                {
+                    command.Parameters.Add(new SqlParameter("academicYear", academicYear)); // Adding the given parameters to the query
+
+                    SqlDataReader reader = command.ExecuteReader(); // Execute query
+
+                    // Getting result(s) from query
+                    while (reader.Read())
+                    {
+                        GroupModel group = new GroupModel();
+                        // Assigning values from the result of the query to a new GroupModel object to use in the app
+                        group.Name = reader.GetString(0);
+                        group.CurrYear = reader.GetInt16(1);
+                        group.Id = reader.GetInt16(2);
+                        group.CurrCalendarYear = reader.GetInt16(3);
+                        group.StartYear = reader.GetInt16(4);
+
+                        groups.Add(group);
+                    }
+                }
+            }
+            return groups;
         }
 
     }

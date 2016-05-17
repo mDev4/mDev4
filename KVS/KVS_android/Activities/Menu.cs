@@ -21,7 +21,11 @@ namespace KVS_android
             // Set our view from the "menu" layout resource
             SetContentView(Resource.Layout.Menu);
             
+<<<<<<< HEAD
 			var newFragment = new  FragmentMainMenu ();
+=======
+			var newFragment = new FragmentMainMenu ();
+>>>>>>> develop
 			var ft = FragmentManager.BeginTransaction ();
 			ft.Add (Resource.Id.frameLayout1, newFragment);
 			ft.Commit ();

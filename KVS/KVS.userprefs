@@ -1,9 +1,8 @@
 ﻿<Properties StartupItem="KVS_android\KVS_android.csproj" RefactoringSettings.EnableRefactorings="True">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.6c364c50" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="KVS_windows\MainPage.xaml">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.169.254.109.177:5555" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="KVS_windows\App.xaml">
     <Files>
       <File FileName="KVS_windows\App.xaml" Line="1" Column="1" />
-      <File FileName="KVS_windows\MainPage.xaml" Line="8" Column="22" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
