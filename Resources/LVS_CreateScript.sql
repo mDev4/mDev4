@@ -24,6 +24,7 @@ CREATE TABLE [LVS].[User]
 	id         SMALLINT PRIMARY KEY             NOT NULL IDENTITY,
 	username   VARCHAR(20)                      NOT NULL,
 	password   VARCHAR(100)                     NOT NULL,
+	clearance  TINYINT DEFAULT 3                NOT NULL,
 	email      VARCHAR(50)                      NOT NULL,
 	phone      VARCHAR(20)                      NOT NULL,
 	first_name VARCHAR(20)                      NOT NULL,
@@ -43,7 +44,7 @@ CREATE TABLE [LVS].[UserSettings]
 CREATE TABLE [LVS].[Announcement]
 (
 	id      SMALLINT PRIMARY KEY             NOT NULL IDENTITY,
-	message TEXT                             NOT NULL,
+	message VARCHAR(MAX)                     NOT NULL,
 	author  SMALLINT                         NOT NULL,
 	title   VARCHAR(50)                      NOT NULL,
 	type    VARCHAR(20)                      NOT NULL
@@ -60,7 +61,7 @@ CREATE TABLE [LVS].[Student]
 (
 	id           INT PRIMARY KEY                            NOT NULL IDENTITY,
 	student_code VARCHAR(20)                                NOT NULL,
-	particulars  TEXT,
+	particulars  VARCHAR(MAX),
 	birth_date   DATE                                       NOT NULL,
 	first_name   VARCHAR(20)                                NOT NULL,
 	middle_name  VARCHAR(20),
@@ -75,16 +76,16 @@ CREATE TABLE [LVS].[Student_Group]
 );
 CREATE TABLE [LVS].[Test]
 (
-	[id]      SMALLINT PRIMARY KEY                     NOT NULL IDENTITY,
-	[title]   VARCHAR(50)                              NULL,
-	[date]    DATE                                     NULL,
-	[subject] VARCHAR(50)                              NULL
+	[id]          SMALLINT PRIMARY KEY                     NOT NULL IDENTITY,
+	[date]        DATE                                     NOT NULL,
+	[title]       VARCHAR(50)                              NOT NULL,
+	[description] VARCHAR(100)
 );
 CREATE TABLE [LVS].[Student_Test]
 (
 	[test_id]    SMALLINT    NOT NULL,
 	[student_id] INT         NOT NULL,
-	[grade]      VARCHAR(20) NULL,
+	[grade]      VARCHAR(20),
 	CONSTRAINT [PK__Student_Test_test_id_student_id] PRIMARY KEY ([test_id] ASC, [student_id] ASC),
 	CONSTRAINT [FK__Student_Test_test_id] FOREIGN KEY (test_id) REFERENCES [LVS].[Test] (id),
 	CONSTRAINT [FK__Student_Test_student_id] FOREIGN KEY (student_id) REFERENCES [LVS].[Student] (id)
