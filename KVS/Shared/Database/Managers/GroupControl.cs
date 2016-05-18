@@ -36,10 +36,10 @@ namespace Shared.Database.Managers
                     while (reader.Read())
                     {
                         // Assigning values from the result of the query to a new GroupModel object to use in the app
-                        group.Name = reader.GetString(0);
-                        group.CurrYear = reader.GetInt16(1);
-                        group.Id = reader.GetInt16(2);
-                        group.CurrCalendarYear = reader.GetInt16(3);
+                        group.Id = reader.GetInt16(0);
+                        group.Name = reader.GetString(1);
+                        group.CurrCalendarYear = reader.GetInt16(2);
+                        group.CurrYear = reader.GetInt16(3);
                         group.StartYear = reader.GetInt16(4);
 
                         return group;
@@ -68,10 +68,10 @@ namespace Shared.Database.Managers
                     {
                         GroupModel group = new GroupModel();
                         // Assigning values from results to new GroupModel Object
-                        group.Name = reader.GetString(0);
-                        group.CurrYear = reader.GetInt16(1);
-                        group.Id = reader.GetInt16(2);
-                        group.CurrCalendarYear = reader.GetInt16(3);
+                        group.Id = reader.GetInt16(0);
+                        group.Name = reader.GetString(1);
+                        group.CurrCalendarYear = reader.GetInt16(2);
+                        group.CurrYear = reader.GetInt16(3);
                         group.StartYear = reader.GetInt16(4);
 
 
@@ -90,7 +90,7 @@ namespace Shared.Database.Managers
         public static List<GroupModel> getGroupsByAcademicYear(string academicYear)
         {
             List<GroupModel> groups = new List<GroupModel>();
-            
+
             // Making sure to use the right database connection
             using (SqlConnection con = new SqlConnection(DatabaseHelper.dbString))
             {
@@ -108,10 +108,10 @@ namespace Shared.Database.Managers
                     {
                         GroupModel group = new GroupModel();
                         // Assigning values from the result of the query to a new GroupModel object to use in the app
-                        group.Name = reader.GetString(0);
-                        group.CurrYear = reader.GetInt16(1);
-                        group.Id = reader.GetInt16(2);
-                        group.CurrCalendarYear = reader.GetInt16(3);
+                        group.Id = reader.GetInt16(0);
+                        group.Name = reader.GetString(1);
+                        group.CurrCalendarYear = reader.GetInt16(2);
+                        group.CurrYear = reader.GetInt16(3);
                         group.StartYear = reader.GetInt16(4);
 
                         groups.Add(group);

@@ -4,23 +4,26 @@ using System.Text;
 
 namespace Shared.Database.Models
 {
-	class StudentModel
+    class StudentModel
     {
         private int id;
         private string firstname;
+        private string middlename;
         private string lastname;
         private string studentCode;
         private DateTime birthDate;
         private string particulars; //allergies etc
-        private string group; //group a student is in
+        private int startYear;
 
-		public StudentModel(string firstname, string lastname){
-			this.firstname = firstname;
-			this.lastname = lastname;
-		}
+        public StudentModel(string firstname, string lastname)
+        {
+            this.firstname = firstname;
+            this.lastname = lastname;
+        }
 
-		public StudentModel(){
-		}
+        public StudentModel()
+        {
+        }
 
         public int Id
         {
@@ -44,6 +47,18 @@ namespace Shared.Database.Models
             set
             {
                 firstname = value;
+            }
+        }
+
+        public string Middlename
+        {
+            get
+            {
+                return middlename;
+            }
+            set
+            {
+                middlename = value;
             }
         }
 
@@ -95,15 +110,15 @@ namespace Shared.Database.Models
             }
         }
 
-        public string Group
+        public int StartYear
         {
             get
             {
-                return group;
+                return startYear;
             }
             set
             {
-                group = value;
+                startYear = value;
             }
 
 

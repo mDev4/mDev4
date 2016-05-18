@@ -15,7 +15,7 @@ namespace Shared.Database.Managers
 
         public static List<StudentModel> getStudentsByGroup(string groupId)
         {
-            
+
             List<StudentModel> students = new List<StudentModel>();
             // Making sure to use the right database connection
             using (SqlConnection con = new SqlConnection(DatabaseHelper.dbString))
@@ -35,12 +35,14 @@ namespace Shared.Database.Managers
                     {
                         StudentModel student = new StudentModel();
                         // Assigning values from the result of the query to a new GroupModel object to use in the app
-                        student.Id = reader.GetInt16(0);
+                        student.Id = reader.GetInt32(0);
                         student.Studentcode = reader.GetString(1);
                         student.Particulars = reader.GetString(2);
                         student.BirthDate = DateTime.Parse(reader.GetString(3));
                         student.Firstname = reader.GetString(4);
-                        student.Lastname = reader.GetString(5);
+                        student.Middlename = reader.GetString(5);
+                        student.Lastname = reader.GetString(6);
+                        student.StartYear = reader.GetInt16(7);
 
                         students.Add(student);
                     }

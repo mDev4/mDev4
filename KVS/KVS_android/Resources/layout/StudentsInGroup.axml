@@ -4,29 +4,33 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/schoolbackground">
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:background="@drawable/linearlayout_bg">
-        <SearchView
-            android:id="@+id/searchView"
-            android:layout_width="300dp"
-            android:layout_height="75dp"
-            android:queryHint="Zoek naar student.." />
-        <Button
-            android:text="Voeg student toe"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/addGroupButton"
-            android:layout_alignParentRight="true"
-            android:layout_marginTop="15dp" />
-    </RelativeLayout>
-    <ListView
-        android:minWidth="25px"
-        android:minHeight="25px"
+    <LinearLayout
+        android:background="@drawable/linearlayout_bg"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@id/android:list"
-        android:background="@drawable/linearlayout_bg" />
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <SearchView
+                android:id="@+id/searchView"
+                android:layout_width="300dp"
+                android:layout_height="75dp"
+                android:queryHint="Zoek naar student.." />
+            <Button
+                android:text="Voeg student toe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/addGroupButton"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="15dp" />
+        </RelativeLayout>
+        <ListView
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/android:list" />
+    </LinearLayout>
 </LinearLayout>

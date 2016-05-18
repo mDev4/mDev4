@@ -5,35 +5,38 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/schoolbackground">
-    <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/year_prompt"
+    <LinearLayout
         android:background="@drawable/linearlayout_bg"
-        android:textSize="20dp" />
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:background="@drawable/linearlayout_bg">
-        <Spinner
-            android:id="@+id/spinner"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:prompt="@string/year_prompt"
-            android:layout_alignParentLeft="true" />
-        <Button
-            android:text="Voeg groep toe"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/addGroupButton"
-            android:layout_alignParentRight="true" />
-    </RelativeLayout>
-    <ListView
-        android:minWidth="25px"
-        android:minHeight="25px"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@id/android:list"
-        android:background="@drawable/linearlayout_bg" />
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/year_prompt"
+            android:textSize="20dp" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:prompt="@string/year_prompt"
+                android:layout_alignParentLeft="true" />
+            <Button
+                android:text="Voeg groep toe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/addGroupButton"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <ListView
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/android:list" />
+    </LinearLayout>
 </LinearLayout>
