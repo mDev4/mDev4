@@ -57,24 +57,32 @@
                 android:layout_marginBottom="20dp"
                 android:textSize="20dp" />
         </LinearLayout>
-        <RelativeLayout
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="280dp">
+            android:orientation="vertical"
+            android:layout_marginTop="250dp">
             <Button
                 android:text="Resultaten inzien"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/resultsButton1"
-                android:layout_alignParentLeft="true" />
+                android:padding="10dp"
+                android:layout_margin="4dp"
+                style="@style/DefaultButtonText"
+                android:background="@drawable/button_default_bg"
+                android:layout_gravity="center_horizontal" />
             <Button
                 android:text="Resultaten invoeren"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/resultsButton2"
-                android:layout_alignParentRight="true" />
-        </RelativeLayout>
+                android:padding="10dp"
+                android:layout_margin="4dp"
+                style="@style/DefaultButtonText"
+                android:background="@drawable/button_default_bg"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
         <Space
             android:layout_width="match_parent"
             android:layout_height="50dp"

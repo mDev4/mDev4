@@ -9,6 +9,11 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="20dp" />
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -24,7 +29,10 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/addStudentButton1"
                 android:layout_alignParentRight="true"
-                android:layout_marginTop="15dp" />
+                android:padding="10dp"
+                android:layout_margin="4dp"
+                style="@style/DefaultButtonText"
+                android:background="@drawable/button_default_bg" />
         </RelativeLayout>
         <ListView
             android:minWidth="25px"

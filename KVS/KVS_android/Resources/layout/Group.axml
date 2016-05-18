@@ -30,7 +30,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/addGroupButton1"
-                android:layout_alignParentRight="true" />
+                android:layout_alignParentRight="true"
+                android:padding="10dp"
+                android:layout_margin="4dp"
+                style="@style/DefaultButtonText"
+                android:background="@drawable/button_default_bg" />
         </RelativeLayout>
         <ListView
             android:minWidth="25px"
