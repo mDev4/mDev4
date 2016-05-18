@@ -1,0 +1,15 @@
+KVS/KVS_android/bin
+
+KVS/KVS_android/obj
+
+KVS/Components/*
+
+*.userprefs
+
+*.java
+
+*.cache
+
+*.png
+
+*.info
