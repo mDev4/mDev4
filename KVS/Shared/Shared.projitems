@@ -14,15 +14,15 @@
     <Compile Include="$(MSBuildThisFileDirectory)Database\Managers\GroupControl.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Database\Managers\GroupStudentControl.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Database\Managers\StudentControl.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Database\Managers\TestControl.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Database\Managers\TestStudentControl.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Database\Managers\UserControl.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Database\Models\AnnouncementModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Database\Models\GroupModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Database\Models\GroupStudentModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Database\Models\StudentModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Database\Models\TestModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Database\Models\TestStudentModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Database\Models\UserModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Model\Class.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Model\Student.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Model\Teacher.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Model\User.cs" />
   </ItemGroup>
 </Project>

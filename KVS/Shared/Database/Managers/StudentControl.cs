@@ -1,15 +1,12 @@
 ﻿using System;
-using System.Collections;
-using System.Text;
 using System.Data.SqlClient;
 using Shared.Database.Models;
-using System.Collections.Generic;
 
 namespace Shared.Database.Managers
 {
-        /*
-         * Class for reading and writing data into the Student table of the database 
-         */
+    /*
+     * Class for reading and writing data into the Student table of the database 
+     */
     class StudentControl
     {
         

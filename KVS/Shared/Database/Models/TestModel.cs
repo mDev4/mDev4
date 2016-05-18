@@ -7,7 +7,7 @@ namespace Shared.Database.Models
     class TestModel
     {
         private int id;
-        private string name;
+        private string title;
         private DateTime date;
         private string subject;
 
@@ -23,15 +23,15 @@ namespace Shared.Database.Models
             }
         }
 
-        public string Name
+        public string Title
         {
             get
             {
-                return name;
+                return title;
             }
             set
             {
-                name = value;
+                title = value;
             }
         }
 
