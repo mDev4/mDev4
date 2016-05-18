@@ -33,6 +33,17 @@ INSERT INTO [LVS].[Group] ([id], [name], [current_academic_year], [current_year_
 VALUES (16, N'Group 8', 2005, 8, 1998)
 SET IDENTITY_INSERT [LVS].[Group] OFF
 
+SET IDENTITY_INSERT [LVS].[Student] ON
+INSERT INTO [LVS].[Student] ([id], [student_code], [particulars], [birth_date], [first_name], [middle_name], [last_name], [start_year])
+VALUES (1, N'Kuijlel001', N'Cat allergy', N'1997-08-23', N'Lars', N'Christiaan', N'Kuijlenburg', 2005)
+INSERT INTO [LVS].[Student] ([id], [student_code], [particulars], [birth_date], [first_name], [middle_name], [last_name], [start_year])
+VALUES (2, N'Shayan001', N'Midget', N'1992-09-22', N'Nick', N'The bomb', N'Shayan', 2004)
+INSERT INTO [LVS].[Student] ([id], [student_code], [particulars], [birth_date], [first_name], [middle_name], [last_name], [start_year])
+VALUES (3, N'Zammir001', N'From Malta', N'1998-09-22', N'Ryan', N'The Weirdo', N'Zammit', 1995)
+INSERT INTO [LVS].[Student] ([id], [student_code], [particulars], [birth_date], [first_name], [middle_name], [last_name], [start_year])
+VALUES (4, N'Tester1', N'none', N'2222-09-22', N'test1', N'test1', N'test1', 1998)
+SET IDENTITY_INSERT [LVS].[Student] OFF
+
 INSERT INTO [LVS].[Student_Group] ([group_id], [student_id]) VALUES (1, 1)
 INSERT INTO [LVS].[Student_Group] ([group_id], [student_id]) VALUES (1, 2)
 INSERT INTO [LVS].[Student_Group] ([group_id], [student_id]) VALUES (1, 3)
@@ -98,14 +109,3 @@ INSERT INTO [LVS].[Student_Group] ([group_id], [student_id]) VALUES (16, 1)
 INSERT INTO [LVS].[Student_Group] ([group_id], [student_id]) VALUES (16, 2)
 INSERT INTO [LVS].[Student_Group] ([group_id], [student_id]) VALUES (16, 3)
 INSERT INTO [LVS].[Student_Group] ([group_id], [student_id]) VALUES (16, 4)
-
-SET IDENTITY_INSERT [LVS].[Student] ON
-INSERT INTO [LVS].[Student] ([id], [student_code], [particulars], [birth_date], [first_name], [middle_name], [last_name], [start_year])
-VALUES (1, N'Kuijlel001', N'Cat allergy', N'1997-08-23', N'Lars', N'Christiaan', N'Kuijlenburg', 2005)
-INSERT INTO [LVS].[Student] ([id], [student_code], [particulars], [birth_date], [first_name], [middle_name], [last_name], [start_year])
-VALUES (2, N'Shayan001', N'Midget', N'1992-09-22', N'Nick', N'The bomb', N'Shayan', 2004)
-INSERT INTO [LVS].[Student] ([id], [student_code], [particulars], [birth_date], [first_name], [middle_name], [last_name], [start_year])
-VALUES (3, N'Zammir001', N'From Malta', N'1998-09-22', N'Ryan', N'The Weirdo', N'Zammit', 1995)
-INSERT INTO [LVS].[Student] ([id], [student_code], [particulars], [birth_date], [first_name], [middle_name], [last_name], [start_year])
-VALUES (4, N'Tester1', N'none', N'2222-09-22', N'test1', N'test1', N'test1', 1998)
-SET IDENTITY_INSERT [LVS].[Student] OFF

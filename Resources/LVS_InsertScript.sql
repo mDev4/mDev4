@@ -11,6 +11,14 @@ VALUES (1, N'Group 1', 2004, 1, 2004), (2, N'Group 2', 2004, 2, 2003), (3, N'Gro
 	(16, N'Group 8', 2005, 8, 1998);
 SET IDENTITY_INSERT [LVS].[Group] OFF
 
+SET IDENTITY_INSERT [LVS].[Student] ON
+INSERT INTO [LVS].[Student] ([id], [student_code], [particulars], [birth_date], [first_name], [middle_name], [last_name], [start_year])
+VALUES (1, N'Kuijlel001', N'Cat allergy', N'1997-08-23', N'Lars', N'Christiaan', N'Kuijlenburg', 2005),
+	(2, N'Shayan001', N'Midget', N'1992-09-22', N'Nick', N'The bomb', N'Shayan', 2004),
+	(3, N'Zammir001', N'From Malta', N'1998-09-22', N'Ryan', N'The Weirdo', N'Zammit', 1995),
+	(4, N'Tester1', N'none', N'2222-09-22', N'test1', N'test1', N'test1', 1998);
+SET IDENTITY_INSERT [LVS].[Student] OFF
+
 INSERT INTO [LVS].[Student_Group] ([group_id], [student_id])
 VALUES (1, 1), (1, 2), (1, 3), (1, 4), (2, 1), (2, 2), (2, 3), (2, 4), (3, 1), (3, 2), (3, 3), (3, 4), (4, 1), (4, 2),
 	(4, 3), (4, 4), (5, 1), (5, 2), (5, 3), (5, 4), (6, 1), (6, 2), (6, 3), (6, 4), (7, 1), (7, 2), (7, 3), (7, 4),
@@ -18,12 +26,7 @@ VALUES (1, 1), (1, 2), (1, 3), (1, 4), (2, 1), (2, 2), (2, 3), (2, 4), (3, 1), (
 	(11, 3), (11, 4), (12, 1), (12, 2), (12, 3), (12, 4), (13, 1), (13, 2), (13, 3), (13, 4), (14, 1), (14, 2)
 	, (14, 3), (14, 4), (15, 1), (15, 2), (15, 3), (15, 4), (16, 1), (16, 2), (16, 3), (16, 4);
 
-SET IDENTITY_INSERT [LVS].[Student] ON
-INSERT INTO [LVS].[Student] ([id], [student_code], [particulars], [birth_date], [first_name], [middle_name], [last_name], [start_year])
-VALUES (1, N'Kuijlel001', N'Cat allergy', N'1997-08-23', N'Lars', N'Christiaan', N'Kuijlenburg', 2005), (2, N'Shayan001', N'Midget', N'1992-09-22', N'Nick', N'The bomb', N'Shayan', 2004), (3, N'Zammir001', N'From Malta', N'1998-09-22', N'Ryan', N'The Weirdo', N'Zammit', 1995), (4, N'Tester1', N'none', N'2222-09-22', N'test1', N'test1', N'test1', 1998);
-SET IDENTITY_INSERT [LVS].[Student] OFF
-
-SET IDENTITY_INSERT [LVS].[Student] ON
+SET IDENTITY_INSERT [LVS].[User] ON
 INSERT INTO [LVS].[User] ([id], [username], [password], [email], [phone], [first_name], [last_name])
-VALUES (1, N'test', N'test', [nickmails@me.com], [0123456789], [Nick], [Shayan]);
-SET IDENTITY_INSERT [LVS].[Student] OFF
+VALUES (1, N'test', N'test', N'nickmails@me.com', N'0123456789', N'Nick', N'Shayan');
+SET IDENTITY_INSERT [LVS].[User] OFF
