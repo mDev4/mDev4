@@ -79,7 +79,9 @@
     <Compile Include="Activities\Menu.cs" />
     <Compile Include="Activities\Register.cs" />
     <Compile Include="Activities\Results.cs" />
+    <Compile Include="Activities\Tests.cs" />
     <Compile Include="Adapters\FragmentMainMenu.cs" />
+    <Compile Include="Adapters\TestAdapter.cs" />
     <Compile Include="Adapters\GroupAdapter.cs" />
     <Compile Include="Adapters\StudentAdapter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -132,6 +134,7 @@
     <AndroidResource Include="Resources\layout\Header.axml" />
     <AndroidResource Include="Resources\layout\fragment_layout.axml" />
     <AndroidResource Include="Resources\menu\navmenu.xml" />
+    <AndroidResource Include="Resources\layout\Tests.axml" />
     <None Include="Resources\values-v21\Styles.xml" />
   </ItemGroup>
   <ItemGroup>

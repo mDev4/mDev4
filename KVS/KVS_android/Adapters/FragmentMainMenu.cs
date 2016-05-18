@@ -59,9 +59,9 @@ namespace KVS_android
                     }
                     break;
                 case (Resource.Id.nav_results):
-                    if (this.Activity.GetType() != typeof(Results))
+                    if (this.Activity.GetType() != typeof(Tests))
                     {
-                        var intent = new Intent(this.Activity, typeof(Results));
+                        var intent = new Intent(this.Activity, typeof(Tests));
                         StartActivity(intent);
                     }
                     break;

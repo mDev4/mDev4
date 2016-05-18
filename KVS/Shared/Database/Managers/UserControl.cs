@@ -71,10 +71,11 @@ namespace Shared.Database.Managers
                         user.Id = reader.GetInt16(0);
                         user.Username = reader.GetString(1);
                         user.Password = reader.GetString(2);
-                        user.Firstname = reader.GetString(3);
-                        user.Lastname = reader.GetString(4);
-                        user.Email = reader.GetString(5);
-                        user.PhoneNumber = reader.GetString(6);
+                        user.Email = reader.GetString(4);
+                        user.PhoneNumber = reader.GetString(5);
+                        user.Firstname = reader.GetString(6);
+                        user.Lastname = reader.GetString(7);                      
+                        
 
                         return user;
                     }
@@ -109,10 +110,10 @@ namespace Shared.Database.Managers
                         user.Id = reader.GetInt16(0);
                         user.Username = reader.GetString(1);
                         user.Password = reader.GetString(2);
-                        user.Firstname = reader.GetString(3);
-                        user.Lastname = reader.GetString(4);
-                        user.Email = reader.GetString(5);
-                        user.PhoneNumber = reader.GetString(6);
+                        user.Email = reader.GetString(4);
+                        user.PhoneNumber = reader.GetString(5);
+                        user.Firstname = reader.GetString(6);
+                        user.Lastname = reader.GetString(7);
 
                         return user;
                     }

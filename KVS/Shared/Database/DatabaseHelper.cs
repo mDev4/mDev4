@@ -19,6 +19,8 @@ namespace Shared
         public static readonly string STUDENT_TABLE = SCHEMA + ".[Student]";
         public static readonly string ANNOUNCEMENT_TABLE = SCHEMA + ".[Announcement]";
         public static readonly string GROUP_STUDENT_TABLE = SCHEMA + ".[Student_Group]";
+        public static readonly string TEST_TABLE = SCHEMA + ".[Test]";
+        public static readonly string TEST_STUDENT_TABLE = SCHEMA + ".[Student_Test]";
 
 
         public static SqlConnection getConnection()
