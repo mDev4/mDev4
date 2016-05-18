@@ -27,6 +27,14 @@ namespace KVS_android
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.StudentsInGroup);
 
+            //AddStudent
+            Button addStudentButton1 = FindViewById<Button>(Resource.Id.addStudentButton1);
+
+            addStudentButton1.Click += delegate
+            {
+                StartActivity(typeof(AddStudent));
+            };
+
             //init
 
             Console.WriteLine("Group id from intent: "+ Intent.GetStringExtra("groupId"));

@@ -22,7 +22,7 @@
                 android:text="Voeg student toe"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/addGroupButton"
+                android:id="@+id/addStudentButton1"
                 android:layout_alignParentRight="true"
                 android:layout_marginTop="15dp" />
         </RelativeLayout>

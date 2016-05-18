@@ -34,6 +34,10 @@ namespace KVS_android
 
             loginButton.Click += delegate
             {
+                StartActivity(typeof(Menu));
+                /*
+
+
                 // If the EditText from the usernameField is empty, display toast message
                 if (usernameField.Text.Equals(""))
                 {
@@ -63,6 +67,8 @@ namespace KVS_android
                         Toast.MakeText(this, "Gebruikersnaam onjuist", ToastLength.Long).Show();
                     }
                 }
+
+    */
             };
         }
     }

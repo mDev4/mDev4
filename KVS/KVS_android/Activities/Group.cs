@@ -28,6 +28,14 @@ namespace KVS_android
             // Set our view from the "group" layout resource
             SetContentView(Resource.Layout.Group);
 
+            //AddGroup
+            Button addGroupButton1 = FindViewById<Button>(Resource.Id.addGroupButton1);
+
+            addGroupButton1.Click += delegate
+            {
+                StartActivity(typeof(AddGroup));
+            };
+
             //spinner magicz
             Spinner spinner = FindViewById<Spinner>(Resource.Id.spinner);
 

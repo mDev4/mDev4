@@ -29,7 +29,7 @@
                 android:text="Voeg groep toe"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/addGroupButton"
+                android:id="@+id/addGroupButton1"
                 android:layout_alignParentRight="true" />
         </RelativeLayout>
         <ListView
