@@ -4,12 +4,24 @@ using System.Text;
 
 namespace Shared.Database.Models
 {
-    class TestModel
+    public class TestModel
     {
-        private int id;
-        private string title;
-        private DateTime date;
-        private string subject;
+         private int id;
+         private string title;
+         private DateTime date;
+         private string description;
+
+        public TestModel(int id, string title, DateTime date, string description)
+        {
+            this.id = id;
+            this.title = title;
+            this.date = date;
+            this.description = description;
+        }
+
+        public TestModel()
+        {
+        }
 
         public int Id
         {
@@ -47,15 +59,15 @@ namespace Shared.Database.Models
             }
         }
 
-        public string Subject
+        public string Description
         {
             get
             {
-                return subject;
+                return description;
             }
             set
             {
-                subject = value;
+                description = value;
             }
         }
     }

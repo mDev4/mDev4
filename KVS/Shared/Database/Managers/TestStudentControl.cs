@@ -31,9 +31,9 @@ namespace Shared.Database.Managers
                     {
                         // Converting result to StudentModel
                         test.Id = reader.GetInt32(0);
-                        test.Title = reader.GetString(1);
-                        test.Date = DateTime.Parse(reader.GetString(2));
-                        test.Subject = reader.GetString(3);
+                        test.Date = DateTime.Parse(reader.GetString(1));
+                        test.Title = reader.GetString(2);                        
+                        test.Description = reader.GetString(3);
 
                          tests.Add(test);
                     }
