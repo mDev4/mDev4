@@ -17,7 +17,7 @@
     <item
       android:id="@+id/nav_results"
       android:icon="@drawable/ic_devices_black_24dp"
-      android:title="Resultaten" />
+      android:title="Toetsen" />
   </group>
   <item>
     <menu>

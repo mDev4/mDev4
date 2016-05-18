@@ -25,7 +25,7 @@ namespace KVS_android.Activities
 
             var newFragment = new FragmentMainMenu();
             var ft = FragmentManager.BeginTransaction();
-            ft.Add(Resource.Id.frameLayout1, newFragment);
+            ft.Add(Resource.Id.frameLayoutDetailedResult, newFragment);
             ft.Commit();
         }
     }
