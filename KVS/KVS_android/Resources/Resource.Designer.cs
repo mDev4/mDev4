@@ -1838,31 +1838,61 @@ namespace KVS_android
 			public const int edittext_top_bg = 2130837585;
 			
 			// aapt resource value: 0x7f020052
-			public const int ic_add = 2130837586;
+			public const int ic_account_circle_black_24dp = 2130837586;
 			
 			// aapt resource value: 0x7f020053
-			public const int ic_devices_black_24dp = 2130837587;
+			public const int ic_add = 2130837587;
 			
 			// aapt resource value: 0x7f020054
-			public const int ic_home_black_24dp = 2130837588;
+			public const int ic_cake_black_24dp = 2130837588;
 			
 			// aapt resource value: 0x7f020055
-			public const int ic_question_answer_black_24dp = 2130837589;
+			public const int ic_call_black_24dp = 2130837589;
 			
 			// aapt resource value: 0x7f020056
-			public const int ic_supervisor_account_black_24dp = 2130837590;
+			public const int ic_date_range_black_24dp = 2130837590;
 			
 			// aapt resource value: 0x7f020057
-			public const int Icon = 2130837591;
+			public const int ic_devices_black_24dp = 2130837591;
 			
 			// aapt resource value: 0x7f020058
-			public const int linearlayout_bg = 2130837592;
-			
-			// aapt resource value: 0x7f02005a
-			public const int notification_template_icon_bg = 2130837594;
+			public const int ic_email_black_24dp = 2130837592;
 			
 			// aapt resource value: 0x7f020059
-			public const int schoolBackground = 2130837593;
+			public const int ic_event_black_24dp = 2130837593;
+			
+			// aapt resource value: 0x7f02005a
+			public const int ic_format_list_numbered_black_24dp = 2130837594;
+			
+			// aapt resource value: 0x7f02005b
+			public const int ic_home_black_24dp = 2130837595;
+			
+			// aapt resource value: 0x7f02005c
+			public const int ic_lock_black_24dp = 2130837596;
+			
+			// aapt resource value: 0x7f02005d
+			public const int ic_person_black_24dp = 2130837597;
+			
+			// aapt resource value: 0x7f02005e
+			public const int ic_question_answer_black_24dp = 2130837598;
+			
+			// aapt resource value: 0x7f02005f
+			public const int ic_star_black_24dp = 2130837599;
+			
+			// aapt resource value: 0x7f020060
+			public const int ic_supervisor_account_black_24dp = 2130837600;
+			
+			// aapt resource value: 0x7f020061
+			public const int Icon = 2130837601;
+			
+			// aapt resource value: 0x7f020062
+			public const int linearlayout_bg = 2130837602;
+			
+			// aapt resource value: 0x7f020064
+			public const int notification_template_icon_bg = 2130837604;
+			
+			// aapt resource value: 0x7f020063
+			public const int schoolBackground = 2130837603;
 			
 			static Drawable()
 			{
