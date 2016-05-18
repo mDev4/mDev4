@@ -29,6 +29,7 @@ CREATE TABLE [LVS].[User]
 	phone      VARCHAR(20)                      NOT NULL,
 	first_name VARCHAR(20)                      NOT NULL,
 	last_name  VARCHAR(30)                      NOT NULL,
+	sex        VARCHAR(6)                       NOT NULL,
 	CONSTRAINT UQ_User__username UNIQUE (username)
 );
 CREATE TABLE [LVS].[UserSettings]
@@ -44,7 +45,7 @@ CREATE TABLE [LVS].[UserSettings]
 CREATE TABLE [LVS].[Announcement]
 (
 	id      SMALLINT PRIMARY KEY             NOT NULL IDENTITY,
-	message TEX                              NOT NULL,
+	message TEXT                             NOT NULL,
 	author  SMALLINT                         NOT NULL,
 	title   VARCHAR(50)                      NOT NULL,
 	type    VARCHAR(20)                      NOT NULL
@@ -66,7 +67,8 @@ CREATE TABLE [LVS].[Student]
 	first_name   VARCHAR(20)                                NOT NULL,
 	middle_name  VARCHAR(20),
 	last_name    VARCHAR(20)                                NOT NULL,
-	start_year   SMALLINT DEFAULT datepart(YEAR, getdate()) NOT NULL
+	start_year   SMALLINT DEFAULT datepart(YEAR, getdate()) NOT NULL,
+	sex          VARCHAR(6)                                 NOT NULL
 );
 CREATE TABLE [LVS].[Student_Group]
 (

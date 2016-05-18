@@ -13,10 +13,10 @@ SET IDENTITY_INSERT [LVS].[Group] OFF
 
 SET IDENTITY_INSERT [LVS].[Student] ON
 INSERT INTO [LVS].[Student] ([id], [student_code], [particulars], [birth_date], [first_name], [middle_name], [last_name], [start_year])
-VALUES (1, N'Kuijlel001', N'Cat allergy', N'1997-08-23', N'Lars', N'Christiaan', N'Kuijlenburg', 2005),
-	(2, N'Shayan001', N'Midget', N'1992-09-22', N'Nick', N'The bomb', N'Shayan', 2004),
-	(3, N'Zammir001', N'From Malta', N'1998-09-22', N'Ryan', N'The Weirdo', N'Zammit', 1995),
-	(4, N'Tester1', N'none', N'2222-09-22', N'test1', N'test1', N'test1', 1998);
+VALUES (1, N'Kuijlel001', N'Cat allergy', N'1997-08-23', N'Lars', N'Christiaan', N'Kuijlenburg', 2005, N'female'),
+	(2, N'Shayan001', N'Midget', N'1992-09-22', N'Nick', N'The bomb', N'Shayan', 2004, N'male'),
+	(3, N'Zammir001', N'From Malta', N'1998-09-22', N'Ryan', N'The Weirdo', N'Zammit', 1995, N'other'),
+	(4, N'Tester1', N'none', N'2222-09-22', N'test1', N'test1', N'test1', 1998, N'other');
 SET IDENTITY_INSERT [LVS].[Student] OFF
 
 INSERT INTO [LVS].[Student_Group] ([group_id], [student_id])
@@ -28,5 +28,5 @@ VALUES (1, 1), (1, 2), (1, 3), (1, 4), (2, 1), (2, 2), (2, 3), (2, 4), (3, 1), (
 
 SET IDENTITY_INSERT [LVS].[User] ON
 INSERT INTO [LVS].[User] ([id], [username], [password], [email], [phone], [first_name], [last_name])
-VALUES (1, N'test', N'test', N'nickmails@me.com', N'0123456789', N'Nick', N'Shayan');
+VALUES (1, N'test', N'test', N'nickmails@me.com', N'0123456789', N'Nick', N'Shayan', N'male');
 SET IDENTITY_INSERT [LVS].[User] OFF
