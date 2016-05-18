@@ -44,7 +44,7 @@ CREATE TABLE [LVS].[UserSettings]
 CREATE TABLE [LVS].[Announcement]
 (
 	id      SMALLINT PRIMARY KEY             NOT NULL IDENTITY,
-	message VARCHAR(MAX)                     NOT NULL,
+	message TEX                              NOT NULL,
 	author  SMALLINT                         NOT NULL,
 	title   VARCHAR(50)                      NOT NULL,
 	type    VARCHAR(20)                      NOT NULL
@@ -61,7 +61,7 @@ CREATE TABLE [LVS].[Student]
 (
 	id           INT PRIMARY KEY                            NOT NULL IDENTITY,
 	student_code VARCHAR(20)                                NOT NULL,
-	particulars  VARCHAR(MAX),
+	particulars  TEXT,
 	birth_date   DATE                                       NOT NULL,
 	first_name   VARCHAR(20)                                NOT NULL,
 	middle_name  VARCHAR(20),
