@@ -20,9 +20,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Database\Models\GroupStudentModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Database\Models\StudentModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Database\Models\UserModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Model\Class.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Model\Student.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Model\Teacher.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Model\User.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\OutOfTimeException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\TimeModel.cs" />
   </ItemGroup>
 </Project>

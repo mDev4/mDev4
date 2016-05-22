@@ -8,14 +8,18 @@ using Android.OS;
 using KVS_android;
 using Android.Support.V4.App;
 using Android.Support.V7.App;
+using Shared.Model;
+using Newtonsoft.Json;
 
 namespace KVS_android
 {
     [Activity(Label = "Menu")]
 	public class Menu : AppCompatActivity
     {
+        TimeModel latestTimer;
         protected override void OnCreate(Bundle savedInstanceState)
         {
+            //latestTimer = JsonConvert.DeserializeObject<TimeModel>(base.Intent.GetStringExtra("TIMER"));
             base.OnCreate(savedInstanceState);
 			base.SetTheme (Resource.Style.Base_V7_Theme_AppCompat);
             // Set our view from the "menu" layout resource
@@ -24,7 +28,21 @@ namespace KVS_android
 			var newFragment = new FragmentMainMenu ();
 			var ft = FragmentManager.BeginTransaction ();
 			ft.Add (Resource.Id.frameLayout1, newFragment);
-			ft.Commit ();
-        }
+            ft.Commit();
+
+    }
+        /*public override bool DispatchTouchEvent(MotionEvent ev)
+        {
+            try
+            {
+                latestTimer.checkTime();
+            }
+            catch(OutOfTimeException e)
+            {
+                Toast.MakeText(this,e.Message,ToastLength.Long);
+                StartActivity(typeof(Login));
+            }
+            return base.DispatchTouchEvent(ev);
+       } **/
     }
 }

@@ -10,6 +10,8 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Shared.Database.Managers;
+using Newtonsoft.Json;
+using Shared.Model;
 using Shared.Database.Models;
 
 namespace KVS_android
@@ -31,6 +33,7 @@ namespace KVS_android
             Button loginButton = FindViewById<Button>(Resource.Id.loginButton);
             EditText usernameField = FindViewById<EditText>(Resource.Id.etUserName);
             EditText passwordField = FindViewById<EditText>(Resource.Id.etPass);
+            //TimeModel timer = new TimeModel();
 
             loginButton.Click += delegate
             {
@@ -49,7 +52,11 @@ namespace KVS_android
                         // If this password is correct, start Menu activity
                         if (user.Password == passwordField.Text.ToString())
                         {
-                            StartActivity(typeof(Menu));
+                           // var timerSerialized = JsonConvert.SerializeObject(timer);
+                            var intent = new Intent();
+                            intent.SetClass(this, typeof(Menu));
+                            //intent.PutExtra("TIMER",timerSerialized);
+                            StartActivity(intent);
                         }
                         // If not correct or empty, display toast message
                         else

@@ -2,7 +2,9 @@ KVS/KVS_android/bin
 
 KVS/KVS_android/obj
 
-KVS/Components/*
+KVS/Components/
+
+KVS_android\Resources\Resource.Designer.cs
 
 *.userprefs
 
@@ -13,3 +15,7 @@ KVS/Components/*
 *.png
 
 *.info
+
+*.xml
+
+*.class
