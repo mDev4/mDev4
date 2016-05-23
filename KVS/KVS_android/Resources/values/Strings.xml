@@ -2,7 +2,8 @@
 <resources>
   <string name="Hello">Hello World, Click Me!</string>
   <string name="ApplicationName">KVS_android</string>
-
+  <string name="openDrawer">Drawer Open</string>
+  <string name="closeDrawer">Drawer Closed</string>
   <string name="app_name">Sign In&amp;Up</string>
   <string name="action_settings">Settings</string>
   

@@ -16,12 +16,12 @@ namespace KVS_android
     [Activity(Label = "Menu")]
 	public class Menu : AppCompatActivity
     {
-        TimeModel latestTimer;
+        //TimeModel latestTimer;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             //latestTimer = JsonConvert.DeserializeObject<TimeModel>(base.Intent.GetStringExtra("TIMER"));
             base.OnCreate(savedInstanceState);
-			base.SetTheme (Resource.Style.Base_V7_Theme_AppCompat);
+			base.SetTheme (Resource.Style.Base_Theme_AppCompat);
             // Set our view from the "menu" layout resource
             SetContentView(Resource.Layout.Menu);
 
@@ -30,7 +30,7 @@ namespace KVS_android
 			ft.Add (Resource.Id.frameLayout1, newFragment);
             ft.Commit();
 
-    }
+        }
         /*public override bool DispatchTouchEvent(MotionEvent ev)
         {
             try

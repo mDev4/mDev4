@@ -14,12 +14,13 @@ using Android.Support.Design.Widget;
 
 using KVS_android;
 using KVS_android.Activities;
+using Android.Support.V7.App;
 
 namespace KVS_android
 {
     public class FragmentMainMenu : Fragment
     {
-        DrawerLayout drawerLayout;
+        public DrawerLayout drawerLayout { get; set; }
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
             View view = inflater.Inflate(Resource.Layout.fragment_layout, container, false);
@@ -27,6 +28,11 @@ namespace KVS_android
             NavigationView navigationView = view.FindViewById<NavigationView>(Resource.Id.nav_view);
             navigationView.NavigationItemSelected += NavigationView_NavigationItemSelected;
             TextView text = view.FindViewById<TextView>(Resource.Id.nameActivity);
+            //Toolbar toolbar = view.FindViewById<Toolbar>(Resource.Id.toolbar);
+            //Activity.SetActionBar(toolbar);
+            //var drawerToggle = new Adapters.ActionBarDrawerToggle((AppCompatActivity)Activity, drawerLayout, Resource.String.openDrawer, Resource.String.closeDrawer);
+            //drawerLayout.AddDrawerListener(drawerToggle);
+            //drawerToggle.SyncState();
             return view;
 
         }

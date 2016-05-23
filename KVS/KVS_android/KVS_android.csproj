@@ -83,6 +83,7 @@
     <Compile Include="Activities\Menu.cs" />
     <Compile Include="Activities\Register.cs" />
     <Compile Include="Activities\Results.cs" />
+    <Compile Include="Adapters\ActionBarDrawerToggle.cs" />
     <Compile Include="Adapters\FragmentMainMenu.cs" />
     <Compile Include="Adapters\GroupAdapter.cs" />
     <Compile Include="Adapters\StudentAdapter.cs" />
