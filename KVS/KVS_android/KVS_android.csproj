@@ -112,7 +112,6 @@
       <SubType>AndroidResource</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\detailedResult.axml" />
-    <AndroidResource Include="Resources\layout\perStudent_Group.axml" />
     <AndroidResource Include="Resources\layout\AddGroup.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
@@ -127,13 +126,11 @@
     <AndroidResource Include="Resources\layout\StudentsInGroup.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
-    <None Include="Resources\layout\Subjects.axml" />
     <AndroidResource Include="Resources\drawable\bg_colors_header.png" />
     <AndroidResource Include="Resources\drawable\ic_devices_black_24dp.png" />
     <AndroidResource Include="Resources\drawable\ic_home_black_24dp.png" />
     <AndroidResource Include="Resources\drawable\ic_question_answer_black_24dp.png" />
     <AndroidResource Include="Resources\layout\Header.axml" />
-    <AndroidResource Include="Resources\layout\fragment_layout.axml" />
     <AndroidResource Include="Resources\menu\navmenu.xml" />
     <None Include="Resources\values-v21\Styles.xml" />
   </ItemGroup>

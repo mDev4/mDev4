@@ -111,4 +111,10 @@
             style="@style/DefaultButtonText"
             android:background="@drawable/button_default_bg" />
     </LinearLayout>
+    <FrameLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:id="@+id/frameLayout1" />
 </RelativeLayout>

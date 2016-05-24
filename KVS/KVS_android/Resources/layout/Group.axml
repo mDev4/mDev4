@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:fab="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
@@ -11,36 +11,37 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
         <TextView
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/year_prompt"
             android:textSize="20dp" />
-        <RelativeLayout
+        <Spinner
+            android:id="@+id/spinner"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <Spinner
-                android:id="@+id/spinner"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:prompt="@string/year_prompt"
-                android:layout_alignParentLeft="true" />
-            <Button
-                android:text="Voeg groep toe"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/addGroupButton1"
-                android:layout_alignParentRight="true"
-                android:padding="10dp"
-                android:layout_margin="4dp"
-                style="@style/DefaultButtonText"
-                android:background="@drawable/button_default_bg" />
-        </RelativeLayout>
+            android:layout_height="75dp"
+            android:prompt="@string/year_prompt"
+            android:layout_alignParentLeft="true" />
         <ListView
             android:minWidth="25px"
             android:minHeight="25px"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="400dp"
             android:id="@id/android:list" />
+        <Button
+            android:text="Voeg groep toe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/addGroupButton1"
+            android:layout_alignParentBottom="true"
+            android:padding="10dp"
+            android:layout_margin="4dp"
+            style="@style/DefaultButtonText"
+            android:background="@drawable/button_default_bg" />
     </LinearLayout>
-</LinearLayout>
+    <FrameLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:id="@+id/frameLayout1" />
+</RelativeLayout>

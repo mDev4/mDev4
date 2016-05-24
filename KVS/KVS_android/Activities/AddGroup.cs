@@ -9,6 +9,7 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using Android.Support.V7.App;
 using Shared.Database.Models;
 using Shared.Database.Managers;
 
@@ -20,10 +21,17 @@ namespace KVS_android
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
+            base.SetTheme(Resource.Style.Base_V7_Theme_AppCompat);
 
-            // Set our view from the "register" layout resource
+            // Set our view from the "addGroup" layout resource
             SetContentView(Resource.Layout.AddGroup);
-            
+
+            // frameLayout setup
+            var newFragment = new FragmentMainMenu();
+            var ft = FragmentManager.BeginTransaction();
+            ft.Add(Resource.Id.frameLayout1, newFragment);
+            ft.Commit();
+
             // Create your application here
             Button addGroupButton1 = FindViewById<Button>(Resource.Id.addGroupButton1);
 

@@ -9,6 +9,7 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using Android.Support.V7.App;
 using Shared.Database.Models;
 using Shared.Database.Managers;
 
@@ -20,9 +21,16 @@ namespace KVS_android
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
+            base.SetTheme(Resource.Style.Base_V7_Theme_AppCompat);
 
             // Set our view from the "addStudent" layout resource
             SetContentView(Resource.Layout.AddStudent);
+
+            // frameLayout setup
+            var newFragment = new FragmentMainMenu();
+            var ft = FragmentManager.BeginTransaction();
+            ft.Add(Resource.Id.frameLayout1, newFragment);
+            ft.Commit();
 
             // Initialize button and all the input fields
             Button addStudentButton2 = FindViewById<Button>(Resource.Id.addStudentButton2);
