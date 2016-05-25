@@ -11,7 +11,7 @@ using Android.Views;
 using Android.Widget;
 using Shared.Database.Models;
 using Shared.Database.Managers;
-
+using KVS_android.Adapters_and_Fragments;
 
 namespace KVS_android
 {
@@ -44,12 +44,17 @@ namespace KVS_android
         }
 
         void dateSelectOnClick(object sender, EventArgs eventArgs) {
-            /**
+            
             DatePickerFragment frag = DatePickerFragment.NewInstance(delegate (DateTime time)
             {
-                editDateButton.Text = time.ToLongDateString();
+                editDateButton.Text = time.Date.ToString("MM-dd-yyyy");
+                tests = TestControl.getTestsByDate(editDateButton.Text);
+
+                listAdapter = new TestAdapter(this, tests);
+                testsList.Adapter = listAdapter;
+                listAdapter.NotifyDataSetChanged();
             });
-    */
+            frag.Show(FragmentManager, DatePickerFragment.TAG);
             }
 
 

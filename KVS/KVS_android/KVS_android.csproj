@@ -80,11 +80,14 @@
     <Compile Include="Activities\Register.cs" />
     <Compile Include="Activities\Results.cs" />
     <Compile Include="Activities\Tests.cs" />
-    <Compile Include="Adapters_and_Fragments\DatePickerFragment.cs" />
+    <Compile Include="Adapters_and_Fragments\DatePickerFragment.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Adapters_and_Fragments\FragmentMainMenu.cs" />
     <Compile Include="Adapters_and_Fragments\TestAdapter.cs" />
     <Compile Include="Adapters_and_Fragments\GroupAdapter.cs" />
     <Compile Include="Adapters_and_Fragments\StudentAdapter.cs" />
+    <Compile Include="Activities\addTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Activities\Student.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
@@ -118,6 +121,9 @@
     </AndroidResource>
     <AndroidResource Include="Resources\layout\detailedResult.axml" />
     <AndroidResource Include="Resources\layout\perStudent_Group.axml" />
+    <AndroidResource Include="Resources\layout\addTests.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
     <None Include="Resources\layout\Announcements.axml" />
     <None Include="Resources\layout\CustomRow.axml" />
     <AndroidResource Include="Resources\layout\Header.axml" />
