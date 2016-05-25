@@ -18,9 +18,11 @@ namespace KVS_android
         {
             base.OnCreate(savedInstanceState);
             base.SetTheme(Resource.Style.Base_V7_Theme_AppCompat);
+
             // Set our view from the "Announcements" layout resource
             SetContentView(Resource.Layout.Announcements);
 
+            // frameLayout setup
             var newFragment = new FragmentMainMenu();
             var ft = FragmentManager.BeginTransaction();
             ft.Add(Resource.Id.frameLayout1, newFragment);
