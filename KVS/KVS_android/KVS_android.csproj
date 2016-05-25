@@ -75,6 +75,7 @@
   <ItemGroup>
     <Compile Include="Activities\AddGroup.cs" />
     <Compile Include="Activities\AddStudent.cs" />
+    <Compile Include="Activities\Announcements.cs" />
     <Compile Include="Activities\Group.cs" />
     <Compile Include="Activities\Login.cs" />
     <Compile Include="Activities\MainActivity.cs" />
@@ -118,7 +119,7 @@
     <AndroidResource Include="Resources\layout\AddStudent.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
-    <None Include="Resources\layout\Announcements.axml" />
+    <AndroidResource Include="Resources\layout\Announcements.axml" />
     <None Include="Resources\layout\CustomRow.axml" />
     <AndroidResource Include="Resources\layout\Header.axml" />
     <AndroidResource Include="Resources\layout\insertResult.axml" />

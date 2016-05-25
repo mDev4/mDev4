@@ -9,12 +9,13 @@
     android:id="@+id/linearLayout1">
     <LinearLayout
         android:orientation="horizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="335dp"
+        android:layout_height="75dp"
         android:background="@drawable/linearlayout_bg"
         android:layout_marginTop="200dp"
         android:layout_marginBottom="200dp"
-        android:layout_marginLeft="40dp">
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
         <TextView
             android:text="Welkom in de KVS app!"
             android:textAppearance="?android:attr/textAppearanceLarge"
@@ -28,12 +29,13 @@
     </LinearLayout>
     <LinearLayout
         android:orientation="horizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="335dp"
+        android:layout_height="75dp"
         android:background="@drawable/linearlayout_bg"
-        android:layout_marginTop="255dp"
+        android:layout_marginTop="275dp"
         android:layout_marginBottom="200dp"
-        android:layout_marginLeft="40dp">
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
         <TextView
             android:text="Swipe vanaf links om het menu te weergeven..."
             android:textAppearance="?android:attr/textAppearanceSmall"
