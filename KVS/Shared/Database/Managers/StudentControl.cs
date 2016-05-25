@@ -1,6 +1,9 @@
 ﻿using System;
+using System.Collections;
+using System.Text;
 using System.Data.SqlClient;
 using Shared.Database.Models;
+using System.Collections.Generic;
 
 namespace Shared.Database.Managers
 {
@@ -9,7 +12,7 @@ namespace Shared.Database.Managers
      */
     class StudentControl
     {
-        
+
 
         /*
         * Adds a student to the database with given data
@@ -25,7 +28,7 @@ namespace Shared.Database.Managers
                     // Query
                     using (SqlCommand command = new SqlCommand(
                         "INSERT INTO " + DatabaseHelper.STUDENT_TABLE + " VALUES(@firstName, @lastName, @studentCode, @birthDate, @particulars, @startYear)", con))
-                    {  
+                    {
                         // Adding right data to the query
                         command.Parameters.Add(new SqlParameter("firstName", student.Firstname));
                         command.Parameters.Add(new SqlParameter("lastName", student.Lastname));

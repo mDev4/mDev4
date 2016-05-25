@@ -15,7 +15,7 @@ namespace Shared.Database.Managers
 
         public static List<StudentModel> getStudentsByGroup(string groupId)
         {
-            
+
             List<StudentModel> students = new List<StudentModel>();
             // Making sure to use the right database connection
             using (SqlConnection con = new SqlConnection(DatabaseHelper.dbString))

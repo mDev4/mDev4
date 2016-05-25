@@ -11,7 +11,7 @@ using Android.Support.V7.App;
 
 namespace KVS_android
 {
-    [Activity(Label = "Menu")]
+    [Activity(Label = "Home")]
 	public class Menu : AppCompatActivity
     {
         protected override void OnCreate(Bundle savedInstanceState)

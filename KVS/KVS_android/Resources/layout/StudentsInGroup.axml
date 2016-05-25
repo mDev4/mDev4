@@ -1,12 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <ListView
-        android:minWidth="25px"
-        android:minHeight="25px"
+    android:layout_height="match_parent"
+    android:background="@drawable/schoolbackground">
+    <LinearLayout
+        android:background="@drawable/linearlayout_bg"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@id/android:list" />
-</LinearLayout>
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Studenten in deze groep:"
+            android:textSize="20dp"
+            android:layout_margin="5dp" />
+        <SearchView
+            android:id="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:queryHint="Zoek naar student.."
+            android:layout_margin="5dp" />
+        <ListView
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:id="@id/android:list" />
+        <Button
+            android:text="Voeg student toe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/addStudentButton1"
+            android:layout_alignParentBottom="true"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            style="@style/DefaultButtonText"
+            android:background="@drawable/button_default_bg" />
+    </LinearLayout>
+    <FrameLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:id="@+id/frameLayout1" />
+</RelativeLayout>

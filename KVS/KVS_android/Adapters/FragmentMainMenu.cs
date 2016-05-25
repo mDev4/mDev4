@@ -45,9 +45,9 @@ namespace KVS_android
                     }
                     break;
                 case (Resource.Id.nav_ann):
-                    if (this.Activity.GetType() != typeof(Menu))
+                    if (this.Activity.GetType() != typeof(Announcements))
                     {
-                        var intent = new Intent(this.Activity, typeof(Menu));
+                        var intent = new Intent(this.Activity, typeof(Announcements));
                         StartActivity(intent);
                     }
                     break;

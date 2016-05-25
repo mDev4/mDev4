@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Shared.Database.Models
 {
-	class StudentModel
+    class StudentModel
     {
         private int id;
         private string firstname;
@@ -15,13 +15,15 @@ namespace Shared.Database.Models
         private string particulars; //allergies etc
         private int startYear;
 
-		public StudentModel(string firstname, string lastname){
-			this.firstname = firstname;
-			this.lastname = lastname;
-		}
+        public StudentModel(string firstname, string lastname)
+        {
+            this.firstname = firstname;
+            this.lastname = lastname;
+        }
 
-		public StudentModel(){
-		}
+        public StudentModel()
+        {
+        }
 
         public int Id
         {

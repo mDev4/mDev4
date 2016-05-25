@@ -9,6 +9,7 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using Android.Support.V7.App;
 using KVS_android;
 using Shared.Database.Models;
 using Shared.Database.Managers;
@@ -27,6 +28,7 @@ namespace KVS_android
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
+            base.SetTheme(Resource.Style.Base_V7_Theme_AppCompat);
 
             // Set our view from the "student" layout resource
             SetContentView(Resource.Layout.Student);
@@ -45,6 +47,12 @@ namespace KVS_android
             particularsTextView.Text += " " + student.Particulars;
             birthDateTextView.Text += " " + student.BirthDate.ToString("dd/MM/yyyy");
             studentCodeTextView.Text += " " + student.Studentcode;
+
+            // frameLayout setup
+            var newFragment = new FragmentMainMenu();
+            var ft = FragmentManager.BeginTransaction();
+            ft.Add(Resource.Id.frameLayout1, newFragment);
+            ft.Commit();
 
         }
     }
