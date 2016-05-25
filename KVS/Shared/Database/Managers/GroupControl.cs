@@ -13,6 +13,37 @@ namespace Shared.Database.Managers
     class GroupControl
     {
         /*
+        * Adding a Group to the database according to given data
+        */
+        public static void addGroup(GroupModel group)
+        {
+            using (SqlConnection con = new SqlConnection(DatabaseHelper.dbString))// Using the right connection
+            {
+                con.Open();
+
+                try
+                {
+                    // Query
+                    using (SqlCommand command = new SqlCommand(
+                        "INSERT INTO " + DatabaseHelper.GROUP_TABLE + " VALUES(@name, @current_academic_year, @current_year_of_study, @start_year)", con))
+                    {
+                        // Adding query parameters so the right data is added
+                        command.Parameters.Add(new SqlParameter("name", group.Name));
+                        command.Parameters.Add(new SqlParameter("current_academic_year", group.CurrCalendarYear));
+                        command.Parameters.Add(new SqlParameter("current_year_of_study", group.CurrYear));
+                        command.Parameters.Add(new SqlParameter("start_year", group.StartYear));
+
+                        command.ExecuteNonQuery(); // Executing
+                    }
+                }
+                catch (SqlException ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+            }
+        }
+
+        /*
         * Gets a group by looking at its id and returns it
         */
         public static GroupModel getGroupById(string id)

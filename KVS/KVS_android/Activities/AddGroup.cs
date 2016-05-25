@@ -33,41 +33,35 @@ namespace KVS_android
             ft.Commit();
 
             // Create your application here
-            Button addGroupButton1 = FindViewById<Button>(Resource.Id.addGroupButton1);
+            Button addGroupButton2 = FindViewById<Button>(Resource.Id.addGroupButton2);
 
             EditText nameGroupField = FindViewById<EditText>(Resource.Id.etNameGroup);
             EditText currentAcademicYearField = FindViewById<EditText>(Resource.Id.etCurrentAcademicYear);
             EditText currentYearofStudyField = FindViewById<EditText>(Resource.Id.etCurrentYearofStudy);
             EditText startYearField = FindViewById<EditText>(Resource.Id.etStartYear);
 
-            /*
-            addGroupButton.Click += delegate
+
+            addGroupButton2.Click += delegate
             {
                 GroupModel group = new GroupModel();
-                group.Firstname = nameGroupField.Text.ToString();
-                group.Lastname = currentAcademicYearField.Text.ToString();
-                group.Username = currentYearofStudyField.Text.ToString();
-                group.Password = startYearField.Text.ToString();
-
-                // geen strings, maar ints ??
-
+                group.Name = nameGroupField.Text.ToString();
+                group.CurrCalendarYear = Int16.Parse(currentAcademicYearField.Text);
+                group.CurrYear = Int16.Parse(currentYearofStudyField.Text);
+                group.StartYear = Int16.Parse(startYearField.Text);
                 
                 // Check if all inputfields are filled in
-                if (user.Firstname == String.Empty || user.Lastname == String.Empty || user.Username == String.Empty || user.Password == String.Empty || user.Email == String.Empty || user.PhoneNumber == String.Empty)
+                if (group.Name == String.Empty || group.CurrCalendarYear == null || group.CurrYear == null || group.StartYear == null)
                 {
                     Toast.MakeText(this, "Niet alle velden zijn ingevuld!", ToastLength.Long).Show();
                     Console.WriteLine("Niet alle velden zijn ingevuld error melding...");
                 }
                 else {
                     // User succesfully added
-                    UserControl.addUser(user);
-                    Toast.MakeText(this, "Gebruiker succesvol aangemaakt", ToastLength.Long).Show();
-                    StartActivity(typeof(Login));
-                }
-                
-
-            };
-            */
+                    GroupControl.addGroup(group);
+                    Toast.MakeText(this, "Groep succesvol aangemaakt", ToastLength.Long).Show();
+                    StartActivity(typeof(Group));
+                }        
+            };            
         }
     }
 }
