@@ -42,33 +42,33 @@ namespace KVS_android
             EditText birthDateField = FindViewById<EditText>(Resource.Id.etBirthDate);
             EditText particularsField = FindViewById<EditText>(Resource.Id.etParticulars);
             EditText startYearField = FindViewById<EditText>(Resource.Id.etStartYear);
-            
-            /*
-            registerButton.Click += delegate
+            EditText sexField = FindViewById<EditText>(Resource.Id.etSex);
+
+            addStudentButton2.Click += delegate
             {
-                UserModel user = new UserModel();
-                user.Firstname = firstNameField.Text.ToString();
-                user.Lastname = lastNameField.Text.ToString();
-                user.Username = userNameField.Text.ToString();
-                user.Password = passwordField.Text.ToString();
-                user.Email = emailField.Text.ToString();
-                user.PhoneNumber = phoneField.Text.ToString();
+                StudentModel student = new StudentModel();
+                student.Studentcode = studentCodeField.Text.ToString();
+                student.Firstname = firstNameField.Text.ToString();
+                student.Middlename = middleNameField.Text.ToString();
+                student.Lastname = lastNameField.Text.ToString();
+                student.BirthDate = DateTime.Parse(birthDateField.Text);    
+                student.Particulars = particularsField.Text.ToString();
+                student.StartYear = Int16.Parse(startYearField.Text);
+                student.Sex = sexField.Text.ToString();
 
                 // Check if all inputfields are filled in
-                if (user.Firstname == String.Empty || user.Lastname == String.Empty || user.Username == String.Empty || user.Password == String.Empty || user.Email == String.Empty || user.PhoneNumber == String.Empty)
+                if (student.Studentcode == String.Empty || student.Firstname == String.Empty || student.Middlename == String.Empty || student.Lastname == String.Empty || student.BirthDate == null || student.Particulars == String.Empty || student.StartYear == null || student.Sex == String.Empty)
                 {
                     Toast.MakeText(this, "Niet alle velden zijn ingevuld!", ToastLength.Long).Show();
                     Console.WriteLine("Niet alle velden zijn ingevuld error melding...");
                 }
                 else {
                     // User succesfully added
-                    UserControl.addUser(user);
-                    Toast.MakeText(this, "Gebruiker succesvol aangemaakt", ToastLength.Long).Show();
-                    StartActivity(typeof(Login));
+                    StudentControl.addStudent(student);
+                    Toast.MakeText(this, "Student succesvol aangemaakt", ToastLength.Long).Show();
+                    StartActivity(typeof(StudentsInGroup));
                 }
-
             };
-            */
         }
 
     }

@@ -24,6 +24,7 @@ namespace KVS_android
         private TextView particularsTextView;
         private TextView birthDateTextView;
         private TextView studentCodeTextView;
+        private TextView sexTextView;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -37,6 +38,7 @@ namespace KVS_android
             nameTextView = FindViewById<TextView>(Resource.Id.nameStudentTextField);
             particularsTextView = FindViewById<TextView>(Resource.Id.particularsTextField);
             birthDateTextView = FindViewById<TextView>(Resource.Id.birthDateTextField);
+            sexTextView = FindViewById<TextView>(Resource.Id.sexTextField);
             studentCodeTextView = FindViewById<TextView>(Resource.Id.studentCodeTextField);
 
             //get student to fill in value
@@ -47,6 +49,7 @@ namespace KVS_android
             particularsTextView.Text += " " + student.Particulars;
             birthDateTextView.Text += " " + student.BirthDate.ToString("dd/MM/yyyy");
             studentCodeTextView.Text += " " + student.Studentcode;
+            sexTextView.Text += " " + student.Sex;
 
             // frameLayout setup
             var newFragment = new FragmentMainMenu();

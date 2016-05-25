@@ -76,6 +76,19 @@
             android:drawablePadding="10dp"
             android:singleLine="true" />
         <EditText
+            android:id="@+id/etSex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_bottom_bg"
+            android:layout_marginTop="-2dp"
+            android:padding="10dp"
+            android:hint="Geslacht"
+            android:textColorHint="#bbbbbb"
+            android:drawableLeft="@drawable/ic_star_black_24dp"
+            android:textColor="@android:color/black"
+            android:drawablePadding="10dp"
+            android:singleLine="true" />
+        <EditText
             android:id="@+id/etParticulars"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

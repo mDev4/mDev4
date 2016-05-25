@@ -14,6 +14,7 @@ namespace Shared.Database.Models
         private DateTime birthDate;
         private string particulars; //allergies etc
         private int startYear;
+        private string sex;
 
         public StudentModel(string firstname, string lastname)
         {
@@ -120,8 +121,18 @@ namespace Shared.Database.Models
             {
                 startYear = value;
             }
+        }
 
-
+        public string Sex
+        {
+            get
+            {
+                return sex;
+            }
+            set
+            {
+                sex = value;
+            }
         }
     }
 }

@@ -61,6 +61,16 @@
                 android:layout_marginLeft="5dp"
                 android:textSize="20dp" />
             <TextView
+                android:text="Geslacht:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sexTextField"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="5dp"
+                android:textSize="20dp" />
+            <TextView
                 android:text="Bijzonderheden:"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -75,7 +85,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_marginTop="195dp">
+            android:layout_marginTop="145dp">
             <Button
                 android:text="Resultaten inzien"
                 android:layout_width="match_parent"

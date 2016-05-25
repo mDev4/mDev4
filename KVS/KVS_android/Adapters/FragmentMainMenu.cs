@@ -65,6 +65,12 @@ namespace KVS_android
                         StartActivity(intent);
                     }
                     break;
+                case (Resource.Id.logOut):
+                    {
+                        var intent = new Intent(this.Activity, typeof(MainActivity));
+                        StartActivity(intent);
+                    }
+                    break;
             }
 
             // Close drawer

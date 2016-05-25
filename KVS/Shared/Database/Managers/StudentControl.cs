@@ -27,15 +27,17 @@ namespace Shared.Database.Managers
                 {
                     // Query
                     using (SqlCommand command = new SqlCommand(
-                        "INSERT INTO " + DatabaseHelper.STUDENT_TABLE + " VALUES(@firstName, @lastName, @studentCode, @birthDate, @particulars, @startYear)", con))
+                        "INSERT INTO " + DatabaseHelper.STUDENT_TABLE + " VALUES(@studentCode, @particulars, @birthDate, @firstName, @middleName, @lastName, @startYear, @sex)", con))
                     {
                         // Adding right data to the query
-                        command.Parameters.Add(new SqlParameter("firstName", student.Firstname));
-                        command.Parameters.Add(new SqlParameter("lastName", student.Lastname));
                         command.Parameters.Add(new SqlParameter("studentCode", student.Studentcode));
-                        command.Parameters.Add(new SqlParameter("birthDate", student.BirthDate));
                         command.Parameters.Add(new SqlParameter("particulars", student.Particulars));
+                        command.Parameters.Add(new SqlParameter("birthDate", student.BirthDate));
+                        command.Parameters.Add(new SqlParameter("firstName", student.Firstname));
+                        command.Parameters.Add(new SqlParameter("middleName", student.Middlename));
+                        command.Parameters.Add(new SqlParameter("lastName", student.Lastname));
                         command.Parameters.Add(new SqlParameter("startYear", student.StartYear));
+                        command.Parameters.Add(new SqlParameter("sex", student.Sex));
 
                         command.ExecuteNonQuery(); // Execute query
                     }
@@ -79,6 +81,7 @@ namespace Shared.Database.Managers
                         student.Middlename = reader.GetString(5);
                         student.Lastname = reader.GetString(6);
                         student.StartYear = reader.GetInt16(7);
+                        student.Sex = reader.GetString(8);
 
                         return student;
                     }
@@ -118,6 +121,7 @@ namespace Shared.Database.Managers
                         student.Middlename = reader.GetString(5);
                         student.Lastname = reader.GetString(6);
                         student.StartYear = reader.GetInt16(7);
+                        student.Sex = reader.GetString(8);
 
                         return student;
                     }
