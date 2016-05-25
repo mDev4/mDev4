@@ -9,18 +9,24 @@
         android:background="@drawable/linearlayout_bg"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/year_prompt"
-            android:textSize="20dp" />
+            android:text="Jaar:"
+            android:textSize="20dp"
+            android:layout_margin="5dp" />
         <Spinner
             android:id="@+id/spinner"
             android:layout_width="match_parent"
             android:layout_height="75dp"
             android:prompt="@string/year_prompt"
-            android:layout_alignParentLeft="true" />
+            android:layout_alignParentLeft="true"
+            android:layout_margin="5dp" />
         <ListView
             android:minWidth="25px"
             android:minHeight="25px"
@@ -34,7 +40,7 @@
             android:id="@+id/addGroupButton1"
             android:layout_alignParentBottom="true"
             android:padding="10dp"
-            android:layout_margin="4dp"
+            android:layout_margin="5dp"
             style="@style/DefaultButtonText"
             android:background="@drawable/button_default_bg" />
     </LinearLayout>
