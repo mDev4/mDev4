@@ -80,10 +80,11 @@
     <Compile Include="Activities\Register.cs" />
     <Compile Include="Activities\Results.cs" />
     <Compile Include="Activities\Tests.cs" />
-    <Compile Include="Adapters\FragmentMainMenu.cs" />
-    <Compile Include="Adapters\TestAdapter.cs" />
-    <Compile Include="Adapters\GroupAdapter.cs" />
-    <Compile Include="Adapters\StudentAdapter.cs" />
+    <Compile Include="Adapters_and_Fragments\DatePickerFragment.cs" />
+    <Compile Include="Adapters_and_Fragments\FragmentMainMenu.cs" />
+    <Compile Include="Adapters_and_Fragments\TestAdapter.cs" />
+    <Compile Include="Adapters_and_Fragments\GroupAdapter.cs" />
+    <Compile Include="Adapters_and_Fragments\StudentAdapter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Activities\Student.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />

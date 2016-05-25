@@ -12,6 +12,7 @@ using Android.Widget;
 using Shared.Database.Models;
 using Shared.Database.Managers;
 
+
 namespace KVS_android
 {
     [Activity(Label = "Tests")]
@@ -20,6 +21,7 @@ namespace KVS_android
         private List<TestModel> tests;
         private ListView testsList;
         private TestAdapter listAdapter;
+        private Button editDateButton;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -35,7 +37,22 @@ namespace KVS_android
 
             listAdapter.NotifyDataSetChanged();
 
+            //button logic
+            editDateButton = FindViewById<Button>(Resource.Id.selectDateButton);
+            editDateButton.Click += dateSelectOnClick;
 
         }
+
+        void dateSelectOnClick(object sender, EventArgs eventArgs) {
+            /**
+            DatePickerFragment frag = DatePickerFragment.NewInstance(delegate (DateTime time)
+            {
+                editDateButton.Text = time.ToLongDateString();
+            });
+    */
+            }
+
+
+        
     }
 }

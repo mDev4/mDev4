@@ -2147,17 +2147,17 @@ namespace KVS_android
 			// aapt resource value: 0x7f060098
 			public const int nameStudentTextField = 2131099800;
 			
+			// aapt resource value: 0x7f0600a0
+			public const int nav_ann = 2131099808;
+			
 			// aapt resource value: 0x7f06009f
-			public const int nav_ann = 2131099807;
+			public const int nav_klas = 2131099807;
 			
 			// aapt resource value: 0x7f06009e
-			public const int nav_klas = 2131099806;
+			public const int nav_menu = 2131099806;
 			
-			// aapt resource value: 0x7f06009d
-			public const int nav_menu = 2131099805;
-			
-			// aapt resource value: 0x7f0600a0
-			public const int nav_results = 2131099808;
+			// aapt resource value: 0x7f0600a1
+			public const int nav_results = 2131099809;
 			
 			// aapt resource value: 0x7f060075
 			public const int nav_view = 2131099765;
@@ -2254,6 +2254,9 @@ namespace KVS_android
 			
 			// aapt resource value: 0x7f060067
 			public const int search_voice_btn = 2131099751;
+			
+			// aapt resource value: 0x7f06009d
+			public const int selectDateButton = 2131099805;
 			
 			// aapt resource value: 0x7f060068
 			public const int select_dialog_listview = 2131099752;
