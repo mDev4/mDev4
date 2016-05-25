@@ -75,7 +75,7 @@ namespace Shared.Database.Managers
 
         public static List<TestModel> getTestsByDate(string date)
         {
-            TestModel test = new TestModel();
+            
             List<TestModel> testList = new List<TestModel>();
             using (SqlConnection con = new SqlConnection(DatabaseHelper.dbString))// Using right connection
             {
@@ -93,6 +93,7 @@ namespace Shared.Database.Managers
                     // Getting result
                     while (reader.Read())
                     {
+                        TestModel test = new TestModel();
                         // Converting result to TestModels
                         test.Id = reader.GetInt16(0);
                         test.Date = DateTime.Parse(reader.GetString(1));
