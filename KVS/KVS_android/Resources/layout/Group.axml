@@ -17,7 +17,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Groepen in jaar:"
+            android:text="@string/groups_in_year"
             android:textSize="20dp"
             android:layout_margin="5dp" />
         <Spinner
@@ -34,7 +34,7 @@
             android:layout_height="400dp"
             android:id="@id/android:list" />
         <Button
-            android:text="Voeg groep toe"
+            android:text="@string/add_group"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/addGroupButton1"

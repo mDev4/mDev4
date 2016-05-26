@@ -26,7 +26,7 @@
                 android:layout_marginLeft="50dp"
                 android:layout_margin="5dp" />
             <TextView
-                android:text="Naam leerling"
+                android:text="@string/name_student"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:id="@+id/nameStudentTextField"
@@ -41,7 +41,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <TextView
-                android:text="Studentcode:"
+                android:text="@string/student_code1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/studentCodeTextField"
@@ -51,7 +51,7 @@
                 android:layout_marginLeft="5dp"
                 android:textColor="@android:color/white" />
             <TextView
-                android:text="Geboortedatum:"
+                android:text="@string/birth_date1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/birthDateTextField"
@@ -61,7 +61,7 @@
                 android:layout_marginLeft="5dp"
                 android:textSize="20dp" />
             <TextView
-                android:text="Geslacht:"
+                android:text="@string/sex1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/sexTextField"
@@ -71,7 +71,7 @@
                 android:layout_marginLeft="5dp"
                 android:textSize="20dp" />
             <TextView
-                android:text="Bijzonderheden:"
+                android:text="@string/particulars1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/particularsTextField"
@@ -87,7 +87,7 @@
             android:orientation="vertical"
             android:layout_marginTop="145dp">
             <Button
-                android:text="Resultaten inzien"
+                android:text="@string/see_results"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/resultsButton1"
@@ -97,7 +97,7 @@
                 android:background="@drawable/button_default_bg"
                 android:layout_gravity="center_horizontal" />
             <Button
-                android:text="Resultaten invoeren"
+                android:text="@string/add_results"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/resultsButton2"

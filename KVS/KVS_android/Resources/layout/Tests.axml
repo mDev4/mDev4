@@ -14,7 +14,7 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp">
         <TextView
-            android:text="Toetsen"
+            android:text="@string/tests"
             android:layout_marginTop="20dp"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:layout_width="match_parent"

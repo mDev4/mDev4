@@ -17,7 +17,7 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp">
         <TextView
-            android:text="Welkom in de KVS app!"
+            android:text="@string/welcome"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -37,7 +37,7 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp">
         <TextView
-            android:text="Swipe vanaf links om het menu te weergeven..."
+            android:text="@string/info"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

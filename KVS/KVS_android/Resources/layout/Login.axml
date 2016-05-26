@@ -16,7 +16,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/edittext_top_bg"
             android:padding="10dp"
-            android:hint="Gebruikersnaam"
+            android:hint="@string/user_name"
             android:textColorHint="#cccccc"
             android:drawableLeft="@drawable/ic_account_circle_black_24dp"
             android:textColor="@android:color/black"
@@ -29,7 +29,7 @@
             android:background="@drawable/edittext_bottom_bg"
             android:layout_marginTop="-2dp"
             android:padding="10dp"
-            android:hint="Wachtwoord"
+            android:hint="@string/passw"
             android:textColorHint="#cccccc"
             android:password="true"
             android:drawableLeft="@drawable/ic_lock_black_24dp"
@@ -42,7 +42,7 @@
             android:layout_height="wrap_content"
             android:padding="10dp"
             android:layout_margin="4dp"
-            android:text="Log In"
+            android:text="@string/log_in"
             style="@style/DefaultButtonText"
             android:background="@drawable/button_default_bg" />
     </LinearLayout>

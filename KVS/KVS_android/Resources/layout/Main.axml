@@ -16,7 +16,7 @@
             android:layout_height="wrap_content"
             android:padding="10dp"
             android:layout_margin="4dp"
-            android:text="Log in"
+            android:text="@string/log_in"
             android:background="@drawable/button_default_bg"
             style="@style/DefaultButtonText" />
         <Button
@@ -25,7 +25,7 @@
             android:layout_height="wrap_content"
             android:padding="10dp"
             android:layout_margin="4dp"
-            android:text="Registreer"
+            android:text="@string/register"
             style="@style/DefaultButtonText"
             android:background="@drawable/button_default_bg" />
     </LinearLayout>

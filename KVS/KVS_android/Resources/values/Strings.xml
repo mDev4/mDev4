@@ -1,12 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="Hello">Hello World, Click Me!</string>
-  <string name="ApplicationName">KVS_android</string>
-
+  <string name="ApplicationName">KVS</string>
   <string name="app_name">Sign In&amp;Up</string>
   <string name="action_settings">Settings</string>
+
+  <string name="name_group">Naam groep</string>
+  <string name="cur_ac_year">Huidig schooljaar</string>
+  <string name="cur_year_study">Groep, bijvoorbeeld 1, 2, 3...</string>
+  <string name="start_year">Startjaar</string>
+  <string name="add_group">Voeg groep toe</string>
+  <string name="groups_in_year">Groepen in jaar:</string>
+
+  <string name="student_code">Studentnummer</string>
+  <string name="student_code1">Studentnummer:  </string>
+  <string name="first_name">Voornaam</string>
+  <string name="middle_name">Tussenvoegsel</string>
+  <string name="last_name">Achternaam</string>
+  <string name="birth_date">Geboortedatum</string>
+  <string name="birth_date1">Geboortedatum:  </string>
+  <string name="sex">Geslacht</string>
+  <string name="sex1">Geslacht:  </string>
+  <string name="particulars">Bijzonderheden</string>
+  <string name="particulars1">Bijzonderheden:  </string>
+  <string name="name_student">Naam leerling</string>
+  <string name="students_group">Studenten in deze groep:</string>
+  <string name="add_student">Voeg student toe</string>
+
+  <string name="welcome">Welkom in de KVS app!</string>
+  <string name="info">Swipe vanaf links om het menu te weergeven...</string>
+  <string name="announcem">Mededelingen</string>
+  <string name="tests">Toetsen</string>
+
+  <string name="user_name">Gebruikersnaam</string>
+  <string name="passw">Wachtwoord</string>
+  <string name="email">Email</string>
+  <string name="phone">Telefoonnummer</string>
+  <string name="log_in">Log In</string>
+  <string name="register">Registreer</string>
+
+  <string name="see_results">Resultaten inzien</string>
+  <string name="add_results">Resultaten invoeren</string>
   
-  <string name="year_prompt">Year:</string>
+  <string name="year_prompt">Jaar:</string>
   <string-array name="years_array">
     <item>2004</item>
     <item>2005</item>
