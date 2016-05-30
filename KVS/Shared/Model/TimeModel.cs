@@ -13,29 +13,26 @@ namespace Shared.Model
         public static DateTime timeLastClicked
         {
             get { return timeLastClicked; }
-            set { setter(value); }
+            set {
+                //if(DateTime.Now.Subtract(timeLastClicked).Seconds > TIME_TO_LIVE)
+            //{
+                    //throw new OutOfTimeException("Connection has expired, please log in again");
+                //}
+            //else
+            //{
+                    timeLastClicked = value;
+                //}
+            }
         }
 
         public TimeModel()
         {
-            timeLastClicked = DateTime.Now;
+            
 
         }
 
         public void checkTime() {
             timeLastClicked = DateTime.Now;
-        }
-
-        private static DateTime setter(DateTime model)
-        {
-            if (DateTime.Now.Subtract(timeLastClicked).Seconds > TIME_TO_LIVE)
-            {
-                throw new OutOfTimeException ("Connection has expired, please log in again");
-            }
-            else
-            {
-                return model;
-            }
         }
     }
     }

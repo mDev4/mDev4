@@ -6,29 +6,36 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 using KVS_android;
-using Android.Support.V4.App;
 using Android.Support.V7.App;
 using Shared.Model;
 using Newtonsoft.Json;
+using Android.Support.V4.Widget;
 
 namespace KVS_android
 {
     [Activity(Label = "Menu")]
 	public class Menu : AppCompatActivity
     {
-        //TimeModel latestTimer;
+        TimeModel latestTimer;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             //latestTimer = JsonConvert.DeserializeObject<TimeModel>(base.Intent.GetStringExtra("TIMER"));
             base.OnCreate(savedInstanceState);
 			base.SetTheme (Resource.Style.Base_Theme_AppCompat);
+            var toolbar = FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.toolbar);
+            SetSupportActionBar(toolbar);
+            SupportActionBar.SetHomeAsUpIndicator(Resource.Drawable.ic_menu);
+            SupportActionBar.SetDisplayHomeAsUpEnabled(true);
             // Set our view from the "menu" layout resource
             SetContentView(Resource.Layout.Menu);
+            
 
 			var newFragment = new FragmentMainMenu ();
 			var ft = FragmentManager.BeginTransaction ();
-			ft.Add (Resource.Id.frameLayout1, newFragment);
+			ft.Add (Resource.Id.frameLayout1, newFragment,"Drawer");
             ft.Commit();
+            
+
 
         }
         /*public override bool DispatchTouchEvent(MotionEvent ev)

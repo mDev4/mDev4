@@ -22,7 +22,7 @@ namespace KVS_android
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-
+            //TimeModel timer = new TimeModel();
             // Create your application here
 
             // Set our view from the "main" layout resource
@@ -33,7 +33,7 @@ namespace KVS_android
             Button loginButton = FindViewById<Button>(Resource.Id.loginButton);
             EditText usernameField = FindViewById<EditText>(Resource.Id.etUserName);
             EditText passwordField = FindViewById<EditText>(Resource.Id.etPass);
-            //TimeModel timer = new TimeModel();
+            
 
             loginButton.Click += delegate
             {

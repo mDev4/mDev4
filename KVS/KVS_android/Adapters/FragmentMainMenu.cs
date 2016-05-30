@@ -28,11 +28,8 @@ namespace KVS_android
             NavigationView navigationView = view.FindViewById<NavigationView>(Resource.Id.nav_view);
             navigationView.NavigationItemSelected += NavigationView_NavigationItemSelected;
             TextView text = view.FindViewById<TextView>(Resource.Id.nameActivity);
-            //Toolbar toolbar = view.FindViewById<Toolbar>(Resource.Id.toolbar);
-            //Activity.SetActionBar(toolbar);
-            //var drawerToggle = new Adapters.ActionBarDrawerToggle((AppCompatActivity)Activity, drawerLayout, Resource.String.openDrawer, Resource.String.closeDrawer);
-            //drawerLayout.AddDrawerListener(drawerToggle);
-            //drawerToggle.SyncState();
+            ActionBarDrawerToggle mDrawerToggle = new ActionBarDrawerToggle(
+            Activity, drawerLayout, Resource.String.openDrawer, Resource.String.closeDrawer);
             return view;
 
         }

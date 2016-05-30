@@ -138,6 +138,9 @@
     <AndroidResource Include="Resources\drawable\ic_question_answer_black_24dp.png" />
     <AndroidResource Include="Resources\drawable\ic_supervisor_account_black_24dp.png" />
     <AndroidResource Include="Resources\menu\navmenu.xml" />
+    <AndroidResource Include="Resources\layout\toolbar.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
     <None Include="Resources\values-v21\Styles.xml" />
   </ItemGroup>
   <ItemGroup>
@@ -209,5 +212,11 @@
       <Visible>False</Visible>
       <Version>23.2.1</Version>
     </XamarinComponentReference>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ic_drawer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ic_menu.png" />
   </ItemGroup>
 </Project>
