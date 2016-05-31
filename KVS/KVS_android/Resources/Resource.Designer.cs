@@ -1961,8 +1961,8 @@ namespace KVS_android
 			// aapt resource value: 0x7f06006d
 			public const int addGroupButton2 = 2131099757;
 			
-			// aapt resource value: 0x7f0600ac
-			public const int addStudentButton1 = 2131099820;
+			// aapt resource value: 0x7f0600b0
+			public const int addStudentButton1 = 2131099824;
 			
 			// aapt resource value: 0x7f060076
 			public const int addStudentButton2 = 2131099766;
@@ -1979,8 +1979,8 @@ namespace KVS_android
 			// aapt resource value: 0x7f06001b
 			public const int beginning = 2131099675;
 			
-			// aapt resource value: 0x7f0600a7
-			public const int birthDateTextField = 2131099815;
+			// aapt resource value: 0x7f0600ab
+			public const int birthDateTextField = 2131099819;
 			
 			// aapt resource value: 0x7f06002a
 			public const int bottom = 2131099690;
@@ -2084,8 +2084,8 @@ namespace KVS_android
 			// aapt resource value: 0x7f06006b
 			public const int etCurrentYearofStudy = 2131099755;
 			
-			// aapt resource value: 0x7f0600a1
-			public const int etEmail = 2131099809;
+			// aapt resource value: 0x7f0600a5
+			public const int etEmail = 2131099813;
 			
 			// aapt resource value: 0x7f060070
 			public const int etFirstName = 2131099760;
@@ -2093,8 +2093,8 @@ namespace KVS_android
 			// aapt resource value: 0x7f060072
 			public const int etLastName = 2131099762;
 			
-			// aapt resource value: 0x7f0600a0
-			public const int etLastname = 2131099808;
+			// aapt resource value: 0x7f0600a4
+			public const int etLastname = 2131099812;
 			
 			// aapt resource value: 0x7f060071
 			public const int etMiddleName = 2131099761;
@@ -2108,8 +2108,8 @@ namespace KVS_android
 			// aapt resource value: 0x7f06008d
 			public const int etPass = 2131099789;
 			
-			// aapt resource value: 0x7f0600a2
-			public const int etPhone = 2131099810;
+			// aapt resource value: 0x7f0600a6
+			public const int etPhone = 2131099814;
 			
 			// aapt resource value: 0x7f060074
 			public const int etSex = 2131099764;
@@ -2165,8 +2165,14 @@ namespace KVS_android
 			// aapt resource value: 0x7f06003f
 			public const int image = 2131099711;
 			
-			// aapt resource value: 0x7f0600a4
-			public const int imageStudent = 2131099812;
+			// aapt resource value: 0x7f0600a1
+			public const int imageAnn = 2131099809;
+			
+			// aapt resource value: 0x7f0600a3
+			public const int imageButton1 = 2131099811;
+			
+			// aapt resource value: 0x7f0600a8
+			public const int imageStudent = 2131099816;
 			
 			// aapt resource value: 0x7f06009e
 			public const int info = 2131099806;
@@ -2189,6 +2195,9 @@ namespace KVS_android
 			// aapt resource value: 0x7f060091
 			public const int linearLayout1 = 2131099793;
 			
+			// aapt resource value: 0x7f0600a0
+			public const int linearLayout2 = 2131099808;
+			
 			// aapt resource value: 0x7f06008b
 			public const int list = 2131099787;
 			
@@ -2200,9 +2209,6 @@ namespace KVS_android
 			
 			// aapt resource value: 0x7f060041
 			public const int list_item = 2131099713;
-			
-			// aapt resource value: 0x7f0600b1
-			public const int logOut = 2131099825;
 			
 			// aapt resource value: 0x7f06008e
 			public const int loginButton = 2131099790;
@@ -2222,20 +2228,23 @@ namespace KVS_android
 			// aapt resource value: 0x7f060088
 			public const int nameActivity = 2131099784;
 			
-			// aapt resource value: 0x7f0600a5
-			public const int nameStudentTextField = 2131099813;
+			// aapt resource value: 0x7f0600a9
+			public const int nameStudentTextField = 2131099817;
 			
-			// aapt resource value: 0x7f0600af
-			public const int nav_ann = 2131099823;
+			// aapt resource value: 0x7f0600b4
+			public const int nav_ann = 2131099828;
 			
-			// aapt resource value: 0x7f0600ae
-			public const int nav_klas = 2131099822;
+			// aapt resource value: 0x7f0600b3
+			public const int nav_klas = 2131099827;
 			
-			// aapt resource value: 0x7f0600ad
-			public const int nav_menu = 2131099821;
+			// aapt resource value: 0x7f0600b6
+			public const int nav_log_out = 2131099830;
 			
-			// aapt resource value: 0x7f0600b0
-			public const int nav_results = 2131099824;
+			// aapt resource value: 0x7f0600b2
+			public const int nav_menu = 2131099826;
+			
+			// aapt resource value: 0x7f0600b5
+			public const int nav_results = 2131099829;
 			
 			// aapt resource value: 0x7f060085
 			public const int nav_view = 2131099781;
@@ -2258,8 +2267,8 @@ namespace KVS_android
 			// aapt resource value: 0x7f060046
 			public const int parentPanel = 2131099718;
 			
-			// aapt resource value: 0x7f0600a9
-			public const int particularsTextField = 2131099817;
+			// aapt resource value: 0x7f0600ad
+			public const int particularsTextField = 2131099821;
 			
 			// aapt resource value: 0x7f060029
 			public const int pin = 2131099689;
@@ -2273,14 +2282,14 @@ namespace KVS_android
 			// aapt resource value: 0x7f060054
 			public const int radio = 2131099732;
 			
-			// aapt resource value: 0x7f0600a3
-			public const int registerButton = 2131099811;
+			// aapt resource value: 0x7f0600a7
+			public const int registerButton = 2131099815;
 			
-			// aapt resource value: 0x7f0600aa
-			public const int resultsButton1 = 2131099818;
+			// aapt resource value: 0x7f0600ae
+			public const int resultsButton1 = 2131099822;
 			
-			// aapt resource value: 0x7f0600ab
-			public const int resultsButton2 = 2131099819;
+			// aapt resource value: 0x7f0600af
+			public const int resultsButton2 = 2131099823;
 			
 			// aapt resource value: 0x7f060030
 			public const int right = 2131099696;
@@ -2336,8 +2345,8 @@ namespace KVS_android
 			// aapt resource value: 0x7f060068
 			public const int select_dialog_listview = 2131099752;
 			
-			// aapt resource value: 0x7f0600a8
-			public const int sexTextField = 2131099816;
+			// aapt resource value: 0x7f0600ac
+			public const int sexTextField = 2131099820;
 			
 			// aapt resource value: 0x7f060053
 			public const int shortcut = 2131099731;
@@ -2384,8 +2393,8 @@ namespace KVS_android
 			// aapt resource value: 0x7f060095
 			public const int status_bar_latest_event_content = 2131099797;
 			
-			// aapt resource value: 0x7f0600a6
-			public const int studentCodeTextField = 2131099814;
+			// aapt resource value: 0x7f0600aa
+			public const int studentCodeTextField = 2131099818;
 			
 			// aapt resource value: 0x7f060065
 			public const int submit_area = 2131099749;
@@ -2408,6 +2417,9 @@ namespace KVS_android
 			// aapt resource value: 0x7f060092
 			public const int textView1 = 2131099794;
 			
+			// aapt resource value: 0x7f0600a2
+			public const int textView2 = 2131099810;
+			
 			// aapt resource value: 0x7f060099
 			public const int time = 2131099801;
 			
@@ -2416,6 +2428,9 @@ namespace KVS_android
 			
 			// aapt resource value: 0x7f060048
 			public const int title_template = 2131099720;
+			
+			// aapt resource value: 0x7f0600b1
+			public const int toolbar = 2131099825;
 			
 			// aapt resource value: 0x7f060032
 			public const int top = 2131099698;
@@ -2657,28 +2672,34 @@ namespace KVS_android
 			public const int notification_template_part_time = 2130903095;
 			
 			// aapt resource value: 0x7f030038
-			public const int Register = 2130903096;
+			public const int perAnn = 2130903096;
 			
 			// aapt resource value: 0x7f030039
-			public const int select_dialog_item_material = 2130903097;
+			public const int Register = 2130903097;
 			
 			// aapt resource value: 0x7f03003a
-			public const int select_dialog_multichoice_material = 2130903098;
+			public const int select_dialog_item_material = 2130903098;
 			
 			// aapt resource value: 0x7f03003b
-			public const int select_dialog_singlechoice_material = 2130903099;
+			public const int select_dialog_multichoice_material = 2130903099;
 			
 			// aapt resource value: 0x7f03003c
-			public const int Student = 2130903100;
+			public const int select_dialog_singlechoice_material = 2130903100;
 			
 			// aapt resource value: 0x7f03003d
-			public const int StudentsInGroup = 2130903101;
+			public const int Student = 2130903101;
 			
 			// aapt resource value: 0x7f03003e
-			public const int support_simple_spinner_dropdown_item = 2130903102;
+			public const int StudentsInGroup = 2130903102;
 			
 			// aapt resource value: 0x7f03003f
-			public const int Tests = 2130903103;
+			public const int support_simple_spinner_dropdown_item = 2130903103;
+			
+			// aapt resource value: 0x7f030040
+			public const int Tests = 2130903104;
+			
+			// aapt resource value: 0x7f030041
+			public const int toolbar = 2130903105;
 			
 			static Layout()
 			{

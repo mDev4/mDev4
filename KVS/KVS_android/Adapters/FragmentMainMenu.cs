@@ -28,8 +28,6 @@ namespace KVS_android
             NavigationView navigationView = view.FindViewById<NavigationView>(Resource.Id.nav_view);
             navigationView.NavigationItemSelected += NavigationView_NavigationItemSelected;
             TextView text = view.FindViewById<TextView>(Resource.Id.nameActivity);
-            ActionBarDrawerToggle mDrawerToggle = new ActionBarDrawerToggle(
-            Activity, drawerLayout, Resource.String.openDrawer, Resource.String.closeDrawer);
             return view;
 
         }
@@ -68,15 +66,9 @@ namespace KVS_android
                         StartActivity(intent);
                     }
                     break;
-                case (Resource.Id.logOut):
-                    {
-                        var intent = new Intent(this.Activity, typeof(MainActivity));
-                        StartActivity(intent);
-                    }
-                    break;
 			case (Resource.Id.nav_log_out):
 				{
-					var intent = new Intent(this.Activity, typeof(Login));
+					var intent = new Intent(this.Activity, typeof(MainActivity));
 					Activity.Finish ();
 					StartActivity(intent);
 				}

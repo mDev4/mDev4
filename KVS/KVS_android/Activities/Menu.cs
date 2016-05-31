@@ -7,8 +7,7 @@ using Android.Widget;
 using Android.OS;
 using KVS_android;
 using Android.Support.V7.App;
-using Shared.Model;
-using Newtonsoft.Json;
+
 using Android.Support.V4.Widget;
 
 namespace KVS_android
@@ -16,7 +15,7 @@ namespace KVS_android
     [Activity(Label = "Home")]
 	public class Menu : AppCompatActivity
     {
-        TimeModel latestTimer;
+        //TimeModel latestTimer;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             //latestTimer = JsonConvert.DeserializeObject<TimeModel>(base.Intent.GetStringExtra("TIMER"));

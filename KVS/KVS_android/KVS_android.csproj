@@ -77,16 +77,21 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Activities\AddGroup.cs" />
+    <Compile Include="Activities\AddStudent.cs" />
+    <Compile Include="Activities\Announcements.cs" />
     <Compile Include="Activities\Group.cs" />
     <Compile Include="Activities\Login.cs" />
     <Compile Include="Activities\MainActivity.cs" />
     <Compile Include="Activities\Menu.cs" />
     <Compile Include="Activities\Register.cs" />
     <Compile Include="Activities\Results.cs" />
+    <Compile Include="Activities\Tests.cs" />
     <Compile Include="Adapters\ActionBarDrawerToggle.cs" />
     <Compile Include="Adapters\FragmentMainMenu.cs" />
     <Compile Include="Adapters\GroupAdapter.cs" />
     <Compile Include="Adapters\StudentAdapter.cs" />
+    <Compile Include="Adapters\TestAdapter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Activities\Student.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
@@ -99,7 +104,6 @@
     </None>
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
-    <AndroidResource Include="Resources\drawable\ic_supervisor_account_black_24dp.png" />
     <AndroidResource Include="Resources\layout\fragment_layout.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
@@ -119,28 +123,24 @@
       <SubType>AndroidResource</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\detailedResult.axml" />
-    <AndroidResource Include="Resources\layout\perStudent_Group.axml" />
-    <None Include="Resources\layout\Announcements.axml" />
+    <AndroidResource Include="Resources\layout\Announcements.axml" />
+    <AndroidResource Include="Resources\drawable\schoolBackground" />
+    <AndroidResource Include="Resources\layout\AddGroup.axml" />
+    <AndroidResource Include="Resources\layout\AddStudent.axml" />
     <None Include="Resources\layout\CustomRow.axml" />
     <AndroidResource Include="Resources\layout\Header.axml" />
     <AndroidResource Include="Resources\layout\insertResult.axml" />
     <AndroidResource Include="Resources\layout\perAnn.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
-    <None Include="Resources\layout\packages.config" />
     <AndroidResource Include="Resources\layout\StudentsInGroup.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
-    <None Include="Resources\layout\Subjects.axml" />
-    <AndroidResource Include="Resources\drawable\bg_colors_header.png" />
-    <AndroidResource Include="Resources\drawable\ic_devices_black_24dp.png" />
-    <AndroidResource Include="Resources\drawable\ic_home_black_24dp.png" />
-    <AndroidResource Include="Resources\drawable\ic_question_answer_black_24dp.png" />
-    <AndroidResource Include="Resources\drawable\ic_supervisor_account_black_24dp.png" />
     <AndroidResource Include="Resources\menu\navmenu.xml" />
     <AndroidResource Include="Resources\layout\toolbar.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
+    <AndroidResource Include="Resources\layout\Tests.axml" />
     <None Include="Resources\values-v21\Styles.xml" />
   </ItemGroup>
   <ItemGroup>
@@ -150,42 +150,7 @@
     <AndroidResource Include="Resources\values\Strings.xml" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Icon.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Properties\AndroidManifest.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\schoolBackground" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\linearlayout_bg.xml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\button_default_bg.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\edittext_top_bg.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\edittext_defealt_bg.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\edittext_bottom_bg.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\ic_add.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\ic_devices_black_24dp.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\ic_home_black_24dp.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\ic_question_answer_black_24dp.png" />
   </ItemGroup>
   <Import Project="..\Shared\Shared.projitems" Label="Shared" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
@@ -214,9 +179,69 @@
     </XamarinComponentReference>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\ic_drawer.png" />
+    <AndroidResource Include="Resources\drawable\bg_colors_header.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\ic_menu.png" />
+    <AndroidResource Include="Resources\drawable\button_default_bg.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\edittext_bottom_bg.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\edittext_defealt_bg.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\edittext_top_bg.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ic_account_circle_black_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ic_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ic_cake_black_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ic_call_black_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ic_date_range_black_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ic_devices_black_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ic_email_black_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ic_event_black_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ic_format_list_numbered_black_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ic_home_black_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ic_lock_black_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ic_person_black_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ic_question_answer_black_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ic_star_black_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ic_supervisor_account_black_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\linearlayout_bg.xml" />
   </ItemGroup>
 </Project>
