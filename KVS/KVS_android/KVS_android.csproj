@@ -140,7 +140,6 @@
       <SubType>AndroidResource</SubType>
     </AndroidResource>
     <None Include="Resources\layout\Announcements.axml" />
->>>>>>> feature/AddTest
     <None Include="Resources\layout\CustomRow.axml" />
     <AndroidResource Include="Resources\layout\Header.axml" />
     <AndroidResource Include="Resources\layout\insertResult.axml" />
