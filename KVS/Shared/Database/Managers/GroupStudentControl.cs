@@ -51,5 +51,30 @@ namespace Shared.Database.Managers
             return students;
         }
 
+        public static void addStudentToGroup(StudentModel student, GroupModel group)
+        {
+            using (SqlConnection con = new SqlConnection(DatabaseHelper.dbString))// Using right connection
+            {
+                con.Open();
+
+                try
+                {
+                    // Query
+                    using (SqlCommand command = new SqlCommand(
+                        "INSERT INTO " + DatabaseHelper.GROUP_STUDENT_TABLE + " VALUES(@groupId, @studentId)", con))
+                    {
+                        // Adding right data to the query
+                        command.Parameters.Add(new SqlParameter("groupId", group.Id));
+                        command.Parameters.Add(new SqlParameter("studentId", student.Id));
+                        command.ExecuteNonQuery(); // Execute query
+                    }
+                }
+                catch (SqlException ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+            }
+        }
+
     }
 }

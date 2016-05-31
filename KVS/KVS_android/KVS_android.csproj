@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -92,6 +92,14 @@
     <Compile Include="Adapters\GroupAdapter.cs" />
     <Compile Include="Adapters\StudentAdapter.cs" />
     <Compile Include="Adapters\TestAdapter.cs" />
+    <Compile Include="Adapters_and_Fragments\DatePickerFragment.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Adapters_and_Fragments\FragmentMainMenu.cs" />
+    <Compile Include="Adapters_and_Fragments\TestAdapter.cs" />
+    <Compile Include="Adapters_and_Fragments\GroupAdapter.cs" />
+    <Compile Include="Adapters_and_Fragments\StudentAdapter.cs" />
+    <Compile Include="Activities\addTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Activities\Student.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
@@ -127,6 +135,12 @@
     <AndroidResource Include="Resources\drawable\schoolBackground" />
     <AndroidResource Include="Resources\layout\AddGroup.axml" />
     <AndroidResource Include="Resources\layout\AddStudent.axml" />
+    <AndroidResource Include="Resources\layout\perStudent_Group.axml" />
+    <AndroidResource Include="Resources\layout\addTests.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <None Include="Resources\layout\Announcements.axml" />
+>>>>>>> feature/AddTest
     <None Include="Resources\layout\CustomRow.axml" />
     <AndroidResource Include="Resources\layout\Header.axml" />
     <AndroidResource Include="Resources\layout\insertResult.axml" />

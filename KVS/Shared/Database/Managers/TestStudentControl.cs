@@ -18,8 +18,8 @@ namespace Shared.Database.Managers
 
                 // Query
                 using (SqlCommand command = new SqlCommand(
-                    "SELECT * FROM " + DatabaseHelper.TEST_STUDENT_TABLE +  " ts INNER JOIN " + 
-                    DatabaseHelper.STUDENT_TABLE + " s ON ts.student_id = s.id "+ "WHERE s.id = @id", con))
+                    "SELECT * FROM " + DatabaseHelper.TEST_TABLE +  " t INNER JOIN " + 
+                    DatabaseHelper.TEST_STUDENT_TABLE + " ts ON ts.test_id = t.id "+ "WHERE ts.student_id = @id", con))
                 {
                     // Adding id to search with
                     command.Parameters.Add(new SqlParameter("id", student.Id));
@@ -40,6 +40,31 @@ namespace Shared.Database.Managers
                 }
             }
             return tests;
+        }
+
+        public static void addStudentToTest(StudentModel student, TestModel test, double grade) {
+            using (SqlConnection con = new SqlConnection(DatabaseHelper.dbString))// Using right connection
+            {
+                con.Open();
+
+                try
+                {
+                    // Query
+                    using (SqlCommand command = new SqlCommand(
+                        "INSERT INTO " + DatabaseHelper.TEST_STUDENT_TABLE + " VALUES(@testId, @studentId)", con))
+                    {
+                        // Adding right data to the query
+                        command.Parameters.Add(new SqlParameter("testId", test.Id));
+                        command.Parameters.Add(new SqlParameter("studentId", student.Id));
+                        command.Parameters.Add(new SqlParameter("grade", grade));
+                        command.ExecuteNonQuery(); // Execute query
+                    }
+                }
+                catch (SqlException ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+            }
         }
     }
 }
