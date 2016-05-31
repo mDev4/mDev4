@@ -22,10 +22,6 @@ namespace KVS_android
             //latestTimer = JsonConvert.DeserializeObject<TimeModel>(base.Intent.GetStringExtra("TIMER"));
             base.OnCreate(savedInstanceState);
 			base.SetTheme (Resource.Style.Base_Theme_AppCompat);
-            var toolbar = FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.toolbar);
-            SetSupportActionBar(toolbar);
-            SupportActionBar.SetHomeAsUpIndicator(Resource.Drawable.ic_menu);
-            SupportActionBar.SetDisplayHomeAsUpEnabled(true);
             // Set our view from the "menu" layout resource
             SetContentView(Resource.Layout.Menu);
             
