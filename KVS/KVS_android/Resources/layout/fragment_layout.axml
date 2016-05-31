@@ -4,6 +4,8 @@
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px"
     android:fitsSystemWindows="true">
 <!-- Your content -->
 <!-- The flyout menu -->

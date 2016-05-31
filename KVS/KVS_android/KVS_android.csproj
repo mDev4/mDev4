@@ -42,6 +42,10 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Mono.Android" />
     <Reference Include="mscorlib" />
+    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.8.0.3\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
@@ -73,18 +77,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Activities\AddGroup.cs" />
-    <Compile Include="Activities\AddStudent.cs" />
-    <Compile Include="Activities\Announcements.cs" />
     <Compile Include="Activities\Group.cs" />
     <Compile Include="Activities\Login.cs" />
     <Compile Include="Activities\MainActivity.cs" />
     <Compile Include="Activities\Menu.cs" />
     <Compile Include="Activities\Register.cs" />
     <Compile Include="Activities\Results.cs" />
-    <Compile Include="Activities\Tests.cs" />
+    <Compile Include="Adapters\ActionBarDrawerToggle.cs" />
     <Compile Include="Adapters\FragmentMainMenu.cs" />
-    <Compile Include="Adapters\TestAdapter.cs" />
     <Compile Include="Adapters\GroupAdapter.cs" />
     <Compile Include="Adapters\StudentAdapter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -119,27 +119,28 @@
       <SubType>AndroidResource</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\detailedResult.axml" />
-    <AndroidResource Include="Resources\layout\AddGroup.axml">
-      <SubType>AndroidResource</SubType>
-    </AndroidResource>
-    <AndroidResource Include="Resources\layout\AddStudent.axml">
-      <SubType>AndroidResource</SubType>
-    </AndroidResource>
-    <AndroidResource Include="Resources\layout\Announcements.axml" />
+    <AndroidResource Include="Resources\layout\perStudent_Group.axml" />
+    <None Include="Resources\layout\Announcements.axml" />
     <None Include="Resources\layout\CustomRow.axml" />
     <AndroidResource Include="Resources\layout\Header.axml" />
     <AndroidResource Include="Resources\layout\insertResult.axml" />
+    <AndroidResource Include="Resources\layout\perAnn.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
     <None Include="Resources\layout\packages.config" />
     <AndroidResource Include="Resources\layout\StudentsInGroup.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
+    <None Include="Resources\layout\Subjects.axml" />
     <AndroidResource Include="Resources\drawable\bg_colors_header.png" />
     <AndroidResource Include="Resources\drawable\ic_devices_black_24dp.png" />
     <AndroidResource Include="Resources\drawable\ic_home_black_24dp.png" />
     <AndroidResource Include="Resources\drawable\ic_question_answer_black_24dp.png" />
-    <AndroidResource Include="Resources\layout\Header.axml" />
+    <AndroidResource Include="Resources\drawable\ic_supervisor_account_black_24dp.png" />
     <AndroidResource Include="Resources\menu\navmenu.xml" />
-    <AndroidResource Include="Resources\layout\Tests.axml" />
+    <AndroidResource Include="Resources\layout\toolbar.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
     <None Include="Resources\values-v21\Styles.xml" />
   </ItemGroup>
   <ItemGroup>
@@ -147,6 +148,9 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\Strings.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Icon.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\AndroidManifest.xml" />
@@ -175,7 +179,13 @@
     <AndroidResource Include="Resources\drawable\ic_add.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\menu\navmenu.xml" />
+    <AndroidResource Include="Resources\drawable\ic_devices_black_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ic_home_black_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ic_question_answer_black_24dp.png" />
   </ItemGroup>
   <Import Project="..\Shared\Shared.projitems" Label="Shared" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
@@ -204,36 +214,9 @@
     </XamarinComponentReference>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Icon.png" />
+    <AndroidResource Include="Resources\drawable\ic_drawer.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\ic_cake_black_24dp.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\ic_account_circle_black_24dp.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\ic_call_black_24dp.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\ic_email_black_24dp.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\ic_lock_black_24dp.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\ic_date_range_black_24dp.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\ic_event_black_24dp.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\ic_format_list_numbered_black_24dp.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\ic_person_black_24dp.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\ic_star_black_24dp.png" />
+    <AndroidResource Include="Resources\drawable\ic_menu.png" />
   </ItemGroup>
 </Project>
