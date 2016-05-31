@@ -8,6 +8,36 @@ namespace Shared.Database.Managers
 {
     class TestControl 
     {
+
+        /*
+        * Adds a test to the database with given data
+        */
+        public static void addTest(TestModel test)
+        {
+            using (SqlConnection con = new SqlConnection(DatabaseHelper.dbString))// Using right connection
+            {
+                con.Open();
+
+                try
+                {
+                    // Query
+                    using (SqlCommand command = new SqlCommand(
+                        "INSERT INTO " + DatabaseHelper.TEST_TABLE + " VALUES(@date, @title, @description)", con))
+                    {
+                        // Adding right data to the query
+                        command.Parameters.Add(new SqlParameter("date", test.Date.ToString("dd-MM-yyyy")));
+                        command.Parameters.Add(new SqlParameter("title", test.Title));
+                        command.Parameters.Add(new SqlParameter("description", test.Description));
+
+                        command.ExecuteNonQuery(); // Execute query
+                    }
+                }
+                catch (SqlException ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+            }
+        }
         public static TestModel getTestById(string id)
         {
             TestModel test = new TestModel();
