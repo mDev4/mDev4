@@ -22,6 +22,7 @@ namespace KVS_android
         private ListView testsList;
         private TestAdapter listAdapter;
         private Button editDateButton;
+        private Button addTestsButton;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -29,6 +30,8 @@ namespace KVS_android
 
             // Set our view from the "group" layout resource
             SetContentView(Resource.Layout.Tests);
+
+            addTestsButton = FindViewById<Button>(Resource.Id.addTestsButton);
 
             tests = TestControl.getAllTests();
             testsList = FindViewById<ListView>(Android.Resource.Id.List);
@@ -40,6 +43,7 @@ namespace KVS_android
             //button logic
             editDateButton = FindViewById<Button>(Resource.Id.selectDateButton);
             editDateButton.Click += dateSelectOnClick;
+            addTestsButton.Click += addTestButtonOnClick;
 
         }
 
@@ -56,6 +60,13 @@ namespace KVS_android
             });
             frag.Show(FragmentManager, DatePickerFragment.TAG);
             }
+
+       public void addTestButtonOnClick(object sender, EventArgs eventArgs)
+        {
+            Intent intent = new Intent(this, typeof(addTest));
+            StartActivity(intent);
+            
+        }
 
 
         
