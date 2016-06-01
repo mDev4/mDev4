@@ -51,7 +51,7 @@ namespace KVS_android
             
             DatePickerFragment frag = DatePickerFragment.NewInstance(delegate (DateTime time)
             {
-                editDateButton.Text = time.Date.ToString("MM-dd-yyyy");
+                editDateButton.Text = time.Date.ToString("dd-MM-yyyy");
                 tests = TestControl.getTestsByDate(editDateButton.Text);
 
                 listAdapter = new TestAdapter(this, tests);
