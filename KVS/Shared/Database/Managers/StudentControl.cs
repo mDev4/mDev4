@@ -91,7 +91,7 @@ namespace Shared.Database.Managers
         }
 
         /*
-        * Getting a student from the database by name
+        * Getting a student from the database by id
         */
         public static StudentModel getStudentById(string id)
         {
@@ -129,5 +129,43 @@ namespace Shared.Database.Managers
             }
             return student;
         }
+		/*
+        * Getting all students
+        */
+		public static List<StudentModel> getAllStudents()
+		{
+			StudentModel student = new StudentModel();
+			List<StudentModel> studentList = new List<StudentModel> ();
+			using (SqlConnection con = new SqlConnection(DatabaseHelper.dbString))// Using right connection
+			{
+				con.Open();
+
+				// Query
+				using (SqlCommand command = new SqlCommand(
+					"SELECT * FROM " + DatabaseHelper.STUDENT_TABLE, con))
+				{
+					SqlDataReader reader = command.ExecuteReader(); //execute
+
+					// Getting result from query
+					while (reader.Read())
+					{
+						// Converting result to StudentModel
+						student.Id = reader.GetInt32(0);
+						student.Studentcode = reader.GetString(1);
+						student.Particulars = reader.GetString(2);
+						student.BirthDate = DateTime.Parse(reader.GetString(3));
+						student.Firstname = reader.GetString(4);
+						student.Middlename = reader.GetString(5);
+						student.Lastname = reader.GetString(6);
+						student.StartYear = reader.GetInt16(7);
+						student.Sex = reader.GetString(8);
+
+						studentList.Add (student);
+					}
+				}
+			}
+			return studentList;
+		}
+
     }
 }

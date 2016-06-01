@@ -32,17 +32,19 @@ namespace KVS_android
             SetContentView(Resource.Layout.StudentsInGroup);
 
             // frameLayout setup
-            var newFragment = new FragmentMainMenu();
-            var ft = FragmentManager.BeginTransaction();
-            ft.Add(Resource.Id.frameLayout1, newFragment);
-            ft.Commit();
+            //var newFragment = new FragmentMainMenu();
+            //var ft = FragmentManager.BeginTransaction();
+            //ft.Add(Resource.Id.frameLayout1, newFragment);
+            //ft.Commit();
 
             //AddStudent
             Button addStudentButton1 = FindViewById<Button>(Resource.Id.addStudentButton1);
 
             addStudentButton1.Click += delegate
             {
-                StartActivity(typeof(AddStudent));
+				Intent intent = new Intent(this, typeof(AddStudentToGroup));
+				intent.PutExtra("groupId", this.Intent.GetStringExtra("groupId"));
+                StartActivity(intent);
             };
 
             //init
