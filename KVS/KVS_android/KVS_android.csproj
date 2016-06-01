@@ -78,7 +78,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Activities\AddGroup.cs" />
+    <Compile Include="Activities\AddResultToTest.cs" />
     <Compile Include="Activities\AddStudent.cs" />
+    <Compile Include="Activities\AddStudentToTest.cs" />
     <Compile Include="Activities\Announcements.cs" />
     <Compile Include="Activities\Group.cs" />
     <Compile Include="Activities\Login.cs" />
@@ -87,10 +89,13 @@
     <Compile Include="Activities\Register.cs" />
     <Compile Include="Activities\Results.cs" />
     <Compile Include="Activities\Tests.cs" />
+    <Compile Include="Activities\TestsPerStudent.cs" />
+    <Compile Include="Activities\ViewResultOfTest.cs" />
     <Compile Include="Adapters_and_Fragments\DatePickerFragment.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Adapters_and_Fragments\FragmentMainMenu.cs" />
+    <Compile Include="Adapters_and_Fragments\AnnouncementAdapter.cs" />
     <Compile Include="Adapters_and_Fragments\TestAdapter.cs" />
     <Compile Include="Adapters_and_Fragments\GroupAdapter.cs" />
     <Compile Include="Adapters_and_Fragments\StudentAdapter.cs" />
@@ -133,6 +138,7 @@
     <AndroidResource Include="Resources\layout\addTests.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
+    <AndroidResource Include="Resources\layout\AddResultToTest.axml" />
     <None Include="Resources\layout\Announcements.axml" />
     <None Include="Resources\layout\CustomRow.axml" />
     <AndroidResource Include="Resources\layout\Header.axml" />
@@ -148,6 +154,8 @@
       <SubType>AndroidResource</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\Tests.axml" />
+    <AndroidResource Include="Resources\layout\TestsPerStudent.axml" />
+    <AndroidResource Include="Resources\layout\ViewResultOfTest.axml" />
     <None Include="Resources\values-v21\Styles.xml" />
   </ItemGroup>
   <ItemGroup>

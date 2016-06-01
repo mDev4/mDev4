@@ -38,11 +38,11 @@ namespace KVS_android.Activities
             tvTitle = FindViewById<TextView>(Resource.Id.tvTitle);
             tvDescription = FindViewById<TextView>(Resource.Id.tvDescription);
             tvDate = FindViewById<TextView>(Resource.Id.tvDate);
-            tvGrade = FindViewById<TextView>(Resource.Id.etGrade);
+            tvGrade = FindViewById<TextView>(Resource.Id.tvGrade);
 
             //get student and test
-            long testId = Intent.GetLongExtra("testId", -1);
-            long studentId = Intent.GetLongExtra("studentId", -1);
+            string testId = Intent.GetStringExtra("testId");
+            string studentId = Intent.GetStringExtra("studentId");
 
             student = StudentControl.getStudentById(studentId.ToString());
             test = TestControl.getTestById(testId.ToString());
