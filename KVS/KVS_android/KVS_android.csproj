@@ -95,6 +95,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Adapters_and_Fragments\FragmentMainMenu.cs" />
+    <Compile Include="Adapters_and_Fragments\AnnouncementAdapter.cs" />
     <Compile Include="Adapters_and_Fragments\TestAdapter.cs" />
     <Compile Include="Adapters_and_Fragments\GroupAdapter.cs" />
     <Compile Include="Adapters_and_Fragments\StudentAdapter.cs" />
