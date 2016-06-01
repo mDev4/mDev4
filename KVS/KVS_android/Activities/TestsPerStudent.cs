@@ -12,6 +12,7 @@ using Android.Widget;
 using Shared.Database.Models;
 using Shared.Database.Managers;
 using KVS_android.Adapters_and_Fragments;
+using KVS_android.Activities;
 
 namespace KVS_android
 {
@@ -21,28 +22,20 @@ namespace KVS_android
         private List<TestModel> tests;
         private ListView testsList;
         private TestAdapter listAdapter;
-        private Button editDateButton;
-        private Button addTestsButton;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
 
-            // Set our view from the "group" layout resource
+            // Set our view from the "TestsPerStudent" layout resource
             SetContentView(Resource.Layout.TestsPerStudent);
 
-            addTestsButton = FindViewById<Button>(Resource.Id.addTestsButton);
-
-            tests = TestControl.getAllTests();
+            tests = TestStudentControl.getTestsByStudent(StudentControl.getStudentById(Intent.GetStringExtra("studentId")));
             testsList = FindViewById<ListView>(Android.Resource.Id.List);
             listAdapter = new TestAdapter(this, tests);
             testsList.Adapter = listAdapter;
 
             listAdapter.NotifyDataSetChanged();
-
-            //button logic
-            editDateButton = FindViewById<Button>(Resource.Id.selectDateButton);
-            editDateButton.Click += dateSelectOnClick;
 
             testsList.ItemClick += (sender, e) =>
             {
@@ -50,32 +43,17 @@ namespace KVS_android
                 TestModel test = tests[e.Position];
                 Console.WriteLine("Clicked " + test.Title);
 
-                //go to overview of clicked group
-                //Intent intent = new Intent(this, typeof(addResultToTest));
-                //intent.PutExtra("testId", test.Id.ToString());
-                //StartActivity(intent);
+                //go to overview of clicked test
+                Intent intent = new Intent(this, typeof(ViewResultOfTest));
+                intent.PutExtra("testId", test.Id.ToString());
+                intent.PutExtra("studentId", StudentControl.getStudentById(Intent.GetStringExtra("studentId")).Id.ToString());
+                StartActivity(intent);
             };
 
         }
 
-        void dateSelectOnClick(object sender, EventArgs eventArgs)
-        {
-
-            DatePickerFragment frag = DatePickerFragment.NewInstance(delegate (DateTime time)
-            {
-                editDateButton.Text = time.Date.ToString("MM-dd-yyyy");
-                tests = TestControl.getTestsByDate(editDateButton.Text);
-
-                listAdapter = new TestAdapter(this, tests);
-                testsList.Adapter = listAdapter;
-                listAdapter.NotifyDataSetChanged();
-            });
-            frag.Show(FragmentManager, DatePickerFragment.TAG);
-        }
-
-        
-}
-
-       
     }
+
+
 }
+

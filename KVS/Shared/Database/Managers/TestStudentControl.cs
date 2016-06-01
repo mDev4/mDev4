@@ -42,6 +42,37 @@ namespace Shared.Database.Managers
             return tests;
         }
 
+        public static TestStudentModel getResultById(StudentModel student, TestModel test)
+        {
+            TestStudentModel result = new TestStudentModel();
+            using (SqlConnection con = new SqlConnection(DatabaseHelper.dbString))// Using right connection
+            {
+                con.Open();
+
+                // Query
+                using (SqlCommand command = new SqlCommand(
+                    "SELECT * FROM " + DatabaseHelper.TEST_STUDENT_TABLE +  " WHERE student_id = @studentId AND test_id = testId", con))
+                {
+                    // Adding id to search with
+                    command.Parameters.Add(new SqlParameter("studentId", student.Id));
+                    command.Parameters.Add(new SqlParameter("testId", test.Id));
+
+                    SqlDataReader reader = command.ExecuteReader(); //execute query
+
+                    // Getting result
+                    while (reader.Read())
+                    {
+                        // Converting result to TestStudentModel
+                        result.Student_id = student.Id;
+                        result.Test_id = test.Id;
+                        result.Grade = reader.GetString(2);
+                        
+                    }
+                }
+            }
+            return result;
+        }
+
         public static void addStudentToTest(StudentModel student, TestModel test, double grade) {
             using (SqlConnection con = new SqlConnection(DatabaseHelper.dbString))// Using right connection
             {
