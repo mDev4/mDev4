@@ -139,7 +139,6 @@
       <SubType>AndroidResource</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\AddResultToTest.axml" />
-    <None Include="Resources\layout\Announcements.axml" />
     <None Include="Resources\layout\CustomRow.axml" />
     <AndroidResource Include="Resources\layout\Header.axml" />
     <AndroidResource Include="Resources\layout\insertResult.axml" />
@@ -258,5 +257,11 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\linearlayout_bg.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ic_description_black_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ic_info_black_24dp.png" />
   </ItemGroup>
 </Project>

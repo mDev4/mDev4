@@ -30,6 +30,7 @@
   <string name="info">Swipe vanaf links om het menu te weergeven...</string>
   <string name="announcem">Mededelingen</string>
   <string name="tests">Toetsen</string>
+  <string name="save">Opslaan</string>
 
   <string name="user_name">Gebruikersnaam</string>
   <string name="passw">Wachtwoord</string>
@@ -47,6 +48,8 @@
   <string name="datum">Datum</string>
   <string name="btnGrade">Geef cijfer</string>
   <string name="grade">Cijfer</string>
+  <string name="add_test">Voeg toets toe</string>
+  <string name="select_date">Selecteer datum</string>
   
   <string name="year_prompt">Jaar:</string>
   <string-array name="years_array">
