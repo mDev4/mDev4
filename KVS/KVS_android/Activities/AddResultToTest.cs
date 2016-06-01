@@ -41,11 +41,11 @@ namespace KVS_android.Activities
             btnGrade = FindViewById<Button>(Resource.Id.btnGrade);
 
             //get student and test
-            long testId = Intent.GetLongExtra("testId", -1);
-            long studentId = Intent.GetLongExtra("studentId", -1);
+            string testId = Intent.GetStringExtra("testId");
+            string studentId = Intent.GetStringExtra("studentId");
 
-            student = StudentControl.getStudentById(studentId.ToString());
-            test = TestControl.getTestById(testId.ToString());
+            student = StudentControl.getStudentById(studentId);
+            test = TestControl.getTestById(testId);
 
             //fill in text fields
             tvStudentName.Text = student.Firstname + " " + student.Lastname;
