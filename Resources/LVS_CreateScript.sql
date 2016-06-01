@@ -44,31 +44,35 @@ CREATE TABLE [LVS].[UserSettings]
 );
 CREATE TABLE [LVS].[Announcement]
 (
-	id      SMALLINT PRIMARY KEY             NOT NULL IDENTITY,
-	message TEXT                             NOT NULL,
-	author  SMALLINT                         NOT NULL,
-	title   VARCHAR(50)                      NOT NULL,
-	type    VARCHAR(20)                      NOT NULL
+	id      SMALLINT PRIMARY KEY                                           NOT NULL IDENTITY,
+	message TEXT                                                           NOT NULL,
+	author  SMALLINT                                                       NOT NULL,
+	title   VARCHAR(50)                                                    NOT NULL,
+	type    VARCHAR(20)                                                    NOT NULL,
+	date    smalldatetime DEFAULT (CONVERT([smalldatetime], getutcdate())) NOT NULL,
+	CONSTRAINT UQ_Announcement__message_author_title UNIQUE (author, title, date)
 );
 CREATE TABLE [LVS].[Group]
 (
-	id                    SMALLINT PRIMARY KEY                       NOT NULL IDENTITY,
-	name                  VARCHAR(20)                                NOT NULL,
-	current_academic_year SMALLINT                                   NOT NULL,
-	current_year_of_study SMALLINT                                   NOT NULL,
-	start_year            SMALLINT DEFAULT datepart(YEAR, getdate()) NOT NULL
+	id                    SMALLINT PRIMARY KEY                          NOT NULL IDENTITY,
+	name                  VARCHAR(20)                                   NOT NULL,
+	current_academic_year SMALLINT                                      NOT NULL,
+	current_year_of_study SMALLINT                                      NOT NULL,
+	start_year            SMALLINT DEFAULT datepart(YEAR, GETUTCDATE()) NOT NULL
 );
 CREATE TABLE [LVS].[Student]
 (
-	id           INT PRIMARY KEY                            NOT NULL IDENTITY,
-	student_code VARCHAR(20)                                NOT NULL,
+	id           INT PRIMARY KEY                               NOT NULL IDENTITY,
+	student_code VARCHAR(20)                                   NOT NULL,
 	particulars  TEXT,
-	birth_date   DATE                                       NOT NULL,
-	first_name   VARCHAR(20)                                NOT NULL,
+	birth_date   DATE                                          NOT NULL,
+	first_name   VARCHAR(20)                                   NOT NULL,
 	middle_name  VARCHAR(20),
-	last_name    VARCHAR(20)                                NOT NULL,
-	start_year   SMALLINT DEFAULT datepart(YEAR, getdate()) NOT NULL,
-	sex          VARCHAR(6)                                 NOT NULL
+	last_name    VARCHAR(20)                                   NOT NULL,
+	start_year   SMALLINT DEFAULT datepart(YEAR, GETUTCDATE()) NOT NULL,
+	sex          VARCHAR(6)                                    NOT NULL,
+	alumni       BOOLEAN DEFAULT '0'                           NOT NULL,
+	CONSTRAINT UQ_Student__student_code UNIQUE (student_code)
 );
 CREATE TABLE [LVS].[Student_Group]
 (
@@ -103,6 +107,8 @@ ALTER TABLE [LVS].[Student_Group]
 	ADD CONSTRAINT FK__Student_Group_group_id FOREIGN KEY (group_id) REFERENCES [LVS].[Group] (id);
 ALTER TABLE [LVS].[Student_Group]
 	ADD CONSTRAINT FK__Student_Group_student_id FOREIGN KEY (student_id) REFERENCES [LVS].[Student] (id);
+
+CREATE UNIQUE INDEX UQ_Index__Student_first_name_last_name_birth_date_student_code ON [LVS].[Student] (first_name, last_name, birth_date, student_code);
 
 CREATE UNIQUE INDEX UQ_Index__Student_Group_group_id_student_id ON [LVS].[Student_Group] (group_id, student_id);
 
