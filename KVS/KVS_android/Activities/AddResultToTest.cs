@@ -54,15 +54,18 @@ namespace KVS_android.Activities
             tvDate.Text = test.Date.ToString("dd-MM-yyyy");
 
             //get onclick event for button clicked
-            etGrade.Click += gradeButtonClick;
+            btnGrade.Click += gradeButtonClick;
 
         }
 
         public void gradeButtonClick(object sender, EventArgs eventArgs)
         {
-            double grade = Double.Parse(etGrade.Text.ToString());
+            string grade = etGrade.Text.ToString();
             TestStudentControl.addStudentToTest(student, test, grade);
-            this.Finish();
+
+            Intent intent = new Intent(this, typeof(Menu));
+            StartActivity(intent);
+            
         }
     }
 }

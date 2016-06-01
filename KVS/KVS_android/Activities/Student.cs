@@ -13,6 +13,7 @@ using Android.Support.V7.App;
 using KVS_android;
 using Shared.Database.Models;
 using Shared.Database.Managers;
+using KVS_android.Activities;
 
 namespace KVS_android
 {
@@ -25,6 +26,9 @@ namespace KVS_android
         private TextView birthDateTextView;
         private TextView studentCodeTextView;
         private TextView sexTextView;
+        private Button viewResults;
+        private Button editResults;
+        private StudentModel student;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -40,9 +44,11 @@ namespace KVS_android
             birthDateTextView = FindViewById<TextView>(Resource.Id.birthDateTextField);
             sexTextView = FindViewById<TextView>(Resource.Id.sexTextField);
             studentCodeTextView = FindViewById<TextView>(Resource.Id.studentCodeTextField);
+            viewResults = FindViewById<Button>(Resource.Id.resultsButton1);
+            editResults = FindViewById<Button>(Resource.Id.resultsButton2);
 
             //get student to fill in value
-            StudentModel student = StudentControl.getStudentById(Intent.GetStringExtra("studentId"));
+            student = StudentControl.getStudentById(Intent.GetStringExtra("studentId"));
 
             //fill values into fields
             nameTextView.Text = student.Firstname + " " + student.Lastname;
@@ -57,6 +63,25 @@ namespace KVS_android
             ft.Add(Resource.Id.frameLayout1, newFragment);
             ft.Commit();
 
+            viewResults.Click += viewResultsOnClick;
+
+            editResults.Click += editResultsOnClick;
+
         }
+
+        public void viewResultsOnClick(object sender, EventArgs view)
+        {
+            Intent intent = new Intent(this, typeof(TestsPerStudents));
+            intent.PutExtra("studentId", student.Id.ToString());
+            StartActivity(intent);
+        }
+
+        public void editResultsOnClick(object sender, EventArgs view)
+        {
+            Intent intent = new Intent(this, typeof(AddStudentToTest));
+            intent.PutExtra("studentId", student.Id.ToString());
+            StartActivity(intent);
+        }
+
     }
 }

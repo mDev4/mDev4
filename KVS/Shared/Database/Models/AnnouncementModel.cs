@@ -1,25 +1,43 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Data;
+using Shared.Database.Models;
+using System.Data.SqlClient;
 
 namespace Shared.Database.Models
 {
-    class AnnouncementModel
+    public class AnnouncementModel
     {
-        private string title;
+        private int id;
         private string message;
+        private int author;
+        private string title;
         private string type;
-        private UserModel userAdded;
 
-        public string Title
+        public AnnouncementModel(int id, string message, int author, string title, string type)
+        {
+            this.id = id;
+            this.message = message;
+            this.author = author;
+            this.title = title;
+            this.type = type;
+        }
+
+        public AnnouncementModel()
+        {
+
+        }
+
+        public int Id
         {
             get
             {
-                return title;
+                return id;
             }
             set
             {
-                title = value;
+                id = value;
             }
         }
 
@@ -35,15 +53,27 @@ namespace Shared.Database.Models
             }
         }
 
-        public UserModel UserAdded
+        public int Author
         {
             get
             {
-                return userAdded;
+                return author;
             }
             set
             {
-                userAdded = value;
+                author = value;
+            }
+        }
+
+        public string Title
+        {
+            get
+            {
+                return title;
+            }
+            set
+            {
+                title = value;
             }
         }
 

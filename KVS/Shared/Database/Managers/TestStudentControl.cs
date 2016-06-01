@@ -30,7 +30,7 @@ namespace Shared.Database.Managers
                     while (reader.Read())
                     {
                         // Converting result to StudentModel
-                        test.Id = reader.GetInt32(0);
+                        test.Id = reader.GetInt16(0);
                         test.Date = DateTime.Parse(reader.GetString(1));
                         test.Title = reader.GetString(2);                        
                         test.Description = reader.GetString(3);
@@ -51,11 +51,11 @@ namespace Shared.Database.Managers
 
                 // Query
                 using (SqlCommand command = new SqlCommand(
-                    "SELECT * FROM " + DatabaseHelper.TEST_STUDENT_TABLE +  " WHERE student_id = @studentId AND test_id = testId", con))
+                    "SELECT * FROM " + DatabaseHelper.TEST_STUDENT_TABLE + " WHERE test_id = @testId AND student_id = @studentId", con))
                 {
                     // Adding id to search with
-                    command.Parameters.Add(new SqlParameter("studentId", student.Id));
                     command.Parameters.Add(new SqlParameter("testId", test.Id));
+                    command.Parameters.Add(new SqlParameter("studentId", student.Id));                    
 
                     SqlDataReader reader = command.ExecuteReader(); //execute query
 
@@ -63,17 +63,18 @@ namespace Shared.Database.Managers
                     while (reader.Read())
                     {
                         // Converting result to TestStudentModel
-                        result.Student_id = student.Id;
-                        result.Test_id = test.Id;
+                        result.Student_id = reader.GetInt16(0);
+                        result.Test_id = reader.GetInt32(1);
                         result.Grade = reader.GetString(2);
-                        
+
+                        return result;
                     }
                 }
             }
             return result;
         }
 
-        public static void addStudentToTest(StudentModel student, TestModel test, double grade) {
+        public static void addStudentToTest(StudentModel student, TestModel test, string grade) {
             using (SqlConnection con = new SqlConnection(DatabaseHelper.dbString))// Using right connection
             {
                 con.Open();
@@ -82,7 +83,7 @@ namespace Shared.Database.Managers
                 {
                     // Query
                     using (SqlCommand command = new SqlCommand(
-                        "INSERT INTO " + DatabaseHelper.TEST_STUDENT_TABLE + " VALUES(@testId, @studentId)", con))
+                        "INSERT INTO " + DatabaseHelper.TEST_STUDENT_TABLE + " VALUES(@testId, @studentId, @grade)", con))
                     {
                         // Adding right data to the query
                         command.Parameters.Add(new SqlParameter("testId", test.Id));
