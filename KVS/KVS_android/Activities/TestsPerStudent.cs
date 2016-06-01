@@ -73,9 +73,9 @@ namespace KVS_android
             frag.Show(FragmentManager, DatePickerFragment.TAG);
         }
 
-        
+
+    }
+
+
 }
 
-       
-    }
-}
