@@ -4,61 +4,91 @@
     android:layout_height="match_parent"
     android:background="@drawable/schoolbackground">
     <LinearLayout
-        android:orientation="vertical"
+        android:background="@drawable/linearlayout_bg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:padding="10dp"
-        android:background="@drawable/linearlayout_bg">
-        <TextView
-            android:id="@+id/tvStudentName"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+        <LinearLayout
+            android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/edittext_top_bg"
-            android:padding="10dp"
-            android:drawableLeft="@android:drawable/ic_dialog_info"
-            android:layout_marginBottom="0.0dp"
-            android:textColor="@android:color/black"
-            android:drawablePadding="10dp" />
-        <TextView
-            android:id="@+id/tvTitle"
+            android:background="@drawable/linearlayout_bg">
+            <TextView
+                android:text="@string/result_test"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/resulttest1"
+                android:textSize="20dp"
+                android:layout_marginLeft="65dp"
+                android:layout_marginTop="27dp"
+                android:layout_marginBottom="30dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/edittext_top_bg"
-            android:padding="10dp"
-            android:drawableLeft="@android:drawable/ic_dialog_info"
-            android:layout_marginBottom="0.0dp"
-            android:textColor="@android:color/black"
-            android:drawablePadding="10dp" />
-        <TextView
-            android:id="@+id/tvDescription"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/edittext_top_bg"
-            android:padding="10dp"
-            android:drawableLeft="@android:drawable/ic_dialog_info"
-            android:layout_marginBottom="0.0dp"
-            android:textColor="@android:color/black"
-            android:drawablePadding="10dp" />
-        <TextView
-            android:id="@+id/tvDate"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/edittext_top_bg"
-            android:padding="10dp"
-            android:drawableLeft="@android:drawable/ic_dialog_info"
-            android:layout_marginBottom="0.0dp"
-            android:textColor="@android:color/black"
-            android:drawablePadding="10dp" />
-        <TextView
-            android:id="@+id/tvGrade"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/edittext_top_bg"
-            android:padding="10dp"
-            android:drawableLeft="@android:drawable/ic_dialog_info"
-            android:layout_marginBottom="0.0dp"
-            android:textColor="@android:color/black"
-            android:drawablePadding="10dp" />
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tvStudentName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="@string/name_student1"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="@android:color/white" />
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="@string/title1"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="@android:color/white" />
+            <TextView
+                android:id="@+id/tvDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="@string/description1"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="@android:color/white" />
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="@string/datum1"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="@android:color/white" />
+            <TextView
+                android:id="@+id/tvGrade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="@string/grade1"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
     </LinearLayout>
+    <FrameLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:id="@+id/frameLayout1" />
 </RelativeLayout>

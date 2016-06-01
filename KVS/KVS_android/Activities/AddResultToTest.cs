@@ -29,8 +29,15 @@ namespace KVS_android.Activities
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
+            base.SetTheme(Resource.Style.Base_V7_Theme_AppCompat);
 
             SetContentView(Resource.Layout.AddResultToTest);
+
+            // frameLayout setup
+            var newFragment = new FragmentMainMenu();
+            var ft = FragmentManager.BeginTransaction();
+            ft.Add(Resource.Id.frameLayout1, newFragment);
+            ft.Commit();
 
             //init
             tvStudentName = FindViewById<TextView>(Resource.Id.tvStudentName);

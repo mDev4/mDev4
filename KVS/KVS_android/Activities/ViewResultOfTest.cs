@@ -30,6 +30,7 @@ namespace KVS_android.Activities
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
+            base.SetTheme(Resource.Style.Base_V7_Theme_AppCompat);
 
             SetContentView(Resource.Layout.ViewResultOfTest);
 
@@ -39,6 +40,12 @@ namespace KVS_android.Activities
             tvDescription = FindViewById<TextView>(Resource.Id.tvDescription);
             tvDate = FindViewById<TextView>(Resource.Id.tvDate);
             tvGrade = FindViewById<TextView>(Resource.Id.tvGrade);
+
+            // frameLayout setup
+            var newFragment = new FragmentMainMenu();
+            var ft = FragmentManager.BeginTransaction();
+            ft.Add(Resource.Id.frameLayout1, newFragment);
+            ft.Commit();
 
             //get student and test
             string testId = Intent.GetStringExtra("testId");

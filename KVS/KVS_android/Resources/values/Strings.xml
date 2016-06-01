@@ -23,6 +23,7 @@
   <string name="particulars">Bijzonderheden</string>
   <string name="particulars1">Bijzonderheden:  </string>
   <string name="name_student">Naam leerling</string>
+  <string name="name_student1">Naam leerling:  </string>
   <string name="students_group">Studenten in deze groep:</string>
   <string name="add_student">Voeg student toe</string>
 
@@ -41,15 +42,20 @@
 
   <string name="see_results">Resultaten inzien</string>
   <string name="add_results">Resultaten invoeren</string>
+  <string name="result_test">Resultaat van deze toets</string>
 
-  <string name="student_name">Studentnaam</string>
   <string name="title">Toetsnaam</string>
+  <string name="title1">Toetsnaam:  </string>
   <string name="description">Beschrijving</string>
+  <string name="description1">Beschrijving:  </string>
   <string name="datum">Datum</string>
+  <string name="datum1">Datum:  </string>
   <string name="btnGrade">Geef cijfer</string>
   <string name="grade">Cijfer</string>
+  <string name="grade1">Cijfer:  </string>
   <string name="add_test">Voeg toets toe</string>
   <string name="select_date">Selecteer datum</string>
+  <string name="testperstudent">Toetsen van deze student</string>
   
   <string name="year_prompt">Jaar:</string>
   <string-array name="years_array">
