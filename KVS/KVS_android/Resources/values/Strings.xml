@@ -40,6 +40,13 @@
 
   <string name="see_results">Resultaten inzien</string>
   <string name="add_results">Resultaten invoeren</string>
+
+  <string name="student_name">Studentnaam</string>
+  <string name="title">Toetsnaam</string>
+  <string name="description">Beschrijving</string>
+  <string name="datum">Datum</string>
+  <string name="btnGrade">Geef cijfer</string>
+  <string name="grade">Cijfer</string>
   
   <string name="year_prompt">Jaar:</string>
   <string-array name="years_array">
