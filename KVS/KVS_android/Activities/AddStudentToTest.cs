@@ -15,7 +15,7 @@ using KVS_android.Adapters_and_Fragments;
 
 namespace KVS_android.Activities
 {
-    [Activity(Label = "AddStudentToTest")]
+    [Activity(Label = "Voeg student aan toets toe")]
     public class AddStudentToTest : Activity
     {
         private List<TestModel> tests;

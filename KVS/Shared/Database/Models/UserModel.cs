@@ -9,10 +9,13 @@ namespace Shared.Database.Models
         private int id;
         private string username;
         private string password;
+        private int clearance;
         private string firstname;
         private string lastname;
         private string email;
         private string phoneNumber;
+        private string sex;
+        private bool active;
 
         public int Id
         {
@@ -50,6 +53,19 @@ namespace Shared.Database.Models
             set
             {
                 password = value;
+            }
+        }
+
+        public int Clearance
+        {
+            get
+            {
+                return clearance;
+            }
+
+            set
+            {
+                clearance = value;
             }
         }
 
@@ -102,6 +118,32 @@ namespace Shared.Database.Models
             {
                 phoneNumber = value;
             }
+        }
+
+        public string Sex
+        {
+            get
+            {
+                return sex;
+            }
+
+            set
+            {
+                sex = value;
+            }
+        }
+
+        public bool Active
+        {
+            get
+            {
+                return active;
+            }
+            set
+            {
+                active = value;
+            }
+
         }
     }
 }

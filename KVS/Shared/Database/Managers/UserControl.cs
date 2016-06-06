@@ -25,15 +25,18 @@ namespace Shared.Database.Managers
                 {
                     // Query
                     using (SqlCommand command = new SqlCommand(
-                        "INSERT INTO " + DatabaseHelper.USER_TABLE + " VALUES(@username, @password, @firstname, @lastname, @email, @phoneNumber)", con))
+                        "INSERT INTO " + DatabaseHelper.USER_TABLE + " VALUES(@username, @password, @clearance, @firstname, @lastname, @email, @phoneNumber, @sex, @active)", con))
                     {
                         // Adding query parameters so the right data is added
                         command.Parameters.Add(new SqlParameter("username", user.Username));
                         command.Parameters.Add(new SqlParameter("password", user.Password));
+                        command.Parameters.Add(new SqlParameter("clearance", user.Clearance));
                         command.Parameters.Add(new SqlParameter("firstname", user.Firstname));
                         command.Parameters.Add(new SqlParameter("lastname", user.Lastname));
                         command.Parameters.Add(new SqlParameter("email", user.Email));
                         command.Parameters.Add(new SqlParameter("phoneNumber", user.PhoneNumber));
+                        command.Parameters.Add(new SqlParameter("sex", user.Sex));
+                        command.Parameters.Add(new SqlParameter("active", user.Active));
 
                         command.ExecuteNonQuery(); // Executing
                     }

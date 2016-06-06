@@ -49,18 +49,11 @@ namespace KVS_android
                 group.CurrYear = Int16.Parse(currentYearofStudyField.Text);
                 group.StartYear = Int16.Parse(startYearField.Text);
                 
-                // Check if all inputfields are filled in
-                if (group.Name == String.Empty || group.CurrCalendarYear == null || group.CurrYear == null || group.StartYear == null)
-                {
-                    Toast.MakeText(this, "Niet alle velden zijn ingevuld!", ToastLength.Long).Show();
-                    Console.WriteLine("Niet alle velden zijn ingevuld error melding...");
-                }
-                else {
                     // User succesfully added
                     GroupControl.addGroup(group);
                     Toast.MakeText(this, "Groep succesvol aangemaakt", ToastLength.Long).Show();
                     StartActivity(typeof(Group));
-                }        
+                     
             };            
         }
     }

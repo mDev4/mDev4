@@ -16,7 +16,7 @@ using KVS_android.Activities;
 
 namespace KVS_android
 {
-    [Activity(Label = "Tests")]
+    [Activity(Label = "Toetsen per student")]
     public class TestsPerStudents : ListActivity
     {
         private List<TestModel> tests;

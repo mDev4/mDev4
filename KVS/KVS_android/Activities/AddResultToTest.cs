@@ -14,7 +14,7 @@ using Shared.Database.Managers;
 
 namespace KVS_android.Activities
 {
-    [Activity(Label = "AddResultToTest")]
+    [Activity(Label = "Voeg resultaat aan toets toe")]
     public class AddResultToTest : Activity
     {
         private TextView tvStudentName;
@@ -29,7 +29,6 @@ namespace KVS_android.Activities
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-
             SetContentView(Resource.Layout.AddResultToTest);
 
             //init

@@ -11,7 +11,7 @@ namespace Shared.Database.Managers
         public static List<TestModel> getTestsByStudent(StudentModel student)
         {
             List<TestModel> tests = new List<TestModel>();
-            TestModel test = new TestModel();
+            
             using (SqlConnection con = new SqlConnection(DatabaseHelper.dbString))// Using right connection
             {
                 con.Open();
@@ -26,9 +26,12 @@ namespace Shared.Database.Managers
 
                     SqlDataReader reader = command.ExecuteReader(); //execute query
 
+
                     // Getting result
                     while (reader.Read())
                     {
+                        TestModel test = new TestModel();
+
                         // Converting result to StudentModel
                         test.Id = reader.GetInt16(0);
                         test.Date = DateTime.Parse(reader.GetString(1));

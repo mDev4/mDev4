@@ -14,7 +14,7 @@ using Shared.Database.Managers;
 
 namespace KVS_android.Activities
 {
-    [Activity(Label = "ViewResultOfTest")]
+    [Activity(Label = "Resultaat van toets")]
     public class ViewResultOfTest : Activity
     {
         private TextView tvStudentName;
@@ -30,7 +30,6 @@ namespace KVS_android.Activities
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-
             SetContentView(Resource.Layout.ViewResultOfTest);
 
             //init
@@ -50,11 +49,11 @@ namespace KVS_android.Activities
 
 
             //fill in text fields
-            tvStudentName.Text = student.Firstname + " " + student.Lastname;
-            tvTitle.Text = test.Title;
-            tvDescription.Text = test.Description;
-            tvDate.Text = test.Date.ToString("dd-MM-yyyy");
-            tvGrade.Text = result.Grade;
+            tvStudentName.Text += student.Firstname + " " + student.Lastname;
+            tvTitle.Text += test.Title;
+            tvDescription.Text += test.Description;
+            tvDate.Text += test.Date.ToString("dd-MM-yyyy");
+            tvGrade.Text += result.Grade;
         }
     }
 }

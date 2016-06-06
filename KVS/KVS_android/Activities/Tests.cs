@@ -15,7 +15,7 @@ using KVS_android.Adapters_and_Fragments;
 
 namespace KVS_android
 {
-    [Activity(Label = "Tests")]
+    [Activity(Label = "Toetsen")]
     public class Tests : ListActivity
     {
         private List<TestModel> tests;
@@ -51,7 +51,7 @@ namespace KVS_android
             
             DatePickerFragment frag = DatePickerFragment.NewInstance(delegate (DateTime time)
             {
-                editDateButton.Text = time.Date.ToString("dd-MM-yyyy");
+                editDateButton.Text = time.Date.ToString("MM-dd-yyyy");
                 tests = TestControl.getTestsByDate(editDateButton.Text);
 
                 listAdapter = new TestAdapter(this, tests);

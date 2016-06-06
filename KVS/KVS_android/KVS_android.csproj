@@ -87,7 +87,6 @@
     <Compile Include="Activities\MainActivity.cs" />
     <Compile Include="Activities\Menu.cs" />
     <Compile Include="Activities\Register.cs" />
-    <Compile Include="Activities\Results.cs" />
     <Compile Include="Activities\Tests.cs" />
     <Compile Include="Activities\TestsPerStudent.cs" />
     <Compile Include="Activities\ViewResultOfTest.cs" />
@@ -130,7 +129,6 @@
     <AndroidResource Include="Resources\layout\Student.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\detailedResult.axml" />
     <AndroidResource Include="Resources\layout\Announcements.axml" />
     <AndroidResource Include="Resources\drawable\schoolBackground" />
     <AndroidResource Include="Resources\layout\AddGroup.axml" />
@@ -139,10 +137,8 @@
       <SubType>AndroidResource</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\AddResultToTest.axml" />
-    <None Include="Resources\layout\Announcements.axml" />
     <None Include="Resources\layout\CustomRow.axml" />
     <AndroidResource Include="Resources\layout\Header.axml" />
-    <AndroidResource Include="Resources\layout\insertResult.axml" />
     <AndroidResource Include="Resources\layout\perAnn.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
@@ -258,5 +254,11 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\linearlayout_bg.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ic_description_black_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ic_info_black_24dp.png" />
   </ItemGroup>
 </Project>
