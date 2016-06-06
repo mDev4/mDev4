@@ -51,23 +51,17 @@ namespace KVS_android
                 student.Firstname = firstNameField.Text.ToString();
                 student.Middlename = middleNameField.Text.ToString();
                 student.Lastname = lastNameField.Text.ToString();
-                student.BirthDate = DateTime.Parse(birthDateField.Text);    
+                student.BirthDate = DateTime.Parse(birthDateField.Text);
                 student.Particulars = particularsField.Text.ToString();
                 student.StartYear = Int16.Parse(startYearField.Text);
                 student.Sex = sexField.Text.ToString();
+                student.Alumni = false;
 
-                // Check if all inputfields are filled in
-                if (student.Studentcode == String.Empty || student.Firstname == String.Empty || student.Middlename == String.Empty || student.Lastname == String.Empty || student.BirthDate == null || student.Particulars == String.Empty || student.StartYear == null || student.Sex == String.Empty)
-                {
-                    Toast.MakeText(this, "Niet alle velden zijn ingevuld!", ToastLength.Long).Show();
-                    Console.WriteLine("Niet alle velden zijn ingevuld error melding...");
-                }
-                else {
-                    // User succesfully added
-                    StudentControl.addStudent(student);
-                    Toast.MakeText(this, "Student succesvol aangemaakt", ToastLength.Long).Show();
-                    StartActivity(typeof(StudentsInGroup));
-                }
+                // User succesfully added
+                StudentControl.addStudent(student);
+                Toast.MakeText(this, "Student succesvol aangemaakt", ToastLength.Long).Show();
+                StartActivity(typeof(StudentsInGroup));
+
             };
         }
 

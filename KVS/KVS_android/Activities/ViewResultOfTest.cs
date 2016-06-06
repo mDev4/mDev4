@@ -14,7 +14,7 @@ using Shared.Database.Managers;
 
 namespace KVS_android.Activities
 {
-    [Activity(Label = "ViewResultOfTest")]
+    [Activity(Label = "Resultaat van toets")]
     public class ViewResultOfTest : Activity
     {
         private TextView tvStudentName;
@@ -30,8 +30,6 @@ namespace KVS_android.Activities
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-            base.SetTheme(Resource.Style.Base_V7_Theme_AppCompat);
-
             SetContentView(Resource.Layout.ViewResultOfTest);
 
             //init
@@ -40,12 +38,6 @@ namespace KVS_android.Activities
             tvDescription = FindViewById<TextView>(Resource.Id.tvDescription);
             tvDate = FindViewById<TextView>(Resource.Id.tvDate);
             tvGrade = FindViewById<TextView>(Resource.Id.tvGrade);
-
-            // frameLayout setup
-            var newFragment = new FragmentMainMenu();
-            var ft = FragmentManager.BeginTransaction();
-            ft.Add(Resource.Id.frameLayout1, newFragment);
-            ft.Commit();
 
             //get student and test
             string testId = Intent.GetStringExtra("testId");
@@ -57,11 +49,11 @@ namespace KVS_android.Activities
 
 
             //fill in text fields
-            tvStudentName.Text = student.Firstname + " " + student.Lastname;
-            tvTitle.Text = test.Title;
-            tvDescription.Text = test.Description;
-            tvDate.Text = test.Date.ToString("dd-MM-yyyy");
-            tvGrade.Text = result.Grade;
+            tvStudentName.Text += student.Firstname + " " + student.Lastname;
+            tvTitle.Text += test.Title;
+            tvDescription.Text += test.Description;
+            tvDate.Text += test.Date.ToString("dd-MM-yyyy");
+            tvGrade.Text += result.Grade;
         }
     }
 }

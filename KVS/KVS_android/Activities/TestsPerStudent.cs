@@ -16,7 +16,7 @@ using KVS_android.Activities;
 
 namespace KVS_android
 {
-    [Activity(Label = "Tests")]
+    [Activity(Label = "Toetsen per student")]
     public class TestsPerStudents : ListActivity
     {
         private List<TestModel> tests;
@@ -26,7 +26,6 @@ namespace KVS_android
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-            base.SetTheme(Resource.Style.Base_V7_Theme_AppCompat);
 
             // Set our view from the "TestsPerStudent" layout resource
             SetContentView(Resource.Layout.TestsPerStudent);
@@ -37,12 +36,6 @@ namespace KVS_android
             testsList.Adapter = listAdapter;
 
             listAdapter.NotifyDataSetChanged();
-
-            // frameLayout setup
-            var newFragment = new FragmentMainMenu();
-            var ft = FragmentManager.BeginTransaction();
-            ft.Add(Resource.Id.frameLayout1, newFragment);
-            ft.Commit();
 
             testsList.ItemClick += (sender, e) =>
             {

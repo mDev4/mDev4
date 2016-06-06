@@ -29,10 +29,4 @@
             android:layout_height="wrap_content"
             android:id="@id/android:list" />
     </LinearLayout>
-    <FrameLayout
-        android:minWidth="25px"
-        android:minHeight="25px"
-        android:layout_width="250dp"
-        android:layout_height="match_parent"
-        android:id="@+id/frameLayout1" />
 </RelativeLayout>

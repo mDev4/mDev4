@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,11 +8,7 @@
         android:background="@drawable/linearlayout_bg"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:layout_marginTop="50dp"
-        android:layout_marginBottom="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp">
+        android:orientation="vertical">
         <TextView
             android:text="@string/tests"
             android:layout_marginTop="20dp"
@@ -22,12 +18,6 @@
             android:gravity="center"
             android:id="@+id/largeTextView1"
             android:textStyle="bold" />
-        <ListView
-            android:minWidth="25px"
-            android:minHeight="25px"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@id/android:list" />
         <Button
             android:text="@string/select_date"
             android:layout_width="match_parent"
@@ -38,6 +28,12 @@
             android:layout_alignParentBottom="true"
             style="@style/DefaultButtonText"
             android:background="@drawable/button_default_bg" />
+        <ListView
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="380dp"
+            android:id="@id/android:list" />
         <Button
             android:text="@string/add_test"
             android:layout_width="match_parent"
@@ -49,10 +45,4 @@
             style="@style/DefaultButtonText"
             android:background="@drawable/button_default_bg" />
     </LinearLayout>
-    <FrameLayout
-        android:minWidth="25px"
-        android:minHeight="25px"
-        android:layout_width="250dp"
-        android:layout_height="match_parent"
-        android:id="@+id/frameLayout1" />
-</RelativeLayout>
+</LinearLayout>

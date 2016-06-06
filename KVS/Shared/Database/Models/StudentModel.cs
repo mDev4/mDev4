@@ -15,6 +15,7 @@ namespace Shared.Database.Models
         private string particulars; //allergies etc
         private int startYear;
         private string sex;
+        private bool alumni;
 
         public StudentModel(string firstname, string lastname)
         {
@@ -133,6 +134,19 @@ namespace Shared.Database.Models
             {
                 sex = value;
             }
+        }
+
+        public bool Alumni
+        {
+            get
+            {
+                return alumni;
+            }
+            set
+            {
+                alumni = value;
+            }
+
         }
     }
 }

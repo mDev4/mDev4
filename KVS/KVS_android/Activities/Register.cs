@@ -33,6 +33,7 @@ namespace KVS_android
             EditText passwordField = FindViewById<EditText>(Resource.Id.etPass);
             EditText emailField = FindViewById<EditText>(Resource.Id.etEmail);
             EditText phoneField = FindViewById<EditText>(Resource.Id.etPhone);
+            EditText sexField = FindViewById<EditText>(Resource.Id.etSex);
 
             registerButton.Click += delegate
             {
@@ -41,14 +42,16 @@ namespace KVS_android
                 user.Lastname = lastNameField.Text.ToString();
                 user.Username = userNameField.Text.ToString();
                 user.Password = passwordField.Text.ToString();
+                user.Sex = sexField.Text.ToString();
                 user.Email = emailField.Text.ToString();
                 user.PhoneNumber = phoneField.Text.ToString();
+                user.Clearance = 3;
+                user.Active = true;
 
                 // Check if all inputfields are filled in
                 if (user.Firstname == String.Empty || user.Lastname == String.Empty || user.Username == String.Empty || user.Password == String.Empty || user.Email == String.Empty || user.PhoneNumber == String.Empty)
                 {
                     Toast.MakeText(this, "Niet alle velden zijn ingevuld!", ToastLength.Long).Show();
-                    Console.WriteLine("Niet alle velden zijn ingevuld error melding...");
                 }
                 else {
                     // User succesfully added

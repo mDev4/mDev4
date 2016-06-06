@@ -15,7 +15,7 @@ using KVS_android.Adapters_and_Fragments;
 
 namespace KVS_android
 {
-    [Activity(Label = "addTest")]
+    [Activity(Label = "Voeg toets toe")]
     public class addTest : Activity
     {
         private EditText titleEt;
@@ -26,8 +26,6 @@ namespace KVS_android
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-            base.SetTheme(Resource.Style.Base_V7_Theme_AppCompat);
-
             SetContentView(Resource.Layout.addTests);
 
             //init
@@ -38,12 +36,6 @@ namespace KVS_android
 
             addButton.Click += addTestButtonClick;
             editDateButton.Click += dateSelectOnClick;
-
-            // frameLayout setup
-            var newFragment = new FragmentMainMenu();
-            var ft = FragmentManager.BeginTransaction();
-            ft.Add(Resource.Id.frameLayout1, newFragment);
-            ft.Commit();
         }
 
         public void addTestButtonClick(object sender, EventArgs eventArgs)
@@ -62,7 +54,7 @@ namespace KVS_android
             DatePickerFragment frag = DatePickerFragment.NewInstance(delegate (DateTime time)
             {
                 editDateButton.Text = time.Date.ToString("dd-MM-yyyy");
-                
+
             });
             frag.Show(FragmentManager, DatePickerFragment.TAG);
         }

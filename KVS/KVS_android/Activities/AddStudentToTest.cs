@@ -15,7 +15,7 @@ using KVS_android.Adapters_and_Fragments;
 
 namespace KVS_android.Activities
 {
-    [Activity(Label = "AddStudentToTest")]
+    [Activity(Label = "Voeg student aan toets toe")]
     public class AddStudentToTest : Activity
     {
         private List<TestModel> tests;
@@ -27,16 +27,9 @@ namespace KVS_android.Activities
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-            base.SetTheme(Resource.Style.Base_V7_Theme_AppCompat);
 
             // Set our view from the "group" layout resource
             SetContentView(Resource.Layout.Tests);
-
-            // frameLayout setup
-            var newFragment = new FragmentMainMenu();
-            var ft = FragmentManager.BeginTransaction();
-            ft.Add(Resource.Id.frameLayout1, newFragment);
-            ft.Commit();
 
             addTestsButton = FindViewById<Button>(Resource.Id.addTestsButton);
 

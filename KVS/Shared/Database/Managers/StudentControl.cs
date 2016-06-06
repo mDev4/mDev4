@@ -27,7 +27,7 @@ namespace Shared.Database.Managers
                 {
                     // Query
                     using (SqlCommand command = new SqlCommand(
-                        "INSERT INTO " + DatabaseHelper.STUDENT_TABLE + " VALUES(@studentCode, @particulars, @birthDate, @firstName, @middleName, @lastName, @startYear, @sex)", con))
+                        "INSERT INTO " + DatabaseHelper.STUDENT_TABLE + " VALUES(@studentCode, @particulars, @birthDate, @firstName, @middleName, @lastName, @startYear, @sex, @alumni)", con))
                     {
                         // Adding right data to the query
                         command.Parameters.Add(new SqlParameter("studentCode", student.Studentcode));
@@ -38,6 +38,7 @@ namespace Shared.Database.Managers
                         command.Parameters.Add(new SqlParameter("lastName", student.Lastname));
                         command.Parameters.Add(new SqlParameter("startYear", student.StartYear));
                         command.Parameters.Add(new SqlParameter("sex", student.Sex));
+                        command.Parameters.Add(new SqlParameter("alumni", student.Alumni));
 
                         command.ExecuteNonQuery(); // Execute query
                     }
